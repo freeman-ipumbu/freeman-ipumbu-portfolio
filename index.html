@@ -531,6 +531,8 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .boot-flash b{font-size:18px;color:#eaffff;margin-top:10px;letter-spacing:.12em}.boot-flash.done{opacity:0;visibility:hidden}
 
 
+/* Final polish: legacy stack intro is intentionally retired in favour of the interactive OSI experience. */
+.legacy-stack-intro{display:none!important}
 .countup{min-width:2ch;display:inline-block}
 
 </style>
@@ -678,6 +680,14 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
   </div>
 </section>
 
+<section id="stack" class="legacy-stack-intro">
+  <div class="wrap">
+    <div class="section-head"><span class="section-num">02</span><h2 class="section-title">Protocol Stack</h2></div>
+    <p class="section-sub">Ten years of skills, organized the way I organize everything else — as a stack, bottom to top. Tap a layer to expand it.</p>
+    <div class="stack" id="stackList"></div>
+  </div>
+</section>
+
 <section id="log">
   <div class="wrap">
     <div class="section-head"><span class="section-num">03</span><h2 class="section-title">Change Log</h2></div>
@@ -711,7 +721,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
   </div>
 </section>
 
-<section id="stack" class="osi-experience reveal" aria-label="Interactive OSI experience">
+<section class="osi-experience reveal" aria-label="Interactive OSI experience">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">PROTOCOL STACK // INTERACTIVE</div>
@@ -1088,8 +1098,8 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   document.querySelectorAll('.countup').forEach(el=>{
     const target=Number(el.dataset.target||0), obs=new IntersectionObserver(es=>{
       if(!es[0].isIntersecting)return;
-      let start=target,t0=performance.now();
-      function tick(t){const p=Math.min(1,(t-t0)/1000);el.textContent=Math.round(start+(target-start)*p);if(p<1)requestAnimationFrame(tick)}
+      let start=0,t0=performance.now();
+      function tick(t){const p=Math.min(1,(t-t0)/1000);el.textContent=Math.round((1-Math.pow(1-p,3))*target);if(p<1)requestAnimationFrame(tick)}
       requestAnimationFrame(tick);obs.disconnect();
     });obs.observe(el);
   });
