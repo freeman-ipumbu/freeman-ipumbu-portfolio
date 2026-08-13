@@ -4,6 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Freeman Ipumbu — IT Systems & Network Engineer</title>
+<meta name="description" content="Freeman Ipumbu — IT Systems & Network Engineer. Networking, systems administration, security, infrastructure, and technical operations across Namibia and offshore environments.">
+
+<!-- Social / WhatsApp link preview -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://freeman-ipumbu.github.io/freeman-ipumbu-portfolio/">
+<meta property="og:title" content="Freeman Ipumbu — IT Systems & Network Engineer">
+<meta property="og:description" content="10+ years across networking, systems, security and infrastructure. Explore Freeman Ipumbu's technical portfolio, research and professional work.">
+<meta property="og:image" content="https://freeman-ipumbu.github.io/freeman-ipumbu-portfolio/og-image.jpg">
+<meta property="og:image:secure_url" content="https://freeman-ipumbu.github.io/freeman-ipumbu-portfolio/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Freeman Ipumbu — IT Systems & Network Engineer">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Freeman Ipumbu — IT Systems & Network Engineer">
+<meta name="twitter:description" content="10+ years across networking, systems, security and infrastructure.">
+<meta name="twitter:image" content="https://freeman-ipumbu.github.io/freeman-ipumbu-portfolio/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
@@ -531,8 +549,6 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .boot-flash b{font-size:18px;color:#eaffff;margin-top:10px;letter-spacing:.12em}.boot-flash.done{opacity:0;visibility:hidden}
 
 
-/* Final polish: legacy stack intro is intentionally retired in favour of the interactive OSI experience. */
-.legacy-stack-intro{display:none!important}
 .countup{min-width:2ch;display:inline-block}
 
 </style>
@@ -680,14 +696,6 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
   </div>
 </section>
 
-<section id="stack" class="legacy-stack-intro">
-  <div class="wrap">
-    <div class="section-head"><span class="section-num">02</span><h2 class="section-title">Protocol Stack</h2></div>
-    <p class="section-sub">Ten years of skills, organized the way I organize everything else — as a stack, bottom to top. Tap a layer to expand it.</p>
-    <div class="stack" id="stackList"></div>
-  </div>
-</section>
-
 <section id="log">
   <div class="wrap">
     <div class="section-head"><span class="section-num">03</span><h2 class="section-title">Change Log</h2></div>
@@ -721,7 +729,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
   </div>
 </section>
 
-<section class="osi-experience reveal" aria-label="Interactive OSI experience">
+<section id="stack" class="osi-experience reveal" aria-label="Interactive OSI experience">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">PROTOCOL STACK // INTERACTIVE</div>
@@ -924,36 +932,8 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   updateUptime();
   setInterval(updateUptime, 60000);
 
-  // ---------- protocol stack data ----------
-  var layers = [
-    {n:7, name:'Application', label:'Client-facing support & training', desc:'Direct end-user support, training staff on new hardware/software, and freelance IT consulting since 2014.', tags:['Client Relations','End-User Training','Consulting','Communication']},
-    {n:6, name:'Presentation', label:'Documentation & reporting', desc:'Writing SOPs, cable layout diagrams, and process documentation others can actually follow under pressure.', tags:['SOP Writing','AutoCAD Layouts','Technical Docs']},
-    {n:5, name:'Session', label:'Service management', desc:'Running support under ITIL 4 and ISO 20000 service-management principles — SLAs, ticketing, and escalation paths.', tags:['ITIL 4','ISO 20000','SLA Management']},
-    {n:4, name:'Transport', label:'Monitoring & diagnostics', desc:'Collecting and analyzing performance data to catch problems before end users do.', tags:['PRTG','SolarWinds','Wireshark','ICMP']},
-    {n:3, name:'Network', label:'Security & routing', desc:'Firewall administration, VPN/VLAN/MPLS configuration, and IP space management across enterprise and offshore networks.', tags:['SonicWALL','VPN/VLAN/MPLS','CCNA','IP Management']},
-    {n:2, name:'Data Link', label:'CPE & switching', desc:'Installing and optimizing customer-premises equipment and switching infrastructure.', tags:['Juniper','Cisco','Mikrotik','Wireless']},
-    {n:1, name:'Physical', label:'Hardware & site infrastructure', desc:'Hands-on hardware builds and repairs, structured cabling, server rooms, and CCTV surveillance systems.', tags:['Hardware Builds','Cabling','CCTV Systems','Server Maintenance']}
-  ];
-  var stackEl = document.getElementById('stackList');
-  layers.forEach(function(l, idx){
-    var div = document.createElement('div');
-    div.className = 'layer';
-    div.setAttribute('data-open', idx===0 ? 'true' : 'false');
-    div.innerHTML =
-      '<div class="layer-head">'+
-        '<div class="layer-num">L'+l.n+'</div>'+
-        '<div class="layer-titles"><div class="layer-name">'+l.name+'</div><div class="layer-label">'+l.label+'</div></div>'+
-        '<div class="layer-chevron">+</div>'+
-      '</div>'+
-      '<div class="layer-body"><div class="layer-body-inner">'+l.desc+
-        '<div class="layer-tags">'+l.tags.map(function(t){return '<span class="tag">'+t+'</span>';}).join('')+'</div>'+
-      '</div></div>';
-    div.querySelector('.layer-head').addEventListener('click', function(){
-      var open = div.getAttribute('data-open') === 'true';
-      div.setAttribute('data-open', open ? 'false' : 'true');
-    });
-    stackEl.appendChild(div);
-  });
+  // ---------- legacy accordion stack data retired ----------
+  // The cinematic interactive OSI experience now owns #stack.
 
   // ---------- change log (experience) ----------
   var tickets = [
@@ -1098,8 +1078,8 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   document.querySelectorAll('.countup').forEach(el=>{
     const target=Number(el.dataset.target||0), obs=new IntersectionObserver(es=>{
       if(!es[0].isIntersecting)return;
-      let start=0,t0=performance.now();
-      function tick(t){const p=Math.min(1,(t-t0)/1000);el.textContent=Math.round((1-Math.pow(1-p,3))*target);if(p<1)requestAnimationFrame(tick)}
+      let start=target,t0=performance.now();
+      function tick(t){const p=Math.min(1,(t-t0)/1000);el.textContent=Math.round(start+(target-start)*p);if(p<1)requestAnimationFrame(tick)}
       requestAnimationFrame(tick);obs.disconnect();
     });obs.observe(el);
   });
