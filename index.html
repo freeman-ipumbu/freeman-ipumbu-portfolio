@@ -1088,8 +1088,8 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   document.querySelectorAll('.countup').forEach(el=>{
     const target=Number(el.dataset.target||0), obs=new IntersectionObserver(es=>{
       if(!es[0].isIntersecting)return;
-      let start=0,t0=performance.now();
-      function tick(t){const p=Math.min(1,(t-t0)/1000);el.textContent=Math.round((1-Math.pow(1-p,3))*target);if(p<1)requestAnimationFrame(tick)}
+      let start=target,t0=performance.now();
+      function tick(t){const p=Math.min(1,(t-t0)/1000);el.textContent=Math.round(start+(target-start)*p);if(p<1)requestAnimationFrame(tick)}
       requestAnimationFrame(tick);obs.disconnect();
     });obs.observe(el);
   });
