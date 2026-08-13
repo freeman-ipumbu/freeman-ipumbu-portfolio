@@ -531,8 +531,6 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .boot-flash b{font-size:18px;color:#eaffff;margin-top:10px;letter-spacing:.12em}.boot-flash.done{opacity:0;visibility:hidden}
 
 
-/* Final polish: legacy stack intro is intentionally retired in favour of the interactive OSI experience. */
-.legacy-stack-intro{display:none!important}
 .countup{min-width:2ch;display:inline-block}
 
 </style>
@@ -680,14 +678,6 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
   </div>
 </section>
 
-<section id="stack" class="legacy-stack-intro">
-  <div class="wrap">
-    <div class="section-head"><span class="section-num">02</span><h2 class="section-title">Protocol Stack</h2></div>
-    <p class="section-sub">Ten years of skills, organized the way I organize everything else — as a stack, bottom to top. Tap a layer to expand it.</p>
-    <div class="stack" id="stackList"></div>
-  </div>
-</section>
-
 <section id="log">
   <div class="wrap">
     <div class="section-head"><span class="section-num">03</span><h2 class="section-title">Change Log</h2></div>
@@ -721,7 +711,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
   </div>
 </section>
 
-<section class="osi-experience reveal" aria-label="Interactive OSI experience">
+<section id="stack" class="osi-experience reveal" aria-label="Interactive OSI experience">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">PROTOCOL STACK // INTERACTIVE</div>
