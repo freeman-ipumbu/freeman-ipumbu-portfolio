@@ -530,6 +530,11 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .boot-flash{position:fixed;inset:0;z-index:10000;background:#060c12;display:flex;flex-direction:column;align-items:center;justify-content:center;font:9px var(--mono);letter-spacing:.18em;color:var(--electric);transition:opacity .45s,visibility .45s}
 .boot-flash b{font-size:18px;color:#eaffff;margin-top:10px;letter-spacing:.12em}.boot-flash.done{opacity:0;visibility:hidden}
 
+
+/* Final polish: legacy stack intro is intentionally retired in favour of the interactive OSI experience. */
+.legacy-stack-intro{display:none!important}
+.countup{min-width:2ch;display:inline-block}
+
 </style>
 </head>
 <body>
@@ -623,7 +628,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 
 <div class="telemetry wrap reveal">
   <div><span class="telemetry-key">NETWORK</span><strong>ONLINE</strong></div>
-  <div><span class="telemetry-key">EXPERIENCE</span><strong><span class="countup" data-target="10">0</span>+ YRS</strong></div>
+  <div><span class="telemetry-key">EXPERIENCE</span><strong><span class="countup" data-target="10">10</span>+ YRS</strong></div>
   <div><span class="telemetry-key">DISCIPLINES</span><strong>SYS · NET · SEC</strong></div>
   <div><span class="telemetry-key">MODE</span><strong>FIELD + NOC</strong></div>
 </div>
@@ -675,7 +680,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
   </div>
 </section>
 
-<section id="stack">
+<section id="stack" class="legacy-stack-intro">
   <div class="wrap">
     <div class="section-head"><span class="section-num">02</span><h2 class="section-title">Protocol Stack</h2></div>
     <p class="section-sub">Ten years of skills, organized the way I organize everything else — as a stack, bottom to top. Tap a layer to expand it.</p>
