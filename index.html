@@ -552,6 +552,42 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .countup{min-width:2ch;display:inline-block}
 
 </style>
+
+<style id="credentials-cinema">
+.credentials-section{position:relative;padding:110px 0 92px;border-top:1px solid var(--panel-line);overflow:hidden;background:radial-gradient(circle at 15% 20%,rgba(82,214,222,.055),transparent 28%),linear-gradient(180deg,rgba(15,22,29,.82),rgba(8,12,17,.96))}
+.credentials-section:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.34;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
+.credential-grid{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px}
+.credential-card{position:relative;min-height:270px;padding:22px;border:1px solid var(--panel-line);background:linear-gradient(145deg,rgba(20,31,40,.94),rgba(8,13,18,.94));overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.credential-card:before{content:"";position:absolute;top:0;right:0;width:72px;height:72px;border-left:1px solid rgba(82,214,222,.15);border-bottom:1px solid rgba(82,214,222,.15);transform:translate(36px,-36px) rotate(45deg);transition:transform .45s ease}
+.credential-card:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,var(--cyan),transparent);transform:scaleX(.16);transform-origin:left;transition:transform .4s ease}
+.credential-card:hover{transform:translateY(-7px);border-color:rgba(82,214,222,.52);box-shadow:0 20px 48px rgba(0,0,0,.32),0 0 30px rgba(82,214,222,.065)}
+.credential-card:hover:before{transform:translate(14px,-14px) rotate(45deg)}
+.credential-card:hover:after{transform:scaleX(1)}
+.credential-top{display:flex;justify-content:space-between;gap:12px;color:var(--text-faint);font:600 9px var(--mono);letter-spacing:.12em}
+.credential-status{color:var(--ok);white-space:nowrap}
+.credential-short{margin-top:32px;color:var(--cyan);font:700 24px var(--mono);letter-spacing:.015em}
+.credential-title{margin-top:10px;color:var(--text);font:600 14px var(--sans);line-height:1.45;max-width:34ch}
+.credential-meta{margin-top:18px;color:var(--text-dim);font:500 9px var(--mono);letter-spacing:.08em}
+.credential-id{margin-top:9px;color:var(--text-faint);font:500 8px var(--mono);letter-spacing:.06em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.credential-id b{color:var(--text-dim);font-weight:600}
+.credential-link{display:inline-block;margin-top:17px;color:var(--amber);font:700 9px var(--mono);letter-spacing:.12em;text-decoration:none}.credential-link:hover{color:var(--cyan)}
+.credential-footer{position:relative;margin-top:18px;padding:18px 20px;border:1px solid var(--panel-line);background:rgba(15,22,29,.64);display:flex;justify-content:space-between;align-items:center;gap:22px}.credential-footer-label{display:block;color:var(--text-faint);font:600 9px var(--mono);letter-spacing:.12em;margin-bottom:7px}.credential-footer strong{color:var(--text-dim);font:500 11px var(--mono)}.credential-footer-note{color:var(--amber);font:700 9px var(--mono);letter-spacing:.1em;white-space:nowrap}
+@media(max-width:900px){.credential-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){.credential-grid{grid-template-columns:1fr}.credential-footer{display:block}.credential-footer-note{display:block;margin-top:12px}}
+</style>
+
+<style id="edu-verify-style">
+.edu-verify{
+  margin-left:10px;
+  color:var(--amber);
+  text-decoration:none;
+  font:700 9px var(--mono);
+  letter-spacing:.1em;
+  white-space:nowrap;
+  vertical-align:middle;
+  opacity:.92;
+  transition:color .2s, opacity .2s;
+}
+.edu-verify:hover{color:var(--cyan);opacity:1}
+</style>
 </head>
 <body>
 
@@ -806,9 +842,66 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
   </div>
 </section>
 
+
+<section id="credentials" class="credentials-section">
+  <div class="wrap">
+    <div class="section-head"><span class="section-num">07</span><h2 class="section-title">Verified Credentials</h2></div>
+    <p class="section-sub">A curated verification layer behind the systems, security, governance and service-management work.</p>
+    <div class="credential-grid">
+<article class="credential-card" data-category="NETWORK SECURITY">
+  <div class="credential-top"><span>// NETWORK SECURITY</span><span class="credential-status">● VERIFIED</span></div>
+  <div class="credential-short">NSE 3</div>
+  <div class="credential-title">Fortinet Network Security Expert Level 3 — Certified Associate</div>
+  <div class="credential-meta">FORTINET · ISSUED JUN 2026 · VALID TO JUN 2028</div>
+  <div class="credential-id">CREDENTIAL ID <b>1676348093FP</b></div>
+  <a class="credential-link" href="https://training.fortinet.com/admin/tool/certificate/index.php" target="_blank" rel="noopener noreferrer">VERIFY CREDENTIAL ↗</a>
+</article><article class="credential-card" data-category="INFORMATION SECURITY">
+  <div class="credential-top"><span>// INFORMATION SECURITY</span><span class="credential-status">● VERIFIED</span></div>
+  <div class="credential-short">ISO/IEC 27001</div>
+  <div class="credential-title">Dynamics of Information Security Management System (ISMS)</div>
+  <div class="credential-meta">ALISON · ISSUED JUN 2023</div>
+  <div class="credential-id">CREDENTIAL ID <b>2251-31743137</b></div>
+  <a class="credential-link" href="https://alison.com/verify/30aafdf968" target="_blank" rel="noopener noreferrer">VERIFY CREDENTIAL ↗</a>
+</article><article class="credential-card" data-category="CYBERSECURITY">
+  <div class="credential-top"><span>// CYBERSECURITY</span><span class="credential-status">● VERIFIED</span></div>
+  <div class="credential-short">NIST CSF</div>
+  <div class="credential-title">Cyber Security Framework — Foundation</div>
+  <div class="credential-meta">ALISON · ISSUED OCT 2023</div>
+  <div class="credential-id">CREDENTIAL ID <b>2775-31743137</b></div>
+  <a class="credential-link" href="https://alison.com/verify/5ed641d486" target="_blank" rel="noopener noreferrer">VERIFY CREDENTIAL ↗</a>
+</article><article class="credential-card" data-category="GOVERNANCE">
+  <div class="credential-top"><span>// GOVERNANCE</span><span class="credential-status">● VERIFIED</span></div>
+  <div class="credential-short">COBIT</div>
+  <div class="credential-title">Framework — Foundations of IT Governance</div>
+  <div class="credential-meta">ALISON · ISSUED OCT 2023</div>
+  <div class="credential-id">CREDENTIAL ID <b>5901-31743137</b></div>
+  <a class="credential-link" href="https://alison.com/verify/f6038a806a" target="_blank" rel="noopener noreferrer">VERIFY CREDENTIAL ↗</a>
+</article><article class="credential-card" data-category="SERVICE MANAGEMENT">
+  <div class="credential-top"><span>// SERVICE MANAGEMENT</span><span class="credential-status">● VERIFIED</span></div>
+  <div class="credential-short">ISO 20000</div>
+  <div class="credential-title">Principles of IT Service Management System (ITSM)</div>
+  <div class="credential-meta">ALISON · ISSUED JUN 2023</div>
+  <div class="credential-id">CREDENTIAL ID <b>3581-31743137</b></div>
+  <a class="credential-link" href="https://alison.com/verify/4b10580c01" target="_blank" rel="noopener noreferrer">VERIFY CREDENTIAL ↗</a>
+</article><article class="credential-card" data-category="EMERGING SYSTEMS">
+  <div class="credential-top"><span>// EMERGING SYSTEMS</span><span class="credential-status">● VERIFIED</span></div>
+  <div class="credential-short">ISO/IEC 42001</div>
+  <div class="credential-title">Artificial Intelligence Management System (AIMS)</div>
+  <div class="credential-meta">ALISON · ISSUED JUL 2024</div>
+  <div class="credential-id">CREDENTIAL ID <b>6705-31743137</b></div>
+  <a class="credential-link" href="https://alison.com/verify/481c7f0549" target="_blank" rel="noopener noreferrer">VERIFY CREDENTIAL ↗</a>
+</article>
+    </div>
+    <div class="credential-footer">
+      <div><span class="credential-footer-label">SELECTED PROFESSIONAL DEVELOPMENT</span><strong>IT Management · IT Support · Digital Forensics · Windows Server Administration</strong></div>
+      <span class="credential-footer-note">FULL RECORD → LINKEDIN</span>
+    </div>
+  </div>
+</section>
+
 <section id="fieldnotes">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">07</span><h2 class="section-title">Field Notes</h2></div>
+    <div class="section-head"><span class="section-num">08</span><h2 class="section-title">Field Notes</h2></div>
     <p class="section-sub">What runs in the background when I'm off the clock.</p>
     <div class="notes-grid">
       <div class="note-card"><div class="note-icon">// CHESS</div><div class="note-title">Chess</div><div class="note-desc">Long-form problem solving with no undo button &mdash; good practice for network troubleshooting.</div></div>
@@ -862,7 +955,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 
 <section id="contact" style="border-bottom:none;">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">08</span><h2 class="section-title">Establish Connection</h2></div>
+    <div class="section-head"><span class="section-num">09</span><h2 class="section-title">Establish Connection</h2></div>
     <div class="connection-endpoint">
   <div class="endpoint-terminal">
     <span class="terminal-prompt">freeman@portfolio:~$</span>
@@ -909,7 +1002,7 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
     <div class="final-path">
       <span>DISCOVER</span><i>&rarr;</i><span>EXPLORE</span><i>&rarr;</i><span>VERIFY</span><i>&rarr;</i><span>CONNECT</span>
     </div>
-    <a class="final-cta" href="mailto:freeman.ipumbu@gmail.com">
+    <a class="final-cta" href="mailto:freeman.ipumbu@outlook.com">
       <span>ESTABLISH CONNECTION</span><b>&nearr;</b>
     </a>
     <div class="final-status"><i></i> ENDPOINT READY &middot; FREEMAN IPUMBU &middot; SYSTEMS / NETWORKS / SECURITY</div>
@@ -1050,17 +1143,20 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
 
   // ---------- education ----------
   var edu = [
-    ['2011&mdash;2016','BSc (Hons) Computer Science & IT','University of Namibia'],
-    ['2023','Diploma in IT Management','Alison e-Learning Academy'],
-    ['2023','Diploma in IT Support','Alison e-Learning Academy'],
-    ['2023','Diploma in Digital Forensic Investigation','Alison e-Learning Academy'],
-    ['2007&mdash;2008','Namibia Senior Secondary Certificate','University of Cambridge']
+    ['2011&mdash;2016','BSc (Hons) Computer Science & IT','University of Namibia', null],
+    ['2023','Diploma in IT Management','Alison e-Learning Academy','https://alison.com/verify/5edf65619b'],
+    ['2023','Diploma in IT Support','Alison e-Learning Academy','https://alison.com/verify/2c8f8ae6c6'],
+    ['2023','Diploma in Digital Forensic Investigation','Alison e-Learning Academy','https://alison.com/verify/3f657a314b'],
+    ['2007&mdash;2008','Namibia Senior Secondary Certificate','University of Cambridge', null]
   ];
   var eduEl = document.getElementById('eduList');
   edu.forEach(function(e){
     var div = document.createElement('div');
     div.className = 'edu-item';
-    div.innerHTML = '<div class="edu-year">'+e[0]+'</div><div><div class="edu-title">'+e[1]+'</div><div class="edu-org">'+e[2]+'</div></div>';
+    var verify = e[3]
+      ? ' <a class="edu-verify" href="'+e[3]+'" target="_blank" rel="noopener noreferrer" title="Verify credential">Verify Credential ↗</a>'
+      : '';
+    div.innerHTML = '<div class="edu-year">'+e[0]+'</div><div><div class="edu-title">'+e[1]+verify+'</div><div class="edu-org">'+e[2]+'</div></div>';
     eduEl.appendChild(div);
   });
 })();
