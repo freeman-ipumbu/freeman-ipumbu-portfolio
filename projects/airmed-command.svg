@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">MOHSS AIRMED COMMAND</title>
+  <desc id="desc">National air-medical coordination concept for Namibia</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061924"/><stop offset="1" stop-color="#02080d"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#28d7c0" stop-opacity=".28"/><stop offset="1" stop-color="#28d7c0" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#72a5b5" stroke-opacity=".09"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#grid)"/><circle cx="925" cy="238" r="330" fill="url(#glow)"/>
+  <path d="M740 80h370a28 28 0 0 1 28 28v414a28 28 0 0 1-28 28H740a28 28 0 0 1-28-28V108a28 28 0 0 1 28-28Z" fill="#07141d" stroke="#2f5e69"/>
+  <path d="M750 132h350M750 316h350M928 132v418" stroke="#264953"/>
+  <g fill="#102a34" stroke="#2b5d68"><rect x="750" y="166" width="144" height="108" rx="10"/><rect x="962" y="166" width="138" height="108" rx="10"/><rect x="750" y="355" width="350" height="50" rx="9"/><rect x="750" y="425" width="350" height="50" rx="9"/></g>
+  <g fill="#28d7c0"><circle cx="777" cy="193" r="7"/><circle cx="989" cy="193" r="7"/><rect x="776" y="379" width="238" height="4" rx="2"/><rect x="776" y="449" width="182" height="4" rx="2"/></g>
+  <g fill="#89aeb8"><rect x="776" y="219" width="88" height="7" rx="3"/><rect x="776" y="239" width="60" height="7" rx="3"/><rect x="988" y="219" width="82" height="7" rx="3"/><rect x="988" y="239" width="56" height="7" rx="3"/></g>
+  <g transform="translate(72 78)"><rect width="92" height="92" rx="20" fill="#28d7c0"/><path d="M39 17h14v22h22v14H53v22H39V53H17V39h22Z" fill="#06141c"/></g>
+  <text x="72" y="230" fill="#eaf8fb" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="58" letter-spacing="-2">MOHSS AIRMED</text>
+  <text x="72" y="292" fill="#28d7c0" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="58" letter-spacing="6">COMMAND</text>
+  <text x="75" y="345" fill="#91aeb6" font-family="Arial,Helvetica,sans-serif" font-size="19" letter-spacing="3">MISSION COORDINATION · READINESS · AUDIT</text>
+  <path d="M75 394h520" stroke="#2f5e69"/>
+  <text x="75" y="442" fill="#d4e7eb" font-family="Arial,Helvetica,sans-serif" font-size="24">Decision support built for accountable human action.</text>
+  <text x="75" y="527" fill="#6e919b" font-family="Arial,Helvetica,sans-serif" font-size="16" letter-spacing="2">PRODUCT &amp; ENGINEERING CASE STUDY · NAMIBIA · 2026</text>
+</svg>

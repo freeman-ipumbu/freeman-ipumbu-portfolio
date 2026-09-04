@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Freeman Ipumbu &mdash; IT Systems & Network Engineer</title>
-<meta name="description" content="Freeman Ipumbu &mdash; IT Systems & Network Engineer. Networking, systems, security, infrastructure and technical operations.">
+<title>Freeman Ipumbu &mdash; Systems Engineer, Design Researcher & Product Builder</title>
+<meta name="description" content="Freeman Ipumbu &mdash; Namibian systems engineer, design science researcher and product builder. Infrastructure, security, research and production-grade digital products.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://freeman-ipumbu.github.io/freeman-ipumbu-portfolio/">
-<meta property="og:title" content="Freeman Ipumbu &mdash; IT Systems & Network Engineer">
-<meta property="og:description" content="10+ years across networking, systems, security and infrastructure. Explore Freeman Ipumbu's technical portfolio, research and professional work.">
+<meta property="og:title" content="Freeman Ipumbu &mdash; Systems, Research & Product Engineering">
+<meta property="og:description" content="10+ years across infrastructure, systems and security—now extending into design science research and production-grade digital products from Namibia.">
 <meta property="og:image" content="https://freeman-ipumbu.github.io/freeman-ipumbu-portfolio/og-image.jpg">
 <meta property="og:image:secure_url" content="https://freeman-ipumbu.github.io/freeman-ipumbu-portfolio/og-image.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -16,8 +16,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Freeman Ipumbu &mdash; IT Systems & Network Engineer">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Freeman Ipumbu &mdash; IT Systems & Network Engineer">
-<meta name="twitter:description" content="10+ years across networking, systems, security and infrastructure.">
+<meta name="twitter:title" content="Freeman Ipumbu &mdash; Systems, Research & Product Engineering">
+<meta name="twitter:description" content="Infrastructure operator, design science researcher and product builder from Windhoek, Namibia.">
 <meta name="twitter:image" content="https://freeman-ipumbu.github.io/freeman-ipumbu-portfolio/og-image.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -588,6 +588,36 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 }
 .edu-verify:hover{color:var(--cyan);opacity:1}
 </style>
+
+<style id="product-builds-style">
+.builds-section{padding:112px 0;background:radial-gradient(circle at 88% 10%,rgba(255,176,32,.07),transparent 30%)}
+.build-intro{display:flex;justify-content:space-between;gap:36px;align-items:end;margin-bottom:36px}
+.build-intro .section-head{margin:0}.build-intro-note{max-width:360px;color:var(--text-dim);font-size:13px;line-height:1.65;border-left:1px solid rgba(255,176,32,.38);padding-left:18px}
+.build-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.build-card{position:relative;min-height:520px;display:flex;flex-direction:column;border:1px solid rgba(128,185,199,.2);background:linear-gradient(145deg,rgba(17,30,40,.9),rgba(7,13,19,.92));overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.build-card:hover{transform:translateY(-7px);border-color:rgba(94,231,255,.5);box-shadow:0 28px 90px rgba(0,0,0,.32),0 0 40px rgba(94,231,255,.065)}
+.build-card.flagship{grid-column:1/-1;min-height:560px;display:grid;grid-template-columns:1.15fr .85fr}
+.build-media{position:relative;min-height:245px;overflow:hidden;background:#0a1118}
+.build-card.flagship .build-media{min-height:100%}
+.build-media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.04);transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s}
+.build-card:hover .build-media img{transform:scale(1.035);filter:saturate(1) contrast(1.05)}
+.build-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(7,13,19,.84));pointer-events:none}
+.build-signal{position:absolute;left:18px;top:18px;z-index:2;padding:6px 9px;border:1px solid rgba(94,231,255,.28);background:rgba(5,12,18,.75);backdrop-filter:blur(8px);font:8px var(--mono);letter-spacing:.14em;color:var(--electric)}
+.build-body{padding:28px;display:flex;flex-direction:column;flex:1}
+.build-index{font:9px var(--mono);letter-spacing:.16em;color:var(--amber);margin-bottom:16px}
+.build-body h3{font-size:clamp(23px,3vw,34px);letter-spacing:-.035em;margin:0 0 12px}
+.build-body p{color:var(--text-dim);font-size:14px;line-height:1.7;margin:0 0 18px}
+.build-role{padding:12px 0;border-top:1px solid var(--panel-line);border-bottom:1px solid var(--panel-line);font:10px var(--mono);line-height:1.65;color:#cdeff4;margin-top:auto}
+.build-role b{color:var(--text-faint);font-weight:500;letter-spacing:.1em;margin-right:7px}
+.build-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.build-actions a{font:9px var(--mono);letter-spacing:.1em;text-decoration:none;color:var(--electric);border:1px solid rgba(94,231,255,.22);padding:9px 11px;transition:.2s}
+.build-actions a:hover{border-color:var(--electric);background:rgba(94,231,255,.06)}
+.build-actions a.primary{color:#171109;background:var(--amber);border-color:var(--amber);font-weight:700}.build-actions a.primary:hover{background:#ffc65d}
+.build-method{margin-top:22px;padding:18px 20px;border:1px solid rgba(255,176,32,.16);background:rgba(255,176,32,.035);display:flex;align-items:center;justify-content:space-between;gap:22px}
+.build-method span{font:9px var(--mono);letter-spacing:.12em;color:var(--amber);white-space:nowrap}.build-method code{font:10px var(--mono);color:var(--text-dim);text-align:right}
+@media(max-width:800px){.build-intro{display:block}.build-intro-note{margin-top:18px}.build-grid{grid-template-columns:1fr}.build-card.flagship{grid-column:auto;display:flex;min-height:520px}.build-card.flagship .build-media{min-height:270px}.build-method{display:block}.build-method code{display:block;text-align:left;margin-top:10px;line-height:1.7}}
+@media(max-width:520px){.builds-section{padding:84px 0}.build-card{min-height:0}.build-body{padding:22px}.build-media,.build-card.flagship .build-media{min-height:210px}}
+</style>
 </head>
 <body>
 
@@ -609,6 +639,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
       <a href="#about">Profile</a>
       <a href="#stack">Stack</a>
       <a href="#log">Change Log</a>
+      <a href="#builds">Builds</a>
       <a href="#research">Research</a>
       <a href="#compliance">Compliance</a>
       <a href="#contact">Contact</a>
@@ -628,22 +659,24 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 <div class="hero-grid reveal">
       <div>
         <div class="hero-kicker">SYSTEM STATUS: ONLINE</div>
-        <h1>Freeman Ipumbu<br><span>IT Systems &amp; Network Engineer</span></h1>
-        <div class="hero-role">Windhoek, Namibia &middot; Onshore &amp; Offshore Infrastructure &middot; 10 years in the field</div>
-        <p class="hero-lede">I keep networks, servers, and the people who depend on them running. A decade spent in NOC rotations, on vessel decks, and inside firewall configs has taught me one thing: <strong>good IT is invisible</strong> &mdash; it only gets noticed when it breaks, so I make sure it doesn't.</p>
+        <h1>Freeman Ipumbu<br><span>Systems Engineer &middot; Design Researcher &middot; Product Builder</span></h1>
+        <div class="hero-role">Windhoek, Namibia &middot; Infrastructure to interface &middot; 10+ years in the field</div>
+        <p class="hero-lede">I keep networks, servers and the people who depend on them running&mdash;then take the same systems discipline into research and product engineering. <strong>I do not stop at the idea.</strong> I frame the problem, build the artefact, test the weak points and take it into the real world.</p>
         <div class="hero-metrics" aria-label="Professional metrics">
   <div><strong>10+</strong><span>YEARS IN FIELD</span></div>
   <div><strong>24/7</strong><span>NOC EXPERIENCE</span></div>
+  <div><strong>06</strong><span>SELECTED BUILDS</span></div>
   <div><strong>&infin;</strong><span>PROBLEM SOLVING</span></div>
 </div>
 <div class="hero-actions">
-          <a href="#log" class="btn btn-primary">View change log &rarr;</a>
+          <a href="#builds" class="btn btn-primary">Explore the builds &rarr;</a>
           <a href="#research" class="btn btn-ghost">Read the research</a>
           <a href="#contact" class="btn btn-ghost">Establish connection</a>
         </div>
         <div class="console" id="consoleBox">
           <div class="console-row"><span>role</span><b>Senior IT Systems Administrator</b></div>
           <div class="console-row"><span>current_org</span><b>The Namibian / Namibia Media Trust</b></div>
+          <div class="console-row"><span>build_mode</span><b>Systems + Research + Product</b></div>
           <div class="console-row"><span>active_since</span><b>2026-07-20</b></div>
           <div class="console-row"><span>base</span><b>Windhoek, NA</b></div>
           <div class="console-row"><span>uptime</span><b id="uptimeFull">calculating&hellip;</b></div>
@@ -692,7 +725,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
       <div class="about-text">
         <p>I'm a <strong>proactive, detail-oriented IT engineer</strong> with a ten-year track record across telecom and enterprise IT &mdash; from NOC monitoring desks to offshore vessel server rooms. I've spent my career at the intersection of <strong>network infrastructure, security, and end-user support</strong>: the layer where technical decisions meet the people who actually rely on them.</p>
         <p>My work spans firewall administration, network diagnostics, hardware lifecycle management, and IT service management under ITIL and ISO frameworks &mdash; always with an eye on documentation, because a system nobody can explain is a system nobody can fix at 2am.</p>
-        <p>I'm currently <strong>Senior IT Systems Administrator at The Free Press of Namibia / The Namibian, and Namibia Media Trust at large</strong> &mdash; active in the role since 20 July 2026, and rebuilding the department's infrastructure documentation and network from the ground up. I'm also FCA CyberSec NSE3 certified, and recently published a design science research study on IT handover continuity.</p>
+        <p>I'm currently <strong>Senior IT Systems Administrator at The Free Press of Namibia / The Namibian, and Namibia Media Trust at large</strong> &mdash; active in the role since 20 July 2026, and rebuilding the department's infrastructure documentation and network from the ground up. Beyond operations, I publish design science research and build production-grade Namibian digital products through a research-led engineering practice.</p>
       </div>
       <div class="fact-panel">
         <div class="fact-row"><span>Experience</span><span>10+ years</span></div>
@@ -800,9 +833,125 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
   </div>
 </section>
 
+<section id="builds" class="builds-section">
+  <div class="wrap">
+    <div class="build-intro">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">SELECTED PRODUCT SYSTEMS</div>
+          <h2>Built beyond the brief.</h2>
+          <p>Real problems, research-led decisions and working artefacts&mdash;from public-interest operations to Namibian consumer platforms.</p>
+        </div>
+      </div>
+      <div class="build-intro-note">The production systems stay private where they should. These public records show the problem, decisions, experience and engineering boundary without leaking operational details.</div>
+    </div>
+
+    <div class="build-grid">
+      <article class="build-card flagship">
+        <div class="build-media">
+          <span class="build-signal">LIVE // CONTROLLED EARLY ACCESS</span>
+          <img src="projects/rightmatch.png" alt="RightMatch Namibia marketplace interface" loading="lazy" decoding="async">
+        </div>
+        <div class="build-body">
+          <div class="build-index">BUILD 01 / TRUST MARKETPLACE</div>
+          <h3>RightMatch Namibia</h3>
+          <p>A trust-first peer-to-peer vehicle marketplace built around verification, explicit agreements and a durable deal trail. The objective is not to pretend vehicle risk disappears; it is to give Namibians clearer decisions, stronger evidence and more peace of mind.</p>
+          <div class="build-role"><b>MY ROLE</b> Product strategy · design research · UX/UI · brand refinement · full-stack engineering · trust architecture · infrastructure · launch</div>
+          <div class="build-actions">
+            <a class="primary" href="https://rightmatchnamibia.com" target="_blank" rel="noopener noreferrer">VISIT LIVE PRODUCT ↗</a>
+            <a href="https://github.com/freeman-ipumbu/rightmatch-namibia-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="build-card">
+        <div class="build-media">
+          <span class="build-signal">EDUCATION // DIGITAL EXPERIENCE</span>
+          <img src="projects/dream-high.png" alt="Dream High Learning Institute website" loading="lazy" decoding="async">
+        </div>
+        <div class="build-body">
+          <div class="build-index">BUILD 02 / INSTITUTIONAL EXPERIENCE</div>
+          <h3>Dream High Learning Institute</h3>
+          <p>A premium responsive experience that brings early learning, tutoring, after-school care, vocational training and counselling into one clear institutional journey.</p>
+          <div class="build-role"><b>MY ROLE</b> Experience strategy · responsive design · frontend engineering · content architecture</div>
+          <div class="build-actions"><a href="https://github.com/freeman-ipumbu/dream-high-learning-institute" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY ↗</a></div>
+        </div>
+      </article>
+
+      <article class="build-card">
+        <div class="build-media">
+          <span class="build-signal">WINDHOEK // SOCIAL RUNNING</span>
+          <img src="projects/runnerz.png" alt="Runnerz Namibia social running platform" loading="lazy" decoding="async">
+        </div>
+        <div class="build-body">
+          <div class="build-index">BUILD 03 / SOCIAL RUNNING NETWORK</div>
+          <h3>Runnerz Namibia</h3>
+          <p>A route-driven social running network that helps people move from seeing compatible runners to forming safer, realistic runs around pace, intent, timing, place and earned trust.</p>
+          <div class="build-role"><b>MY ROLE</b> Founder · product strategy · design research · Android engineering · web experience · mapping · safety architecture</div>
+          <div class="build-actions">
+            <a class="primary" href="https://runnerznamibia.com" target="_blank" rel="noopener noreferrer">VISIT LIVE PRODUCT ↗</a>
+            <a href="https://github.com/freeman-ipumbu/runnerz-android-case-study" target="_blank" rel="noopener noreferrer">ANDROID CASE STUDY ↗</a>
+            <a href="https://github.com/freeman-ipumbu/runnerz-namibia-website-case-study" target="_blank" rel="noopener noreferrer">WEB CASE STUDY ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="build-card">
+        <div class="build-media">
+          <span class="build-signal">PUBLIC INTEREST // COMMAND SYSTEM</span>
+          <img src="projects/airmed-command.svg" alt="MOHSS AIRMED COMMAND product case study" loading="lazy" decoding="async">
+        </div>
+        <div class="build-body">
+          <div class="build-index">BUILD 04 / AIR-MEDICAL COORDINATION</div>
+          <h3>MOHSS AIRMED COMMAND</h3>
+          <p>A national air-medical coordination concept connecting mission intake, clinical and aviation readiness, authorization and attributable audit history in one command environment.</p>
+          <div class="build-role"><b>MY ROLE</b> Systems design · design research · command UX · React engineering · Kotlin/Spring backend foundation</div>
+          <div class="build-actions"><a href="https://github.com/freeman-ipumbu/mohss-airmed-command-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a></div>
+        </div>
+      </article>
+
+      <article class="build-card">
+        <div class="build-media">
+          <span class="build-signal">AVIATION // OPERATIONS PROTOTYPE</span>
+          <img src="projects/namair-command.svg" alt="NamAir Command aviation operations case study" loading="lazy" decoding="async">
+        </div>
+        <div class="build-body">
+          <div class="build-index">BUILD 05 / CREW &amp; ROSTERING COMMAND</div>
+          <h3>NamAir Command</h3>
+          <p>An aviation command, crew-readiness and rostering prototype designed to make duty assumptions, mission pressure, fleet state and the evidence behind release decisions legible.</p>
+          <div class="build-role"><b>MY ROLE</b> Product design · systems engineering · interaction design · prototype development</div>
+          <div class="build-actions"><a href="https://github.com/freeman-ipumbu/namair-command-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a></div>
+        </div>
+      </article>
+
+      <article class="build-card">
+        <div class="build-media">
+          <span class="build-signal">PUBLISHED // DOI-BACKED</span>
+          <img src="projects/handover.png" alt="IT Handover Continuance research artefact" loading="lazy" decoding="async">
+        </div>
+        <div class="build-body">
+          <div class="build-index">BUILD 06 / DESIGN SCIENCE ARTEFACT</div>
+          <h3>IT Handover Continuance</h3>
+          <p>A living operational artefact that treats knowledge continuity as a system to be sustained, evaluated and improved&mdash;not a document to be filed and forgotten.</p>
+          <div class="build-role"><b>MY ROLE</b> Research · problem framing · artefact design · evaluation · publication</div>
+          <div class="build-actions">
+            <a href="https://github.com/freeman-ipumbu/it-handover-continuance-dsr" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY ↗</a>
+            <a href="https://doi.org/10.5281/zenodo.21840440" target="_blank" rel="noopener noreferrer">READ PUBLICATION ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="build-method">
+      <span>OPERATING METHOD</span>
+      <code>OBSERVE → FRAME → DESIGN → BUILD → EVALUATE → HARDEN → SHIP</code>
+    </div>
+  </div>
+</section>
+
 <section id="research">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">04</span><h2 class="section-title">Published Research</h2></div>
+    <div class="section-head"><span class="section-num">05</span><h2 class="section-title">Published Research</h2></div>
     <p class="section-sub">A design science research study on structuring IT knowledge transfer &mdash; born directly out of inheriting (and rebuilding) an IT department's handover documentation.</p>
     <div class="ticket" style="margin-bottom:0;">
       <div class="ticket-head">
@@ -829,7 +978,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 
 <section id="compliance">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">05</span><h2 class="section-title">Compliance &amp; Training</h2></div>
+    <div class="section-head"><span class="section-num">06</span><h2 class="section-title">Compliance &amp; Training</h2></div>
     <p class="section-sub">Certifications and coursework, grouped by domain. Click a category to expand the audit trail.</p>
     <div id="catList"></div>
   </div>
@@ -837,7 +986,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 
 <section id="education">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">06</span><h2 class="section-title">Education</h2></div>
+    <div class="section-head"><span class="section-num">07</span><h2 class="section-title">Education</h2></div>
     <div id="eduList"></div>
   </div>
 </section>
@@ -845,7 +994,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 
 <section id="credentials" class="credentials-section">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">07</span><h2 class="section-title">Verified Credentials</h2></div>
+    <div class="section-head"><span class="section-num">08</span><h2 class="section-title">Verified Credentials</h2></div>
     <p class="section-sub">A curated verification layer behind the systems, security, governance and service-management work.</p>
     <div class="credential-grid">
 <article class="credential-card" data-category="NETWORK SECURITY">
@@ -901,7 +1050,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 
 <section id="fieldnotes">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">08</span><h2 class="section-title">Field Notes</h2></div>
+    <div class="section-head"><span class="section-num">09</span><h2 class="section-title">Field Notes</h2></div>
     <p class="section-sub">What runs in the background when I'm off the clock.</p>
     <div class="notes-grid">
       <div class="note-card"><div class="note-icon">// CHESS</div><div class="note-title">Chess</div><div class="note-desc">Long-form problem solving with no undo button &mdash; good practice for network troubleshooting.</div></div>
@@ -955,7 +1104,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 
 <section id="contact" style="border-bottom:none;">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">09</span><h2 class="section-title">Establish Connection</h2></div>
+    <div class="section-head"><span class="section-num">10</span><h2 class="section-title">Establish Connection</h2></div>
     <div class="connection-endpoint">
   <div class="endpoint-terminal">
     <span class="terminal-prompt">freeman@portfolio:~$</span>
@@ -971,8 +1120,8 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 <div class="contact">
       <div class="contact-grid">
         <div>
-          <h3>Let's talk infrastructure.</h3>
-          <p>Open to conversations about network security, systems administration, or IT strategy. Based in Windhoek &mdash; available for on-site and remote work across Namibia.</p>
+          <h3>Let's build something that holds.</h3>
+          <p>Open to conversations about resilient infrastructure, systems administration, network security, design research and ambitious product work. Based in Windhoek&mdash;available for serious work across Namibia and remotely.</p>
           <div class="contact-list">
             <div class="contact-row"><span class="k">email</span><a href="mailto:freeman.ipumbu@outlook.com">freeman.ipumbu@outlook.com</a></div>
             <div class="contact-row"><span class="k">phone</span><a href="tel:+264812261959">+264 81 226 1959</a></div>
@@ -998,14 +1147,14 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   <div class="wrap final-inner">
     <div class="eyebrow">FINAL HANDSHAKE</div>
     <h2>Ready when the network is.</h2>
-    <p>For infrastructure, systems, networking or technical operations conversations, establish the connection.</p>
+    <p>For infrastructure, systems, research or product engineering conversations, establish the connection.</p>
     <div class="final-path">
       <span>DISCOVER</span><i>&rarr;</i><span>EXPLORE</span><i>&rarr;</i><span>VERIFY</span><i>&rarr;</i><span>CONNECT</span>
     </div>
     <a class="final-cta" href="mailto:freeman.ipumbu@outlook.com">
       <span>ESTABLISH CONNECTION</span><b>&nearr;</b>
     </a>
-    <div class="final-status"><i></i> ENDPOINT READY &middot; FREEMAN IPUMBU &middot; SYSTEMS / NETWORKS / SECURITY</div>
+    <div class="final-status"><i></i> ENDPOINT READY &middot; FREEMAN IPUMBU &middot; SYSTEMS / RESEARCH / PRODUCT</div>
   </div>
 </section>
 
@@ -1264,7 +1413,7 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   const bar=document.querySelector('#pageProgress span');
   const dial=document.getElementById('dialLabel');
   const sections=[...document.querySelectorAll('section[id],section:not([id])')];
-  const labels=['01 / INTRO','02 / SYSTEM','03 / STACK','04 / CAREER','05 / RESEARCH','06 / CREDENTIALS','07 / PROOF','08 / CONTACT','09 / HANDSHAKE'];
+  const labels=['01 / PROFILE','02 / TOPOLOGY','03 / STACK','04 / CHANGE LOG','05 / CAREER','06 / PROTOCOLS','07 / BUILDS','08 / RESEARCH','09 / TRAINING','10 / EDUCATION','11 / CREDENTIALS','12 / FIELD NOTES','13 / CAPABILITIES','14 / PROOF','15 / CONTACT','16 / HANDSHAKE'];
   function update(){
     const max=document.documentElement.scrollHeight-window.innerHeight;
     if(bar) bar.style.width=(max>0?(scrollY/max)*100:0)+'%';
