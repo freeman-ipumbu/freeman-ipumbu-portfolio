@@ -19,6 +19,7 @@
 <meta name="twitter:title" content="Freeman Ipumbu &mdash; Systems, Research & Product Engineering">
 <meta name="twitter:description" content="Infrastructure operator, design science researcher and product builder from Windhoek, Namibia.">
 <meta name="twitter:image" content="https://freeman-ipumbu.github.io/freeman-ipumbu-portfolio/og-image.jpg">
+<link rel="preload" as="image" href="og-image.jpg" fetchpriority="high">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,6 +63,8 @@
   @media (prefers-reduced-motion: reduce){
     *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
   }
+
+  html.motion-paused *{ animation-play-state:paused !important; }
 
   a{ color:inherit; }
   ::selection{ background:var(--amber); color:#1a1206; }
@@ -367,6 +370,8 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 @media(max-width:600px){
   .hero{min-height:620px}.hero-orbit{right:-300px;top:38%;width:500px;height:500px}
   .telemetry{grid-template-columns:1fr 1fr}.telemetry>div{padding:14px 12px}
+  .grain{display:none}
+  .console,.badge,.ticket,.cat,.note-card,.contact{backdrop-filter:blur(8px)}
 }
 @media(prefers-reduced-motion:reduce){
   .orbit-ring,.orbit-node{animation:none!important}.reveal{opacity:1!important;transform:none!important;filter:none!important}
@@ -686,7 +691,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
       <div class="badge-wrap">
         <div class="badge">
           <div class="badge-top"><span>NMT &middot; ACCESS CARD</span><span>ID-0114</span></div>
-          <div class="badge-photo-frame"><img src="og-image.jpg" alt="Freeman Ipumbu"></div>
+          <div class="badge-photo-frame"><img src="og-image.jpg" alt="Freeman Ipumbu" width="1168" height="1168" decoding="async" fetchpriority="high"></div>
           <div class="badge-info">
             <div class="badge-name">Freeman Ipumbu</div>
             <div class="badge-role">Senior IT Systems Administrator</div>
@@ -850,7 +855,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
       <article class="build-card flagship">
         <div class="build-media">
           <span class="build-signal">LIVE // CONTROLLED EARLY ACCESS</span>
-          <img src="projects/rightmatch.png" alt="RightMatch Namibia marketplace interface" loading="lazy" decoding="async">
+          <img src="projects/rightmatch.webp" alt="RightMatch Namibia marketplace interface" width="1600" height="1000" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">BUILD 01 / TRUST MARKETPLACE</div>
@@ -867,7 +872,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
       <article class="build-card">
         <div class="build-media">
           <span class="build-signal">EDUCATION // DIGITAL EXPERIENCE</span>
-          <img src="projects/dream-high.png" alt="Dream High Learning Institute website" loading="lazy" decoding="async">
+          <img src="projects/dream-high.webp" alt="Dream High Learning Institute website" width="1731" height="909" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">BUILD 02 / INSTITUTIONAL EXPERIENCE</div>
@@ -881,7 +886,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
       <article class="build-card">
         <div class="build-media">
           <span class="build-signal">WINDHOEK // SOCIAL RUNNING</span>
-          <img src="projects/runnerz.png" alt="Runnerz Namibia social running platform" loading="lazy" decoding="async">
+          <img src="projects/runnerz.webp" alt="Runnerz Namibia social running platform" width="2400" height="720" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">BUILD 03 / SOCIAL RUNNING NETWORK</div>
@@ -899,7 +904,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
       <article class="build-card">
         <div class="build-media">
           <span class="build-signal">PUBLIC INTEREST // COMMAND SYSTEM</span>
-          <img src="projects/airmed-command.svg" alt="MOHSS AIRMED COMMAND product case study" loading="lazy" decoding="async">
+          <img src="projects/airmed-command.svg" alt="MOHSS AIRMED COMMAND product case study" width="1600" height="900" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">BUILD 04 / AIR-MEDICAL COORDINATION</div>
@@ -913,7 +918,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
       <article class="build-card">
         <div class="build-media">
           <span class="build-signal">AVIATION // OPERATIONS PROTOTYPE</span>
-          <img src="projects/namair-command.svg" alt="NamAir Command aviation operations case study" loading="lazy" decoding="async">
+          <img src="projects/namair-command.svg" alt="NamAir Command aviation operations case study" width="1600" height="900" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">BUILD 05 / CREW &amp; ROSTERING COMMAND</div>
@@ -927,7 +932,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
       <article class="build-card">
         <div class="build-media">
           <span class="build-signal">PUBLISHED // DOI-BACKED</span>
-          <img src="projects/handover.png" alt="IT Handover Continuance research artefact" loading="lazy" decoding="async">
+          <img src="projects/handover.webp" alt="IT Handover Continuance research artefact" width="1920" height="992" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">BUILD 06 / DESIGN SCIENCE ARTEFACT</div>
@@ -1315,22 +1320,32 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   const canvas=document.getElementById('networkCanvas');
   if(!canvas) return;
   const ctx=canvas.getContext('2d');
-  let w=0,h=0,dpr=Math.min(devicePixelRatio||1,2),nodes=[],mouse={x:-9999,y:-9999};
-  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const motionQuery=window.matchMedia('(prefers-reduced-motion: reduce)');
+  const finePointer=window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const saveData=Boolean(navigator.connection&&navigator.connection.saveData);
+  let w=0,h=0,dpr=1,nodes=[],mouse={x:-9999,y:-9999},raf=0,lastFrame=0,resizeRaf=0;
   function resize(){
-    w=canvas.clientWidth;h=canvas.clientHeight;canvas.width=w*dpr;canvas.height=h*dpr;
+    w=canvas.clientWidth;h=canvas.clientHeight;
+    dpr=Math.min(devicePixelRatio||1,w<700?1.25:1.5);
+    canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);
     ctx.setTransform(dpr,0,0,dpr,0,0);
-    const count=Math.min(95,Math.max(45,Math.floor(w*h/16000)));
+    const minNodes=w<700?22:34,maxNodes=w<700?42:72;
+    const count=Math.min(maxNodes,Math.max(minNodes,Math.floor(w*h/28000)));
     nodes=Array.from({length:count},()=>({x:Math.random()*w,y:Math.random()*h,
       vx:(Math.random()-.5)*.18,vy:(Math.random()-.5)*.18,r:Math.random()*1.7+.5,
       p:Math.random()*Math.PI*2}));
   }
-  function draw(){
+  function draw(now=performance.now()){
+    raf=0;
+    if(document.hidden) return;
+    const frameInterval=saveData?50:33;
+    if(!motionQuery.matches&&now-lastFrame<frameInterval){raf=requestAnimationFrame(draw);return}
+    lastFrame=now;
     ctx.clearRect(0,0,w,h);
     for(const n of nodes){
-      if(!reduce){n.x+=n.vx;n.y+=n.vy;if(n.x<-20)n.x=w+20;if(n.x>w+20)n.x=-20;if(n.y<-20)n.y=h+20;if(n.y>h+20)n.y=-20}
+      if(!motionQuery.matches){n.x+=n.vx;n.y+=n.vy;if(n.x<-20)n.x=w+20;if(n.x>w+20)n.x=-20;if(n.y<-20)n.y=h+20;if(n.y>h+20)n.y=-20}
       const dx=n.x-mouse.x,dy=n.y-mouse.y,dist=Math.hypot(dx,dy);
-      if(dist<150&&!reduce){n.x+=dx/dist*.12;n.y+=dy/dist*.12}
+      if(dist>0&&dist<150&&!motionQuery.matches){n.x+=dx/dist*.12;n.y+=dy/dist*.12}
     }
     for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
       const a=nodes[i],b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);
@@ -1339,15 +1354,30 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
         ctx.strokeStyle=`rgba(94,231,255,${(1-d/125)*.13})`;ctx.lineWidth=.65;ctx.stroke();
       }
     }
+    ctx.shadowBlur=8;ctx.shadowColor='rgba(94,231,255,.55)';
     for(const n of nodes){
-      const pulse=.55+.35*Math.sin(performance.now()/1100+n.p);
+      const pulse=.55+.35*Math.sin(now/1100+n.p);
       ctx.beginPath();ctx.arc(n.x,n.y,n.r*(.8+pulse*.35),0,Math.PI*2);
-      ctx.fillStyle=`rgba(115,225,241,${.35+pulse*.35})`;ctx.shadowBlur=9;ctx.shadowColor='rgba(94,231,255,.55)';ctx.fill();ctx.shadowBlur=0;
+      ctx.fillStyle=`rgba(115,225,241,${.35+pulse*.35})`;ctx.fill();
     }
-    requestAnimationFrame(draw);
+    ctx.shadowBlur=0;
+    if(!motionQuery.matches) raf=requestAnimationFrame(draw);
   }
-  window.addEventListener('resize',resize);
-  window.addEventListener('pointermove',e=>{mouse.x=e.clientX;mouse.y=e.clientY});
+  function start(){if(!raf&&!document.hidden)raf=requestAnimationFrame(draw)}
+  window.addEventListener('resize',()=>{
+    if(resizeRaf) return;
+    resizeRaf=requestAnimationFrame(()=>{
+      resizeRaf=0;
+      if(raf){cancelAnimationFrame(raf);raf=0}
+      resize();draw();
+    });
+  },{passive:true});
+  if(finePointer) window.addEventListener('pointermove',e=>{mouse.x=e.clientX;mouse.y=e.clientY},{passive:true});
+  document.addEventListener('visibilitychange',()=>{
+    document.documentElement.classList.toggle('motion-paused',document.hidden);
+    if(document.hidden&&raf){cancelAnimationFrame(raf);raf=0}else start();
+  });
+  motionQuery.addEventListener?.('change',()=>{if(raf)cancelAnimationFrame(raf);raf=0;draw()});
   resize();draw();
 })();
 
@@ -1369,7 +1399,7 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
 
 // ---------- subtle magnetic card motion ----------
 (function(){
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
   const cards=document.querySelectorAll('.badge,.note-card,.career-card,.topo-node');
   cards.forEach(card=>{
     card.addEventListener('pointermove',e=>{
@@ -1414,14 +1444,17 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   const dial=document.getElementById('dialLabel');
   const sections=[...document.querySelectorAll('section[id],section:not([id])')];
   const labels=['01 / PROFILE','02 / TOPOLOGY','03 / STACK','04 / CHANGE LOG','05 / CAREER','06 / PROTOCOLS','07 / BUILDS','08 / RESEARCH','09 / TRAINING','10 / EDUCATION','11 / CREDENTIALS','12 / FIELD NOTES','13 / CAPABILITIES','14 / PROOF','15 / CONTACT','16 / HANDSHAKE'];
+  let scheduled=false;
   function update(){
+    scheduled=false;
     const max=document.documentElement.scrollHeight-window.innerHeight;
     if(bar) bar.style.width=(max>0?(scrollY/max)*100:0)+'%';
     let idx=0,best=Infinity;
     sections.forEach((s,i)=>{const r=s.getBoundingClientRect(),d=Math.abs(r.top-window.innerHeight*.28);if(d<best){best=d;idx=i}});
     if(dial) dial.textContent=labels[Math.min(idx,labels.length-1)] || `0${idx+1} / SYSTEM`;
   }
-  addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();
+  function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+  addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule,{passive:true});update();
 })();
 
 // ---------- tiny boot flash on first load ----------
