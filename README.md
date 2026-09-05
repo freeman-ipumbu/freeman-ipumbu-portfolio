@@ -4,7 +4,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 
 ## View the portfolio
 
-**[freeman-ipumbu.github.io/freeman-ipumbu-portfolio](https://freeman-ipumbu.github.io/freeman-ipumbu-portfolio/)**
+**[freeman-ipumbu.pages.dev](https://freeman-ipumbu.pages.dev/)**
 
 ## Featured work
 
