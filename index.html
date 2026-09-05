@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>Freeman Ipumbu &mdash; Systems Engineer, Design Researcher & Product Builder</title>
 <meta name="description" content="Freeman Ipumbu &mdash; Namibian systems engineer, design science researcher and product builder. Infrastructure, security, research and production-grade digital products.">
 <meta property="og:type" content="website">
@@ -622,6 +622,67 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .build-method span{font:9px var(--mono);letter-spacing:.12em;color:var(--amber);white-space:nowrap}.build-method code{font:10px var(--mono);color:var(--text-dim);text-align:right}
 @media(max-width:800px){.build-intro{display:block}.build-intro-note{margin-top:18px}.build-grid{grid-template-columns:1fr}.build-card.flagship{grid-column:auto;display:flex;min-height:520px}.build-card.flagship .build-media{min-height:270px}.build-method{display:block}.build-method code{display:block;text-align:left;margin-top:10px;line-height:1.7}}
 @media(max-width:520px){.builds-section{padding:84px 0}.build-card{min-height:0}.build-body{padding:22px}.build-media,.build-card.flagship .build-media{min-height:210px}}
+</style>
+
+<style id="mobile-viewport-hardening">
+html,body{
+  width:100%;
+  max-width:100%;
+  overflow-x:clip;
+  overscroll-behavior-x:none;
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+body{touch-action:pan-y}
+img,video,svg,canvas,iframe{max-width:100%}
+.wrap,.topbar-inner,section,header,footer,.hero-grid,.about-grid,.contact-grid,
+.build-grid,.build-card,.build-media,.osi-stage,.osi-list,.osi-visual,
+.constellation-stage,.career-card,.ticket,.cat,.contact,.console{
+  min-width:0;
+  max-width:100%;
+}
+.hero-role,.console-row,.fact-row,.layer-name,.layer-label,.ticket-org,
+.contact-row,.contact-row a,.pro-link,.pro-link strong,.build-role,.build-actions a,
+.endpoint-terminal,.terminal-result,.credential-title,.credential-id{
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+@supports not (overflow:clip){html,body{overflow-x:hidden}}
+
+@media(max-width:600px){
+  .wrap,.topbar-inner{
+    padding-left:max(20px,env(safe-area-inset-left));
+    padding-right:max(20px,env(safe-area-inset-right));
+  }
+  .topbar{padding-top:env(safe-area-inset-top)}
+  .hero{min-height:0;padding-top:58px}
+  .hero-grid{width:100%;gap:34px}
+  .badge-wrap{width:100%;max-width:300px}
+  .hero-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
+  .hero-metrics div{min-width:0;border-bottom:1px solid rgba(94,231,255,.10)}
+  .hero-metrics div:nth-child(2){border-right:0}
+  .hero-actions,.build-actions{width:100%}
+  .btn{justify-content:center;min-height:44px}
+  .console-row{align-items:flex-start}
+  .console-row span{flex:0 0 auto}
+  .console-row b{min-width:0;text-align:right}
+  .section-head{align-items:flex-start}
+  .topology,.osi-stage,.osi-visual,.constellation-stage{width:100%;max-width:100%;contain:layout paint}
+  .osi-list{width:100%}
+  .career-node{width:100%;min-width:0}
+  .career-card{width:100%}
+  .pro-link{grid-template-columns:36px minmax(0,1fr) 18px;padding:14px 12px}
+  .pro-link span{min-width:0}
+  .proof-route{right:20px;max-width:calc(100% - 45px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .contact-row{align-items:flex-start}
+  .contact-row .k{width:50px}
+  .contact-row a{min-width:0}
+  .final-inner{width:100%}
+  .final-path{max-width:100%;flex-wrap:wrap;justify-content:center}
+  .final-cta{width:100%;max-width:310px;justify-content:space-between;gap:16px}
+  .build-method{max-width:100%;overflow:hidden}
+  .build-method code{white-space:normal;overflow-wrap:anywhere}
+}
 </style>
 </head>
 <body>
@@ -1471,6 +1532,13 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   document.body.appendChild(boot);
   setTimeout(() => boot.classList.add('done'), 650);
   setTimeout(() => boot.remove(), 1200);
+})();
+
+// ---------- mobile viewport lock ----------
+(function(){
+  ['gesturestart','gesturechange','gestureend'].forEach(type=>{
+    document.addEventListener(type,event=>event.preventDefault(),{passive:false});
+  });
 })();
 
 </script>
