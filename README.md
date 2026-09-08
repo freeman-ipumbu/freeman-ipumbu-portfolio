@@ -9,7 +9,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 ## Featured work
 
 - **RightMatch Namibia** — trust-first peer-to-peer vehicle marketplace.
-- **Runnerz Namibia** — route-driven social running network and Windhoek Route Lab.
+- **Runnerz Namibia** — route-driven social running network, Windhoek Route Lab and secure Founder operations command.
 - **MOHSS AIRMED COMMAND** — air-medical coordination and mission-assurance concept.
 - **NamAir Command** — aviation crew-readiness and rostering prototype.
 - **IT Handover Continuance** — published design science research artefact.
