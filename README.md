@@ -12,6 +12,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **Runnerz Namibia** — route-driven social running network, Windhoek Route Lab and secure Founder operations command.
 - **MOHSS AIRMED COMMAND** — air-medical coordination and mission-assurance concept.
 - **NamAir Command** — aviation crew-readiness and rostering prototype.
+- **NamMar Command** — vessel operations, live marine weather, crew-change guidance and public AIS tracking.
 - **IT Handover Continuance** — published design science research artefact.
 - **Dream High Learning Institute** — responsive institutional web experience.
 
