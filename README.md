@@ -16,6 +16,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **IT Handover Continuance** — published design science research artefact.
 - **Dream High Learning Institute** — responsive institutional web experience.
 - **Borizago** — installable shuttle booking and operations platform for Boriza Shuttle & Tours.
+- **Omutambo Herd Operations** — Namibia-first livestock operations workspace for cattle owners, farm managers and field teams.
 
 ## Public/private boundary
 
