@@ -15,6 +15,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **NamMar Command** — vessel operations, live marine weather, crew-change guidance and public AIS tracking.
 - **IT Handover Continuance** — published design science research artefact.
 - **Dream High Learning Institute** — responsive institutional web experience.
+- **Borizago** — installable shuttle booking and operations platform for Boriza Shuttle & Tours.
 
 ## Public/private boundary
 
