@@ -8,6 +8,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 
 ## Featured work
 
+- **Omwenyo Renal Health Centre** — brand identity and interactive digital experience for an emerging renal-care initiative in Nkurenkuru.
 - **RightMatch Namibia** — trust-first peer-to-peer vehicle marketplace.
 - **Runnerz Namibia** — route-driven social running network, Windhoek Route Lab and secure Founder operations command.
 - **MOHSS AIRMED COMMAND** — live national air-medical coordination and governed Government mobility demonstration.
