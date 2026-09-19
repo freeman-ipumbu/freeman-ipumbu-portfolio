@@ -8,6 +8,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 
 ## Featured work
 
+- **M & L Occupational Safety** — identity refinement and a mobile-hardened business experience for a Windhoek occupational health and safety consultancy.
 - **Omwenyo Renal Health Centre** — brand identity and interactive digital experience for an emerging renal-care initiative in Nkurenkuru.
 - **RightMatch Namibia** — trust-first peer-to-peer vehicle marketplace.
 - **Runnerz Namibia** — route-driven social running network, Windhoek Route Lab and secure Founder operations command.
