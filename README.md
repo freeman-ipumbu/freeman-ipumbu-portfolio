@@ -10,7 +10,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 
 - **RightMatch Namibia** — trust-first peer-to-peer vehicle marketplace.
 - **Runnerz Namibia** — route-driven social running network, Windhoek Route Lab and secure Founder operations command.
-- **MOHSS AIRMED COMMAND** — air-medical coordination and mission-assurance concept.
+- **MOHSS AIRMED COMMAND** — live national air-medical coordination and governed Government mobility demonstration.
 - **NamAir Command** — aviation crew-readiness and rostering prototype.
 - **NamMar Command** — vessel operations, live marine weather, crew-change guidance and public AIS tracking.
 - **IT Handover Continuance** — published design science research artefact.
