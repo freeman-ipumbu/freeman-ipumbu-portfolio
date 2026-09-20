@@ -1,0 +1,7 @@
+{
+  "name": "freeman-ipumbu-portfolio",
+  "private": true,
+  "scripts": {
+    "test": "node tests/verify.cjs"
+  }
+}
