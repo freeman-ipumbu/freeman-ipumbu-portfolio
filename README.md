@@ -20,12 +20,16 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **Dream High Learning Institute** — responsive institutional web experience.
 - **Borizago** — installable shuttle booking and operations platform for Boriza Shuttle & Tours.
 - **Omutambo Herd Operations** — Namibia-first livestock operations workspace for cattle owners, farm managers and field teams.
-- **KICKOFF NAM** — public, source-linked Namibian football intelligence archive.
+- **KICKOFF NAM** — public, source-linked Namibian football intelligence archive with a national football atlas.
 - **UNIFIED Music** — local-first Kotlin Multiplatform music, queue and audio-control experience.
 
 ## Public/private boundary
 
 The portfolio and linked case studies explain the product problem, decisions, experience and engineering approach. Production source, credentials, infrastructure, private information and commercially sensitive implementation remain in private repositories.
+
+## Verification
+
+Run `npm test` to check social metadata, accessibility landmarks, local assets, the selected-build count and the 1200×630 share image.
 
 ## Contact
 
