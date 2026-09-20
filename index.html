@@ -600,7 +600,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .build-intro{display:flex;justify-content:space-between;gap:36px;align-items:end;margin-bottom:36px}
 .build-intro .section-head{margin:0}.build-intro-note{max-width:360px;color:var(--text-dim);font-size:13px;line-height:1.65;border-left:1px solid rgba(255,176,32,.38);padding-left:18px}
 .build-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.build-card{position:relative;min-height:520px;display:flex;flex-direction:column;border:1px solid rgba(128,185,199,.2);background:linear-gradient(145deg,rgba(17,30,40,.9),rgba(7,13,19,.92));overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.build-card{position:relative;min-height:520px;display:flex;flex-direction:column;border:1px solid rgba(128,185,199,.2);background:linear-gradient(145deg,rgba(17,30,40,.9),rgba(7,13,19,.92));overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;content-visibility:auto;contain:layout paint style;contain-intrinsic-size:520px}
 .build-card:hover{transform:translateY(-7px);border-color:rgba(94,231,255,.5);box-shadow:0 28px 90px rgba(0,0,0,.32),0 0 40px rgba(94,231,255,.065)}
 .build-card.flagship{grid-column:1/-1;min-height:560px;display:grid;grid-template-columns:1.15fr .85fr}
 .build-media{position:relative;min-height:245px;overflow:hidden;background:#0a1118}
@@ -623,6 +623,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .build-method span{font:9px var(--mono);letter-spacing:.12em;color:var(--amber);white-space:nowrap}.build-method code{font:10px var(--mono);color:var(--text-dim);text-align:right}
 @media(max-width:800px){.build-intro{display:block}.build-intro-note{margin-top:18px}.build-grid{grid-template-columns:1fr}.build-card.flagship{grid-column:auto;display:flex;min-height:520px}.build-card.flagship .build-media{min-height:270px}.build-method{display:block}.build-method code{display:block;text-align:left;margin-top:10px;line-height:1.7}}
 @media(max-width:520px){.builds-section{padding:84px 0}.build-card{min-height:0}.build-body{padding:22px}.build-media,.build-card.flagship .build-media{min-height:210px}}
+@media(max-width:800px),(pointer:coarse){.build-card:hover{transform:none}.build-card:hover .build-media img{transform:none}.build-signal{backdrop-filter:none;background:rgba(5,12,18,.94)}}
 </style>
 
 <style id="mobile-viewport-hardening">
@@ -914,6 +915,23 @@ img,video,svg,canvas,iframe{max-width:100%}
     </div>
 
     <div class="build-grid">
+      <article class="build-card flagship">
+        <div class="build-media">
+          <span class="build-signal">NEW // MOBILE COMMERCE + BAR OPERATIONS</span>
+          <img src="projects/utuseb.svg" alt="Utuseb Bar and Delivery mobile commerce platform" width="1600" height="900" loading="lazy" decoding="async">
+        </div>
+        <div class="build-body">
+          <div class="build-index">FEATURED BUILD / LOCAL RETAIL OPERATIONS</div>
+          <h3>Utuseb — Bar &amp; Delivery</h3>
+          <p>A mobile ordering and operations platform for a private Namibian drinks business: delivery or arranged pickup, 46 product-specific catalogue lines, cash and eWallet checkout, an installable PWA, live stock and fulfilment workflow.</p>
+          <div class="build-role"><b>MY ROLE</b> Product strategy · UX/UI · catalogue photography system · full-stack engineering · PWA performance · security hardening · Cloudflare D1 · launch</div>
+          <div class="build-actions">
+            <a class="primary" href="https://utuseb.pages.dev" target="_blank" rel="noopener noreferrer">VISIT LIVE PRODUCT ↗</a>
+            <a href="https://github.com/freeman-ipumbu/utuseb-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a>
+          </div>
+        </div>
+      </article>
+
       <article class="build-card flagship">
         <div class="build-media">
           <span class="build-signal">NEW // HEALTHCARE BRAND + DIGITAL EXPERIENCE</span>
@@ -1508,6 +1526,7 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   const motionQuery=window.matchMedia('(prefers-reduced-motion: reduce)');
   const finePointer=window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   const saveData=Boolean(navigator.connection&&navigator.connection.saveData);
+  const animate=finePointer&&!saveData;
   let w=0,h=0,dpr=1,nodes=[],mouse={x:-9999,y:-9999},raf=0,lastFrame=0,resizeRaf=0;
   function resize(){
     w=canvas.clientWidth;h=canvas.clientHeight;
@@ -1524,13 +1543,13 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
     raf=0;
     if(document.hidden) return;
     const frameInterval=saveData?50:33;
-    if(!motionQuery.matches&&now-lastFrame<frameInterval){raf=requestAnimationFrame(draw);return}
+    if(animate&&!motionQuery.matches&&now-lastFrame<frameInterval){raf=requestAnimationFrame(draw);return}
     lastFrame=now;
     ctx.clearRect(0,0,w,h);
     for(const n of nodes){
-      if(!motionQuery.matches){n.x+=n.vx;n.y+=n.vy;if(n.x<-20)n.x=w+20;if(n.x>w+20)n.x=-20;if(n.y<-20)n.y=h+20;if(n.y>h+20)n.y=-20}
+      if(animate&&!motionQuery.matches){n.x+=n.vx;n.y+=n.vy;if(n.x<-20)n.x=w+20;if(n.x>w+20)n.x=-20;if(n.y<-20)n.y=h+20;if(n.y>h+20)n.y=-20}
       const dx=n.x-mouse.x,dy=n.y-mouse.y,dist=Math.hypot(dx,dy);
-      if(dist>0&&dist<150&&!motionQuery.matches){n.x+=dx/dist*.12;n.y+=dy/dist*.12}
+      if(dist>0&&dist<150&&animate&&!motionQuery.matches){n.x+=dx/dist*.12;n.y+=dy/dist*.12}
     }
     for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
       const a=nodes[i],b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);
@@ -1546,9 +1565,9 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
       ctx.fillStyle=`rgba(115,225,241,${.35+pulse*.35})`;ctx.fill();
     }
     ctx.shadowBlur=0;
-    if(!motionQuery.matches) raf=requestAnimationFrame(draw);
+    if(animate&&!motionQuery.matches) raf=requestAnimationFrame(draw);
   }
-  function start(){if(!raf&&!document.hidden)raf=requestAnimationFrame(draw)}
+  function start(){if(animate&&!raf&&!document.hidden)raf=requestAnimationFrame(draw)}
   window.addEventListener('resize',()=>{
     if(resizeRaf) return;
     resizeRaf=requestAnimationFrame(()=>{
