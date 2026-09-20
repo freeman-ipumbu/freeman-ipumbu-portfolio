@@ -8,7 +8,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 
 ## Featured work
 
-- **Utuseb — Drinks & Delivery** — mobile ordering for local delivery or arranged pickup, cash/eWallet checkout, PWA installation, fulfilment, stock control and downloadable business reporting for a private Namibian drinks operation.
+- **Utuseb — Drinks & Delivery** — mobile ordering across 47 product lines including ice and AirsPops, universal 18+ ID verification, local delivery or arranged pickup, cash/eWallet checkout, PWA installation, fulfilment, stock control and downloadable business reporting.
 - **M & L Occupational Safety** — identity refinement and a mobile-hardened business experience for a Windhoek occupational health and safety consultancy.
 - **Omwenyo Renal Health Centre** — brand identity and interactive digital experience for an emerging renal-care initiative in Nkurenkuru.
 - **RightMatch Namibia** — trust-first peer-to-peer vehicle marketplace.
