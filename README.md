@@ -8,6 +8,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 
 ## Featured work
 
+- **Ontoko Foods** — a founder-led digital home translating a proudly Namibian agricultural brand, real farm archive and food-security mission into one premium experience.
 - **Magic Boys FC** — a joyful, privacy-first identity and mobile experience for a community football team helping young Namibians play, learn and rise.
 - **Utuseb — Drinks & Delivery** — mobile ordering across 47 product lines including ice and AirsPops, universal 18+ ID verification, local delivery or arranged pickup, cash/eWallet checkout, PWA installation, fulfilment, stock control and downloadable business reporting.
 - **M & L Occupational Safety** — identity refinement and a mobile-hardened business experience for a Windhoek occupational health and safety consultancy.
