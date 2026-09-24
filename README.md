@@ -8,6 +8,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 
 ## Featured work
 
+- **ECC Command · E.M.A. Namibia** — authenticated emergency-control and responder PWA pilot joining guided intake, human-confirmed dispatch decisions, unit status, alarms, audit and explicit integration gates in one shared operating picture.
 - **E.M.A. Namibia** — emergency-first nonprofit experience with persistent 9112 access, guided response tools, a privacy-conscious report flow, Kosmos 94.1 radio and a new community-beacon identity.
 - **OSH-Med International** — a distinct academy platform for accredited emergency-care, first-aid, occupational-safety and high-risk-work learning, with an interactive pathway finder and new reflex-system identity.
 - **Ontoko Foods** — a founder-led digital home translating a proudly Namibian agricultural brand, editorial product-photo system, real farm archive and food-security mission into one premium, mobile-hardened experience.
