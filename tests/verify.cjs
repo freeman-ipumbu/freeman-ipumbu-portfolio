@@ -19,8 +19,8 @@ assert.ok(html.includes('type="application/ld+json"'), "Person structured data i
 assert.ok(!/\son(?:click|error|load)=/i.test(html), "No inline event handlers");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
-assert.equal(cards, 18, "Selected build count changed; update the portfolio metric and test intentionally");
-assert.ok(html.includes('<strong>18</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
+assert.equal(cards, 19, "Selected build count changed; update the portfolio metric and test intentionally");
+assert.ok(html.includes('<strong>19</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
 
 for (const match of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
   const value = match[1];
