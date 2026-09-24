@@ -613,6 +613,12 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .build-card.flagship .build-media{min-height:100%}
 .build-media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.04);transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s}
 .build-card:hover .build-media img{transform:scale(1.035);filter:saturate(1) contrast(1.05)}
+.build-media.unified-shot-wall{display:grid;grid-template-columns:1.08fr .92fr;grid-template-rows:1fr 1fr;gap:10px;padding:18px;background:radial-gradient(circle at 35% 25%,rgba(57,255,136,.13),transparent 48%),#050b08}
+.build-media.unified-shot-wall img{height:100%;min-height:0;border:1px solid rgba(57,255,136,.22);object-fit:cover;object-position:center;filter:saturate(.98) contrast(1.03);transform:none}
+.build-media.unified-shot-wall .unified-shot-main{grid-row:1/-1;border-radius:22px}
+.build-media.unified-shot-wall .unified-shot-detail{border-radius:18px;object-position:center}
+.build-media.unified-shot-wall .unified-shot-now{object-position:top}
+.build-card:hover .build-media.unified-shot-wall img{transform:none;filter:saturate(1.05) contrast(1.05)}
 .build-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(7,13,19,.84));pointer-events:none}
 .build-signal{position:absolute;left:18px;top:18px;z-index:2;padding:6px 9px;border:1px solid rgba(94,231,255,.28);background:rgba(5,12,18,.75);backdrop-filter:blur(8px);font:8px var(--mono);letter-spacing:.14em;color:var(--electric)}
 .build-body{padding:28px;display:flex;flex-direction:column;flex:1}
@@ -987,6 +993,7 @@ img,video,svg,canvas,iframe{max-width:100%}
           <div class="build-role"><b>MY ROLE</b> Discovery · brand direction · identity design · UX/UI · frontend engineering · accessibility · safeguarding boundary · Cloudflare launch</div>
           <div class="build-actions">
             <a class="primary" href="https://magicboys.pages.dev/" target="_blank" rel="noopener noreferrer">VISIT LIVE WEBSITE ↗</a>
+            <a href="https://github.com/freeman-ipumbu/magic-boys-fc" target="_blank" rel="noopener noreferrer">WEBSITE REPOSITORY ↗</a>
             <a href="https://github.com/freeman-ipumbu/magic-boys-fc-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a>
           </div>
         </div>
@@ -1212,17 +1219,19 @@ img,video,svg,canvas,iframe{max-width:100%}
         </div>
       </article>
 
-      <article class="build-card">
-        <div class="build-media">
-          <span class="build-signal">IN DEVELOPMENT // LOCAL-FIRST MUSIC</span>
-          <img src="projects/unified-music.svg" alt="UNIFIED Music Kotlin Multiplatform product case study" width="1600" height="900" loading="lazy" decoding="async">
+      <article class="build-card flagship">
+        <div class="build-media unified-shot-wall">
+          <span class="build-signal">INSTALLED // UNIFIED 9.0 NIGHT SIGNAL</span>
+          <img class="unified-shot-main" src="projects/unified-9-home.jpg" alt="UNIFIED 9.0 Home showing Night Signal and the 3,795-track Library Vault" width="811" height="1800" loading="lazy" decoding="async">
+          <img class="unified-shot-detail" src="projects/unified-9-runnerz-showtime.jpg" alt="UNIFIED Runnerz Mode and ShowTime Radio" width="811" height="1800" loading="lazy" decoding="async">
+          <img class="unified-shot-detail unified-shot-now" src="projects/unified-9-now-playing.jpg" alt="UNIFIED 9.0 Now Playing" width="811" height="1800" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
-          <div class="build-index">BUILD 11 / MUSIC EXPERIENCE</div>
-          <h3>UNIFIED Music</h3>
-          <p>A local-first music experience bringing library discovery, queues, playlists, playback state, sound shaping and audio-reactive visualisation into one coherent Kotlin Multiplatform product direction.</p>
+          <div class="build-index">BUILD 11 / OFFICIAL RUNNERZ MUSIC PLAYER</div>
+          <h3>UNIFIED 9.0 — Night Signal</h3>
+          <p>An installed local-first music system with a durable 3,795-track Library Vault, native Android playback, a new Signal Loop identity, private listening intelligence, ten persistent badges, Session Studio, ShowTime Radio and duration-aware Runnerz mixes. The real release-handset captures make the product—not a concept render—the proof.</p>
           <div class="build-role"><b>MY ROLE</b> Product design · interaction system · Kotlin Multiplatform architecture · Android audio engineering · visual design</div>
-          <div class="build-actions"><a href="https://github.com/freeman-ipumbu/unified-music-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a></div>
+          <div class="build-actions"><a class="primary" href="https://runnerznamibia.com/#official-music-player" target="_blank" rel="noopener noreferrer">SEE IT INSIDE RUNNERZ ↗</a><a href="https://github.com/freeman-ipumbu/unified-music-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a></div>
         </div>
       </article>
     </div>
