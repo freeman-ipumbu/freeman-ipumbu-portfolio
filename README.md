@@ -11,7 +11,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **E.M.A. Namibia** — emergency-first nonprofit experience with persistent 9112 access, guided response tools, a privacy-conscious report flow, Kosmos 94.1 radio and a new community-beacon identity.
 - **OSH-Med International** — a distinct academy platform for accredited emergency-care, first-aid, occupational-safety and high-risk-work learning, with an interactive pathway finder and new reflex-system identity.
 - **Ontoko Foods** — a founder-led digital home translating a proudly Namibian agricultural brand, editorial product-photo system, real farm archive and food-security mission into one premium, mobile-hardened experience.
-- **Magic Boys Football Academy** — a joyful, privacy-first identity and mobile experience helping young Namibians play, learn and rise, with direct links to the live academy and public website repository.
+- **Magic Boys Football Academy** — a joyful, privacy-first identity and mobile experience helping young Namibians play, learn and rise, with a direct link to the live academy and a presentation-safe public case study.
 - **Utuseb — Drinks & Delivery** — mobile ordering across 47 product lines including ice and AirsPops, universal 18+ ID verification, local delivery or arranged pickup, cash/eWallet checkout, PWA installation, fulfilment, stock control and downloadable business reporting.
 - **M & L Occupational Safety** — identity refinement and a mobile-hardened business experience for a Windhoek occupational health and safety consultancy.
 - **Omwenyo Renal Health Centre** — brand identity and interactive digital experience for an emerging renal-care initiative in Nkurenkuru.
