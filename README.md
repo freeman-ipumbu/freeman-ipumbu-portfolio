@@ -24,7 +24,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **IT Handover Continuance** — published design science research artefact.
 - **Dream High Learning Institute** — responsive institutional web experience.
 - **Borizago** — installable shuttle booking and operations platform for Boriza Shuttle & Tours.
-- **Omutambo Herd Operations** — Namibia-first livestock operations workspace for cattle owners, farm managers and field teams.
+- **Omutambo Herd Operations** — live, invitation-only farm-operations workspace joining cattle, goats, sheep, freely named livestock and poultry flocks with health, housing, production, feed, mortality, camps, movements, tasks, NAD costs and field evidence; the current release passes 100 automated checks while keeping its owner-authenticated smoke check explicit.
 - **KICKOFF NAM** — public, source-linked Namibian football intelligence archive with a national football atlas.
 - **UNIFIED 14.0 — Signal Journal** — the installed official Runnerz music player with a protected 3,795-track Library Vault, native playback, Flow State, Sonic Atlas, Pace Brain, private daily missions, a seven-day pulse, thirty persistent badges and direct Android 15 evidence.
 
