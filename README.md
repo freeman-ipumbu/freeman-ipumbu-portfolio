@@ -26,7 +26,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **Borizago** — installable shuttle booking and operations platform for Boriza Shuttle & Tours.
 - **Omutambo Herd Operations** — Namibia-first livestock operations workspace for cattle owners, farm managers and field teams.
 - **KICKOFF NAM** — public, source-linked Namibian football intelligence archive with a national football atlas.
-- **UNIFIED 11.0 — Velocity Engine** — the installed official Runnerz music player with a protected 3,795-track Library Vault, native playback, Pace Map, Pace Brain, Afterglow intelligence, fifteen persistent badges, ShowTime Radio and real physical-device evidence.
+- **UNIFIED 14.0 — Signal Journal** — the official Runnerz music player with a protected 3,795-track Library Vault, native playback, Flow State, Sonic Atlas, Pace Brain, private daily missions, a seven-day pulse, thirty persistent badges and real physical-device evidence through 13.0.
 
 ## Public/private boundary
 
