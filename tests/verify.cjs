@@ -20,9 +20,10 @@ assert.ok(!/\son(?:click|error|load)=/i.test(html), "No inline event handlers");
 assert.ok(html.includes("NEW // MULTI-SPECIES + POULTRY COMMAND"), "Omutambo release signal is current");
 assert.ok(html.includes("100 AUTOMATED CHECKS"), "Omutambo verification evidence is visible");
 assert.ok(html.includes("cattle, goats, sheep, freely named livestock"), "Omutambo multi-species scope is visible");
-assert.ok(html.includes("UNIFIED 15.0 — Momentum Engine"), "Current UNIFIED release is visible");
-assert.ok(html.includes("28-day Listening Season"), "Momentum Engine scope is visible");
-assert.ok(html.includes("real thirty-track Media3 playback"), "UNIFIED device evidence is explicit");
+assert.ok(html.includes("UNIFIED 16.0 — Sonic Forge"), "Current UNIFIED release is visible");
+assert.ok(html.includes("three durable Signature profiles"), "Sonic Forge scope is visible");
+assert.ok(html.includes("in-place Android 15 upgrade"), "UNIFIED device evidence is explicit");
+assert.ok(html.includes("68 shared tests"), "UNIFIED verification count is explicit");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
 assert.equal(cards, 19, "Selected build count changed; update the portfolio metric and test intentionally");
