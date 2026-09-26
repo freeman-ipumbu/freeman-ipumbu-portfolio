@@ -24,7 +24,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **IT Handover Continuance** — published design science research artefact.
 - **Dream High Learning Institute** — responsive institutional web experience.
 - **Borizago** — installable shuttle booking and operations platform for Boriza Shuttle & Tours.
-- **Omutambo Herd Operations** — live, invitation-only farm-operations workspace joining cattle, goats, sheep, freely named livestock and poultry flocks; the Field Command refresh unifies its identity, navigation, responsive registers and evidence-led poultry measures while retaining the 100-check release gate and explicit owner-authenticated smoke check.
+- **Omutambo Herd Operations** — live, invitation-only farm-operations workspace joining cattle, goats, sheep, freely named livestock and poultry flocks; Field Command 2 unifies its identity, branded access surfaces, startup states, responsive registers and evidence-led poultry measures while retaining the 100-check release gate and explicit owner-authenticated smoke check.
 - **KICKOFF NAM** — public, source-linked Namibian football intelligence archive with a national football atlas.
 - **UNIFIED 19.0 — Continuum Relay** — the installed official Runnerz music player with a protected 3,795-track Library Vault, five evidence-led Smart Spaces, a checksum-protected portable Capsule, reversible Queue Director, Sonic Forge, Sonic Recall, thirty-five persistent badges and a privacy-light matching-signature Runnerz relay.
 
