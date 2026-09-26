@@ -17,7 +17,7 @@ assert.ok(html.includes('<meta property="og:image:height" content="630">'));
 assert.ok(html.includes('<meta name="twitter:image:alt"'));
 assert.ok(html.includes('type="application/ld+json"'), "Person structured data is present");
 assert.ok(!/\son(?:click|error|load)=/i.test(html), "No inline event handlers");
-assert.ok(html.includes("NEW // FIELD COMMAND EXPERIENCE"), "Omutambo release signal is current");
+assert.ok(html.includes("LIVE // FIELD COMMAND 2"), "Omutambo release signal is current");
 assert.ok(html.includes("100 AUTOMATED CHECKS"), "Omutambo verification evidence is visible");
 assert.ok(html.includes("cattle, goats, sheep, freely named livestock"), "Omutambo multi-species scope is visible");
 assert.ok(html.includes("projects/magic-boys-fa-logo.png"), "Magic Boys uses the approved standalone academy crest");
