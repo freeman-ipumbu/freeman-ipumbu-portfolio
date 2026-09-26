@@ -26,7 +26,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **Borizago** — installable shuttle booking and operations platform for Boriza Shuttle & Tours.
 - **Omutambo Herd Operations** — live, invitation-only farm-operations workspace joining cattle, goats, sheep, freely named livestock and poultry flocks with health, housing, production, feed, mortality, camps, movements, tasks, NAD costs and field evidence; the current release passes 100 automated checks while keeping its owner-authenticated smoke check explicit.
 - **KICKOFF NAM** — public, source-linked Namibian football intelligence archive with a national football atlas.
-- **UNIFIED 17.0 — Sonic Recall** — the installed official Runnerz music player with a protected 3,795-track Library Vault, native playback, Flow State, Sonic Atlas, Pace Brain, Momentum Engine, thirty-five persistent badges, a graph-led professional sound workspace and opt-in track/album/artist sound memory with an honest personal-library RMS compass.
+- **UNIFIED 19.0 — Continuum Relay** — the installed official Runnerz music player with a protected 3,795-track Library Vault, five evidence-led Smart Spaces, a checksum-protected portable Capsule, reversible Queue Director, Sonic Forge, Sonic Recall, thirty-five persistent badges and a privacy-light matching-signature Runnerz relay.
 
 ## Public/private boundary
 

@@ -20,10 +20,10 @@ assert.ok(!/\son(?:click|error|load)=/i.test(html), "No inline event handlers");
 assert.ok(html.includes("NEW // MULTI-SPECIES + POULTRY COMMAND"), "Omutambo release signal is current");
 assert.ok(html.includes("100 AUTOMATED CHECKS"), "Omutambo verification evidence is visible");
 assert.ok(html.includes("cattle, goats, sheep, freely named livestock"), "Omutambo multi-species scope is visible");
-assert.ok(html.includes("UNIFIED 17.0 — Sonic Recall"), "Current UNIFIED release is visible");
-assert.ok(html.includes("complete sound memories for a track, album or artist"), "Sonic Recall scope is visible");
-assert.ok(html.includes("in-place Android 15 upgrade"), "UNIFIED device evidence is explicit");
-assert.ok(html.includes("71 shared tests"), "UNIFIED verification count is explicit");
+assert.ok(html.includes("UNIFIED 19.0 — Continuum Relay"), "Current UNIFIED release is visible");
+assert.ok(html.includes("five evidence-led Smart Spaces"), "Continuum scope is visible");
+assert.ok(html.includes("physical Capsule export/restore"), "UNIFIED device evidence is explicit");
+assert.ok(html.includes("aggregate-only completion contract"), "Runnerz privacy boundary is explicit");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
 assert.equal(cards, 19, "Selected build count changed; update the portfolio metric and test intentionally");
