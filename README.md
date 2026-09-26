@@ -12,7 +12,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **E.M.A. Namibia** — emergency-first nonprofit experience with persistent 9112 access, guided response tools, a privacy-conscious report flow, Kosmos 94.1 radio and a new community-beacon identity.
 - **OSH-Med International** — a distinct academy platform for accredited emergency-care, first-aid, occupational-safety and high-risk-work learning, with an interactive pathway finder and new reflex-system identity.
 - **Ontoko Foods** — a founder-led digital home translating a proudly Namibian agricultural brand, editorial product-photo system, real farm archive and food-security mission into one premium, mobile-hardened experience.
-- **Magic Boys Football Academy** — a joyful, privacy-first identity and mobile experience helping young Namibians play, learn and rise, with a direct link to the live academy and a presentation-safe public case study.
+- **Magic Boys Football Academy** — a joyful, privacy-first identity and mobile experience helping young Namibians play, learn and rise, now presented with the approved standalone academy crest and a direct link to the live academy and public case study.
 - **Utuseb — Drinks & Delivery** — mobile ordering across 47 product lines including ice and AirsPops, universal 18+ ID verification, local delivery or arranged pickup, cash/eWallet checkout, PWA installation, fulfilment, stock control and downloadable business reporting.
 - **M & L Occupational Safety** — identity refinement and a mobile-hardened business experience for a Windhoek occupational health and safety consultancy.
 - **Omwenyo Renal Health Centre** — brand identity and interactive digital experience for an emerging renal-care initiative in Nkurenkuru.
@@ -24,7 +24,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **IT Handover Continuance** — published design science research artefact.
 - **Dream High Learning Institute** — responsive institutional web experience.
 - **Borizago** — installable shuttle booking and operations platform for Boriza Shuttle & Tours.
-- **Omutambo Herd Operations** — live, invitation-only farm-operations workspace joining cattle, goats, sheep, freely named livestock and poultry flocks with health, housing, production, feed, mortality, camps, movements, tasks, NAD costs and field evidence; the current release passes 100 automated checks while keeping its owner-authenticated smoke check explicit.
+- **Omutambo Herd Operations** — live, invitation-only farm-operations workspace joining cattle, goats, sheep, freely named livestock and poultry flocks; the Field Command refresh unifies its identity, navigation, responsive registers and evidence-led poultry measures while retaining the 100-check release gate and explicit owner-authenticated smoke check.
 - **KICKOFF NAM** — public, source-linked Namibian football intelligence archive with a national football atlas.
 - **UNIFIED 19.0 — Continuum Relay** — the installed official Runnerz music player with a protected 3,795-track Library Vault, five evidence-led Smart Spaces, a checksum-protected portable Capsule, reversible Queue Director, Sonic Forge, Sonic Recall, thirty-five persistent badges and a privacy-light matching-signature Runnerz relay.
 
