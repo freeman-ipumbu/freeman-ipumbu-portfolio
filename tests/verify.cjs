@@ -29,7 +29,7 @@ assert.ok(html.includes("aggregate-only completion contract"), "Runnerz privacy 
 assert.ok(html.includes("PILOT READY // APPROVALS PENDING"), "RightMatch launch gate is current");
 assert.ok(html.includes("final Namibian legal, insurance, registration and payment approvals"), "RightMatch external approvals remain explicit");
 assert.ok(html.includes("ALL RIGHTS RESERVED"), "Portfolio ownership notice is visible");
-assert.ok(html.includes("AN EXPERIENCE BY SOLARSPIN TECHNOLOGIES"), "SolarSpin experience credit is visible");
+assert.ok(html.includes("A DIGITAL EXPERIENCE BY SOLARSPIN TECHNOLOGIES"), "SolarSpin experience credit is visible");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
 assert.equal(cards, 19, "Selected build count changed; update the portfolio metric and test intentionally");
