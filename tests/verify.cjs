@@ -8,6 +8,8 @@ const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(new Set(ids).size, ids.length, "HTML IDs must be unique");
 assert.ok(!html.includes("user-scalable=no"), "Browser zoom must remain available");
+assert.ok(!html.includes("gesturestart','gesturechange','gestureend"), "Gesture zoom blocking must remain removed");
+assert.ok(html.includes("touch-action:pan-x pan-y pinch-zoom"), "Touch zoom must remain available");
 assert.ok(html.includes('<a class="skip-link" href="#main">'), "Skip link is present");
 assert.ok(html.includes('<main id="main">'), "Main landmark is present");
 assert.ok(html.includes('<link rel="icon" href="/favicon.svg" type="image/svg+xml">'), "Favicon is linked");
@@ -22,10 +24,20 @@ assert.ok(html.includes("100 AUTOMATED CHECKS"), "Omutambo verification evidence
 assert.ok(html.includes("cattle, goats, sheep, freely named livestock"), "Omutambo multi-species scope is visible");
 assert.ok(html.includes("projects/magic-boys-fa-logo.png"), "Magic Boys uses the approved standalone academy crest");
 assert.ok(html.includes("evidence coverage behind poultry measures"), "Omutambo evidence-coverage refresh is visible");
-assert.ok(html.includes("UNIFIED 19.0 — Continuum Relay"), "Current UNIFIED release is visible");
+assert.ok(html.includes("UNIFIED 20.0 — Signal Command"), "Current UNIFIED release is visible");
+assert.ok(html.includes("projects/unified-20-command-deck.png"), "UNIFIED uses current physical Command Deck proof");
+assert.ok(html.includes("version code 21"), "UNIFIED version-code evidence is visible");
+assert.ok(html.includes('class="build-card flagship" id="unified"'), "UNIFIED has a shareable flagship anchor");
 assert.ok(html.includes("five evidence-led Smart Spaces"), "Continuum scope is visible");
 assert.ok(html.includes("physical Capsule export/restore"), "UNIFIED device evidence is explicit");
 assert.ok(html.includes("aggregate-only completion contract"), "Runnerz privacy boundary is explicit");
+assert.ok(html.includes("FIELD TEST // RUNNERZ 1.1.0 · CODE 16"), "Runnerz release signal is current");
+assert.ok(html.includes("projects/runnerz-1.1.0.png"), "Runnerz uses current controlled handset proof");
+assert.ok(html.includes('class="build-card flagship runnerz-release" id="runnerz"'), "Runnerz has a shareable flagship anchor");
+assert.ok(html.includes("145 TESTS PER VARIANT / 0 FAILURES"), "Runnerz automated-test evidence is visible");
+assert.ok(html.includes("exact trails stay local"), "Runnerz trail privacy boundary is visible");
+assert.ok(html.includes("public-store acceptance remain tracked gates"), "Runnerz store boundary is visible");
+assert.ok(!html.includes('src="projects/runnerz.webp"'), "Legacy Runnerz banner is no longer referenced");
 assert.ok(html.includes("PILOT READY // APPROVALS PENDING"), "RightMatch launch gate is current");
 assert.ok(html.includes("final Namibian legal, insurance, registration and payment approvals"), "RightMatch external approvals remain explicit");
 assert.ok(html.includes("42 valid directional journeys"), "Borizago directional route scope is current");
@@ -53,5 +65,15 @@ const image = fs.readFileSync(path.join(root, "social-preview.png"));
 assert.deepEqual([...image.subarray(0, 8)], [137,80,78,71,13,10,26,10], "Social preview must be PNG");
 assert.equal(image.readUInt32BE(16), 1200, "Social preview width");
 assert.equal(image.readUInt32BE(20), 630, "Social preview height");
+
+const runnerzProof = fs.readFileSync(path.join(root, "projects/runnerz-1.1.0.png"));
+assert.deepEqual([...runnerzProof.subarray(0, 8)], [137,80,78,71,13,10,26,10], "Runnerz proof must be PNG");
+assert.equal(runnerzProof.readUInt32BE(16), 1600, "Runnerz proof width");
+assert.equal(runnerzProof.readUInt32BE(20), 900, "Runnerz proof height");
+
+const unifiedProof = fs.readFileSync(path.join(root, "projects/unified-20-command-deck.png"));
+assert.deepEqual([...unifiedProof.subarray(0, 8)], [137,80,78,71,13,10,26,10], "UNIFIED proof must be PNG");
+assert.equal(unifiedProof.readUInt32BE(16), 1200, "UNIFIED proof width");
+assert.equal(unifiedProof.readUInt32BE(20), 2664, "UNIFIED proof height");
 
 console.log("PASS: portfolio metadata, accessibility landmarks, asset references, build count and social image.");

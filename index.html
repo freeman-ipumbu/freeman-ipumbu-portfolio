@@ -609,6 +609,10 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .build-card{position:relative;min-height:520px;display:flex;flex-direction:column;border:1px solid rgba(128,185,199,.2);background:linear-gradient(145deg,rgba(17,30,40,.9),rgba(7,13,19,.92));overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;content-visibility:auto;contain:layout paint style;contain-intrinsic-size:520px}
 .build-card:hover{transform:translateY(-7px);border-color:rgba(94,231,255,.5);box-shadow:0 28px 90px rgba(0,0,0,.32),0 0 40px rgba(94,231,255,.065)}
 .build-card.flagship{grid-column:1/-1;min-height:560px;display:grid;grid-template-columns:1.15fr .85fr}
+.build-card.runnerz-release{border-color:rgba(57,255,136,.28);box-shadow:inset 0 1px 0 rgba(57,255,136,.08)}
+.build-card.runnerz-release:hover{border-color:rgba(57,255,136,.58);box-shadow:0 28px 90px rgba(0,0,0,.35),0 0 46px rgba(57,255,136,.075)}
+.runnerz-release .build-signal{color:#63ffa0;border-color:rgba(57,255,136,.42)}
+.runnerz-release .build-index{color:#39ff88}
 .build-media{position:relative;min-height:245px;overflow:hidden;background:#0a1118}
 .build-card.flagship .build-media{min-height:100%}
 .build-media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.04);transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s}
@@ -651,7 +655,7 @@ html,body{
   -webkit-text-size-adjust:100%;
   text-size-adjust:100%;
 }
-body{touch-action:pan-y}
+body{touch-action:pan-x pan-y pinch-zoom}
 img,video,svg,canvas,iframe{max-width:100%}
 .wrap,.topbar-inner,section,header,footer,.hero-grid,.about-grid,.contact-grid,
 .build-grid,.build-card,.build-media,.osi-stage,.osi-list,.osi-visual,
@@ -1141,21 +1145,23 @@ img,video,svg,canvas,iframe{max-width:100%}
         </div>
       </article>
 
-      <article class="build-card">
+      <article class="build-card flagship runnerz-release" id="runnerz">
         <div class="build-media">
-          <span class="build-signal">LIVE // SOCIAL RUNNING + FOUNDER COMMAND</span>
-          <img src="projects/runnerz.webp" alt="Runnerz Namibia social running platform" width="2400" height="720" loading="lazy" decoding="async">
+          <span class="build-signal">FIELD TEST // RUNNERZ 1.1.0 · CODE 16</span>
+          <img src="projects/runnerz-1.1.0.png" alt="Runnerz 1.1.0 controlled Field Test showing the signature trail, UNIFIED Music relay and persistent banked miles" width="1600" height="900" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">BUILD 05 / SOCIAL RUNNING NETWORK</div>
           <h3>Runnerz Namibia</h3>
-          <p>A route-driven social running network that helps people form safer, realistic runs around pace, intent, timing, place and earned trust. The shipped system now includes a Founder-only operational command for live product signals, Insider workflow, exports and accountable audit history.</p>
+          <p>A route-driven social running network that now treats every run as a living system. Version 1.1.0 hardens accepted-fix GPS tracking, draws the segmented Runnerz-green trail, keeps live movement metrics and persistent banked miles, supports route guidance and switching, protects nearby discovery with broad-area presence, expands women-led run choices, rotates a wider History Mode catalogue and hands music control deliberately to UNIFIED.</p>
+          <p><strong>Evidence boundary:</strong> exact trails stay local and controlled handset proof is complete. Outdoor endurance, genuine-run banking, paired-watch mirroring, production signing and public-store acceptance remain tracked gates.</p>
           <div class="build-role"><b>MY ROLE</b> Founder · product strategy · design research · Android and web engineering · mapping · safety architecture · secure operations · infrastructure</div>
           <div class="build-actions">
-            <a class="primary" href="https://runnerznamibia.com" target="_blank" rel="noopener noreferrer">VISIT LIVE PRODUCT ↗</a>
+            <a class="primary" href="https://runnerznamibia.com" target="_blank" rel="noopener noreferrer">VISIT RUNNERZ ↗</a>
             <a href="https://github.com/freeman-ipumbu/runnerz-android-case-study" target="_blank" rel="noopener noreferrer">ANDROID CASE STUDY ↗</a>
             <a href="https://github.com/freeman-ipumbu/runnerz-namibia-website-case-study" target="_blank" rel="noopener noreferrer">WEB CASE STUDY ↗</a>
           </div>
+          <div class="build-proof">1.1.0 · CODE 16 · CONTROLLED TRAIL EVIDENCE · 145 TESTS PER VARIANT / 0 FAILURES · OUTDOOR + WATCH + STORE GATES OPEN</div>
         </div>
       </article>
 
@@ -1244,17 +1250,17 @@ img,video,svg,canvas,iframe{max-width:100%}
         </div>
       </article>
 
-      <article class="build-card flagship">
+      <article class="build-card flagship" id="unified">
         <div class="build-media unified-shot-wall">
-          <span class="build-signal">INSTALLED + VERIFIED // UNIFIED 19.0 CONTINUUM RELAY</span>
-          <img class="unified-shot-main" src="projects/unified-19-continuum.png" alt="UNIFIED 19.0 Continuum Smart Spaces and protected Capsule on Android 15" width="1200" height="2664" loading="lazy" decoding="async">
+          <span class="build-signal">INSTALLED + VERIFIED // UNIFIED 20.0 SIGNAL COMMAND</span>
+          <img class="unified-shot-main" src="projects/unified-20-command-deck.png" alt="UNIFIED 20.0 Signal Command Deck on the physical Android 15 handset" width="1200" height="2664" loading="lazy" decoding="async">
           <img class="unified-shot-detail" src="projects/unified-19-queue-director.png" alt="UNIFIED 19.0 Queue Director controlling the live 3,795-track queue" width="1200" height="2664" loading="lazy" decoding="async">
           <img class="unified-shot-detail unified-shot-now" src="projects/unified-19-runnerz-relay.png" alt="Runnerz native soundtrack consent surface receiving a UNIFIED session" width="1200" height="2664" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">BUILD 17 / OFFICIAL RUNNERZ MUSIC PLAYER</div>
-          <h3>UNIFIED 19.0 — Continuum Relay</h3>
-          <p>The installed official Runnerz music player: a local-first system with a protected 3,795-track Library Vault, native Android playback, five evidence-led Smart Spaces, a checksum-protected Capsule, reversible Queue Director, Flow State, Sonic Atlas, Pace Brain, Momentum Engine, thirty-five persistent badges, Sonic Forge and Sonic Recall. Version 19.0 completes the signed native Runnerz relay architecture with explicit consent, durable duplicate protection and an aggregate-only completion contract. Android test, lint and debug/release build gates pass for both apps; physical Capsule export/restore retained the original install identity, exact Vault checksum and full library. A genuine GPS run remains the final callback field-acceptance step.</p>
+          <h3>UNIFIED 20.0 — Signal Command</h3>
+          <p>The installed official Runnerz music player: a local-first system whose living Command Deck puts live playback, indexed-library and queue truth, Audio Lab, Capsule controls, provider readiness and the signed Runnerz relay state one gesture away. Version 20.0 carries forward the protected 3,795-track Library Vault, five evidence-led Smart Spaces, reversible Queue Director, Flow State, Sonic Atlas, Pace Brain, Momentum Engine, thirty-five persistent badges, Sonic Forge and Sonic Recall. The in-place Android 15 upgrade is installed as version code 21; the exact Vault checksum and full library remain intact, physical Capsule export/restore is verified, and Android test, lint, debug and release gates pass. The relay keeps an aggregate-only completion contract, while a genuine GPS run remains the final callback field-acceptance step.</p>
           <div class="build-role"><b>MY ROLE</b> Product design · interaction system · Kotlin Multiplatform architecture · Android audio engineering · visual design</div>
           <div class="build-actions"><a class="primary" href="https://runnerznamibia.com/#official-music-player" target="_blank" rel="noopener noreferrer">SEE IT INSIDE RUNNERZ ↗</a><a href="https://github.com/freeman-ipumbu/unified-music-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a></div>
         </div>
@@ -1789,13 +1795,6 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   document.body.appendChild(boot);
   setTimeout(() => boot.classList.add('done'), 650);
   setTimeout(() => boot.remove(), 1200);
-})();
-
-// ---------- mobile viewport lock ----------
-(function(){
-  ['gesturestart','gesturechange','gestureend'].forEach(type=>{
-    document.addEventListener(type,event=>event.preventDefault(),{passive:false});
-  });
 })();
 
 </script>

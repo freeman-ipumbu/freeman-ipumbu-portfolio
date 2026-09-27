@@ -17,7 +17,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **M & L Occupational Safety** — identity refinement and a mobile-hardened business experience for a Windhoek occupational health and safety consultancy.
 - **Omwenyo Renal Health Centre** — brand identity and interactive digital experience for an emerging renal-care initiative in Nkurenkuru.
 - **RightMatch Namibia** — launch-ready controlled-pilot vehicle marketplace with guided owner, renter and trust-operations journeys; public transactions remain gated behind final legal, insurance, registration and payment approvals.
-- **Runnerz Namibia** — route-driven social running network, Windhoek Route Lab and secure Founder operations command.
+- **Runnerz Namibia 1.1.0** — controlled Field Test build with hardened accepted-fix GPS, the segmented signature trail, persistent runs and banked miles, privacy-preserving nearby discovery, women-led run options, a wider History Mode catalogue and a deliberate UNIFIED Music relay.
 - **MOHSS AIRMED COMMAND** — live national air-medical coordination and governed Government mobility demonstration.
 - **NamAir Command** — aviation crew-readiness and rostering prototype.
 - **NamMar Command** — vessel operations, live marine weather, crew-change guidance and public AIS tracking.
@@ -26,7 +26,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **Borizago** — installable shuttle booking and operations platform with 42 directional journeys, managed fares and locations, service workflows, manifests, monthly reporting, staff guidance and a refined Boriza identity.
 - **Omutambo Herd Operations** — live, invitation-only farm-operations workspace joining cattle, goats, sheep, freely named livestock and poultry flocks; Field Command 2 unifies its identity, branded access surfaces, startup states, responsive registers and evidence-led poultry measures while retaining the 100-check release gate and explicit owner-authenticated smoke check.
 - **KICKOFF NAM** — public, source-linked Namibian football intelligence archive with a national football atlas.
-- **UNIFIED 19.0 — Continuum Relay** — the installed official Runnerz music player with a protected 3,795-track Library Vault, five evidence-led Smart Spaces, a checksum-protected portable Capsule, reversible Queue Director, Sonic Forge, Sonic Recall, thirty-five persistent badges and a privacy-light matching-signature Runnerz relay.
+- **UNIFIED 20.0 — Signal Command** — the installed official Runnerz music player with a living Command Deck, protected 3,795-track Library Vault, five evidence-led Smart Spaces, a checksum-protected portable Capsule, reversible Queue Director, Sonic Forge, Sonic Recall, thirty-five persistent badges and a privacy-light matching-signature Runnerz relay.
 
 ## Public/private boundary
 
