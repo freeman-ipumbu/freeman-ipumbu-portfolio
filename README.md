@@ -16,7 +16,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 - **Utuseb — Drinks & Delivery** — mobile ordering across 47 product lines including ice and AirsPops, universal 18+ ID verification, local delivery or arranged pickup, cash/eWallet checkout, PWA installation, fulfilment, stock control and downloadable business reporting.
 - **M & L Occupational Safety** — identity refinement and a mobile-hardened business experience for a Windhoek occupational health and safety consultancy.
 - **Omwenyo Renal Health Centre** — brand identity and interactive digital experience for an emerging renal-care initiative in Nkurenkuru.
-- **RightMatch Namibia** — trust-first peer-to-peer vehicle marketplace.
+- **RightMatch Namibia** — launch-ready controlled-pilot vehicle marketplace with guided owner, renter and trust-operations journeys; public transactions remain gated behind final legal, insurance, registration and payment approvals.
 - **Runnerz Namibia** — route-driven social running network, Windhoek Route Lab and secure Founder operations command.
 - **MOHSS AIRMED COMMAND** — live national air-medical coordination and governed Government mobility demonstration.
 - **NamAir Command** — aviation crew-readiness and rostering prototype.
