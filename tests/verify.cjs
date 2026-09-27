@@ -28,6 +28,10 @@ assert.ok(html.includes("physical Capsule export/restore"), "UNIFIED device evid
 assert.ok(html.includes("aggregate-only completion contract"), "Runnerz privacy boundary is explicit");
 assert.ok(html.includes("PILOT READY // APPROVALS PENDING"), "RightMatch launch gate is current");
 assert.ok(html.includes("final Namibian legal, insurance, registration and payment approvals"), "RightMatch external approvals remain explicit");
+assert.ok(html.includes("42 valid directional journeys"), "Borizago directional route scope is current");
+assert.ok(html.includes("monthly financial/customer reporting"), "Borizago reporting scope is current");
+assert.ok(html.includes("borizago-staff-guide.pdf"), "Borizago staff guide is linked");
+assert.ok(html.includes("projects/borizago-refined-v2.png"), "Borizago uses the local refined identity asset");
 assert.ok(html.includes("ALL RIGHTS RESERVED"), "Portfolio ownership notice is visible");
 assert.ok(html.includes("A DIGITAL EXPERIENCE BY SOLARSPIN TECHNOLOGIES"), "SolarSpin experience credit is visible");
 
