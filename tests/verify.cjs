@@ -46,13 +46,16 @@ assert.ok(html.includes("borizago-staff-guide.pdf"), "Borizago staff guide is li
 assert.ok(html.includes("projects/borizago-refined-v2.png"), "Borizago uses the local refined identity asset");
 assert.ok(html.includes("ALL RIGHTS RESERVED"), "Portfolio ownership notice is visible");
 assert.ok(html.includes("A DIGITAL EXPERIENCE BY SOLARSPIN TECHNOLOGIES"), "SolarSpin experience credit is visible");
+assert.ok(html.includes('href="https://pdm-namibia.pages.dev/"'), "PDM Namibia live experience is linked");
+assert.ok(html.includes('href="https://github.com/freeman-ipumbu/pdm-namibia-case-study"'), "PDM Namibia case study is linked");
+assert.ok(html.includes("projects/pdm-namibia.jpg"), "PDM Namibia uses the authorised local campaign image");
 assert.ok(html.includes('href="https://namair-command.pages.dev/"'), "NamAir uses its Git-connected Pages demo");
 assert.ok(html.includes('href="https://nammar.pages.dev/"'), "NamMar uses its Git-connected Pages demo");
 assert.ok(!html.includes("nammar-command-centre.freeman-ipumbu634390.chatgpt.site"), "Legacy NamMar host is removed");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
-assert.equal(cards, 19, "Selected build count changed; update the portfolio metric and test intentionally");
-assert.ok(html.includes('<strong>19</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
+assert.equal(cards, 20, "Selected build count changed; update the portfolio metric and test intentionally");
+assert.ok(html.includes('<strong>20</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
 
 for (const match of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
   const value = match[1];

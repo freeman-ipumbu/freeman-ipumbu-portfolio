@@ -8,6 +8,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 
 ## Featured work
 
+- **PDM Namibia** — cinematic, installable national political experience unifying the movement's history, Top 9, policies, parliamentary work, news, events, structures and membership pathways in an unmistakably PDM identity.
 - **ECC Command · E.M.A. Namibia** — authenticated emergency-control and responder PWA pilot with E.M.A.-owned ECC Signal alarming, all 139 inherited quick-action references, an open operational map, guided onboarding, human-confirmed dispatch decisions, audit and explicit integration gates in one shared operating picture.
 - **E.M.A. Namibia** — emergency-first nonprofit experience with persistent 9112 access, guided response tools, a privacy-conscious report flow, Kosmos 94.1 radio and a new community-beacon identity.
 - **OSH-Med International** — a distinct academy platform for accredited emergency-care, first-aid, occupational-safety and high-risk-work learning, with an interactive pathway finder and new reflex-system identity.
