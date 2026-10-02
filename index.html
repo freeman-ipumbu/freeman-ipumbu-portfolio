@@ -523,6 +523,26 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .proof-card strong{display:block;font-size:21px;margin:27px 0 7px}.proof-card p{color:var(--text-dim);font-size:13px;line-height:1.6;max-width:450px}.proof-route{position:absolute;left:25px;bottom:20px;font:9px var(--mono);color:var(--text-faint);letter-spacing:.06em}
 @media(max-width:700px){.professional-links,.proof-grid{grid-template-columns:1fr}.pro-link strong{font-size:10px}}
 
+/* Google Play launch lane */
+.play-launch{margin-top:22px;margin-bottom:8px}
+.play-launch-shell{position:relative;overflow:hidden;padding:24px;border:1px solid rgba(57,255,136,.24);background:linear-gradient(135deg,rgba(8,26,18,.88),rgba(8,17,25,.9));box-shadow:0 22px 70px rgba(0,0,0,.2)}
+.play-launch-shell::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 88% 12%,rgba(57,255,136,.13),transparent 32%)}
+.play-launch-head{position:relative;display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:18px}
+.play-launch-kicker{font:700 9px var(--mono);letter-spacing:.16em;color:#63ffa0;margin-bottom:7px}
+.play-launch-head h2{font-size:clamp(22px,3vw,31px);letter-spacing:-.035em;margin:0}
+.play-launch-head p{max-width:430px;margin:0;color:var(--text-dim);font-size:12.5px;line-height:1.65}
+.play-launch-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.play-release{padding:18px;border:1px solid rgba(128,185,199,.18);background:rgba(4,12,16,.55)}
+.play-release-top{display:flex;justify-content:space-between;gap:12px;align-items:center;font:700 8px var(--mono);letter-spacing:.13em;color:var(--text-faint)}
+.play-status{padding:4px 7px;border:1px solid rgba(255,176,32,.38);color:var(--amber);white-space:nowrap}
+.play-status.active{border-color:rgba(57,255,136,.4);color:#63ffa0}
+.play-release h3{font-size:18px;margin:16px 0 7px}
+.play-release p{color:var(--text-dim);font-size:12.5px;line-height:1.65;margin:0}
+.play-release a{display:inline-block;margin-top:13px;color:var(--electric);font:700 9px var(--mono);letter-spacing:.1em;text-decoration:none}
+.play-release a:hover{color:#63ffa0}
+.play-launch-foot{position:relative;margin-top:15px;padding-top:13px;border-top:1px dashed rgba(57,255,136,.25);color:rgba(193,231,213,.68);font:9px var(--mono);letter-spacing:.08em;line-height:1.6}
+@media(max-width:760px){.play-launch-head{display:block}.play-launch-head p{margin-top:12px}.play-launch-grid{grid-template-columns:1fr}.play-launch-shell{padding:20px}}
+
 
 /* =========================================================
    FINAL LOCK &mdash; cinematic navigation + closing sequence
@@ -801,6 +821,33 @@ img,video,svg,canvas,iframe{max-width:100%}
     <span class="pro-icon">Z</span><span><small>RESEARCH / PUBLICATION</small><strong>Zenodo / DOI 10.5281/zenodo.21840440</strong></span><i>&nearr;</i>
   </a>
 </div>
+
+<aside class="play-launch wrap reveal" aria-labelledby="play-launch-title">
+  <div class="play-launch-shell">
+    <div class="play-launch-head">
+      <div>
+        <div class="play-launch-kicker">GOOGLE PLAY // LAUNCH LANE</div>
+        <h2 id="play-launch-title">Two Android products are through the build gate.</h2>
+      </div>
+      <p>Runnerz and UNIFIED are staged for Namibia-only Alpha testing. The signed bundles are in Play Console; public production stays deliberately unclaimed until Google and the required test period clear.</p>
+    </div>
+    <div class="play-launch-grid">
+      <article class="play-release">
+        <div class="play-release-top"><span>RUNNERZ 1.1.0 · CODE 16</span><span class="play-status">REVIEW SUBMITTED</span></div>
+        <h3>Runnerz Namibia</h3>
+        <p>All 11 store setup tasks are complete, the signed AAB is validated, 13 changes are in review and the 36-person Alpha tester group is assigned.</p>
+        <a href="https://github.com/freeman-ipumbu/runnerz-android-case-study" target="_blank" rel="noopener noreferrer">ANDROID CASE STUDY ↗</a>
+      </article>
+      <article class="play-release">
+        <div class="play-release-top"><span>UNIFIED 20.0 · CODE 22</span><span class="play-status active">ALPHA ACTIVE</span></div>
+        <h3>UNIFIED Music</h3>
+        <p>The closed-testing track is active, release 20.0 Signal Command (22) is in review and the same 36-person tester group is ready.</p>
+        <a href="https://play.google.com/apps/testing/com.unified.music" target="_blank" rel="noopener noreferrer">TESTER OPT-IN ↗</a>
+      </article>
+    </div>
+    <div class="play-launch-foot">STATUS VERIFIED 02 OCT 2026 · NEXT SHARED GATE: 12+ OPTED-IN TESTERS FOR 14 CONTINUOUS DAYS, THEN PRODUCTION-ACCESS REVIEW</div>
+  </div>
+</aside>
 
 <div class="telemetry wrap reveal">
   <div><span class="telemetry-key">NETWORK</span><strong>ONLINE</strong></div>
@@ -1181,21 +1228,21 @@ img,video,svg,canvas,iframe{max-width:100%}
 
       <article class="build-card flagship runnerz-release" id="runnerz">
         <div class="build-media">
-          <span class="build-signal">FIELD TEST // RUNNERZ 1.1.0 · CODE 16</span>
+          <span class="build-signal">GOOGLE PLAY REVIEW // RUNNERZ 1.1.0 · CODE 16</span>
           <img src="projects/runnerz-1.1.0.png" alt="Runnerz 1.1.0 controlled Field Test showing the signature trail, UNIFIED Music relay and persistent banked miles" width="1600" height="900" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">BUILD 05 / SOCIAL RUNNING NETWORK</div>
           <h3>Runnerz Namibia</h3>
           <p>A route-driven social running network that now treats every run as a living system. Version 1.1.0 hardens accepted-fix GPS tracking, draws the segmented Runnerz-green trail, keeps live movement metrics and persistent banked miles, supports route guidance and switching, protects nearby discovery with broad-area presence, expands women-led run choices, rotates a wider History Mode catalogue and hands music control deliberately to UNIFIED.</p>
-          <p><strong>Evidence boundary:</strong> exact trails stay local and controlled handset proof is complete. Outdoor endurance, genuine-run banking, paired-watch mirroring, production signing and public-store acceptance remain tracked gates.</p>
+          <p><strong>Evidence boundary:</strong> exact trails stay local and controlled handset proof is complete. The signed code-16 AAB is validated, all 11 Play setup tasks are complete, 13 store changes are in review and the 36-person Alpha tester group is assigned. Outdoor endurance, genuine-run banking, paired-watch mirroring, Google approval and the 12-testers-for-14-days production gate remain tracked work.</p>
           <div class="build-role"><b>MY ROLE</b> Founder · product strategy · design research · Android and web engineering · mapping · safety architecture · secure operations · infrastructure</div>
           <div class="build-actions">
             <a class="primary" href="https://runnerznamibia.com" target="_blank" rel="noopener noreferrer">VISIT RUNNERZ ↗</a>
             <a href="https://github.com/freeman-ipumbu/runnerz-android-case-study" target="_blank" rel="noopener noreferrer">ANDROID CASE STUDY ↗</a>
             <a href="https://github.com/freeman-ipumbu/runnerz-namibia-website-case-study" target="_blank" rel="noopener noreferrer">WEB CASE STUDY ↗</a>
           </div>
-          <div class="build-proof">1.1.0 · CODE 16 · CONTROLLED TRAIL EVIDENCE · 145 TESTS PER VARIANT / 0 FAILURES · OUTDOOR + WATCH + STORE GATES OPEN</div>
+          <div class="build-proof">1.1.0 · CODE 16 · SIGNED PLAY BUNDLE VALIDATED · 145 TESTS PER VARIANT / 0 FAILURES · REVIEW SUBMITTED</div>
         </div>
       </article>
 
@@ -1286,7 +1333,7 @@ img,video,svg,canvas,iframe{max-width:100%}
 
       <article class="build-card flagship" id="unified">
         <div class="build-media unified-shot-wall">
-          <span class="build-signal">INSTALLED + VERIFIED // UNIFIED 20.0 SIGNAL COMMAND</span>
+          <span class="build-signal">PLAY ALPHA ACTIVE // UNIFIED 20.0 · CODE 22 IN REVIEW</span>
           <img class="unified-shot-main" src="projects/unified-20-command-deck.png" alt="UNIFIED 20.0 Signal Command Deck on the physical Android 15 handset" width="1200" height="2664" loading="lazy" decoding="async">
           <img class="unified-shot-detail" src="projects/unified-19-queue-director.png" alt="UNIFIED 19.0 Queue Director controlling the live 3,795-track queue" width="1200" height="2664" loading="lazy" decoding="async">
           <img class="unified-shot-detail unified-shot-now" src="projects/unified-19-runnerz-relay.png" alt="Runnerz native soundtrack consent surface receiving a UNIFIED session" width="1200" height="2664" loading="lazy" decoding="async">
@@ -1294,9 +1341,10 @@ img,video,svg,canvas,iframe{max-width:100%}
         <div class="build-body">
           <div class="build-index">BUILD 17 / OFFICIAL RUNNERZ MUSIC PLAYER</div>
           <h3>UNIFIED 20.0 — Signal Command</h3>
-          <p>The installed official Runnerz music player: a local-first system whose living Command Deck puts live playback, indexed-library and queue truth, Audio Lab, Capsule controls, provider readiness and the signed Runnerz relay state one gesture away. Version 20.0 carries forward the protected 3,795-track Library Vault, five evidence-led Smart Spaces, reversible Queue Director, Flow State, Sonic Atlas, Pace Brain, Momentum Engine, thirty-five persistent badges, Sonic Forge and Sonic Recall. The in-place Android 15 upgrade is installed as version code 21; the exact Vault checksum and full library remain intact, physical Capsule export/restore is verified, and Android test, lint, debug and release gates pass. The relay keeps an aggregate-only completion contract, while a genuine GPS run remains the final callback field-acceptance step.</p>
+          <p>The installed official Runnerz music player: a local-first system whose living Command Deck puts live playback, indexed-library and queue truth, Audio Lab, Capsule controls, provider readiness and the signed Runnerz relay state one gesture away. Version 20.0 carries forward the protected 3,795-track Library Vault, five evidence-led Smart Spaces, reversible Queue Director, Flow State, Sonic Atlas, Pace Brain, Momentum Engine, thirty-five persistent badges, Sonic Forge and Sonic Recall. The Google Play release advances the build to version code 22; the exact Vault checksum and full library remain intact, physical Capsule export/restore is verified, and Android test, lint, debug and release gates pass. Its Namibia-only Alpha track is active, release 20.0 Signal Command (22) is in review and the 36-person tester group is assigned. The relay keeps an aggregate-only completion contract, while a genuine GPS run remains the final callback field-acceptance step.</p>
           <div class="build-role"><b>MY ROLE</b> Product design · interaction system · Kotlin Multiplatform architecture · Android audio engineering · visual design</div>
-          <div class="build-actions"><a class="primary" href="https://runnerznamibia.com/#official-music-player" target="_blank" rel="noopener noreferrer">SEE IT INSIDE RUNNERZ ↗</a><a href="https://github.com/freeman-ipumbu/unified-music-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a></div>
+          <div class="build-actions"><a class="primary" href="https://play.google.com/apps/testing/com.unified.music" target="_blank" rel="noopener noreferrer">JOIN THE ALPHA ↗</a><a href="https://runnerznamibia.com/#official-music-player" target="_blank" rel="noopener noreferrer">SEE IT INSIDE RUNNERZ ↗</a><a href="https://github.com/freeman-ipumbu/unified-music-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a></div>
+          <div class="build-proof">20.0 · CODE 22 · CLOSED-TEST TRACK ACTIVE · RELEASE IN REVIEW · 36 TESTERS ASSIGNED</div>
         </div>
       </article>
     </div>
