@@ -42,8 +42,12 @@ assert.ok(html.includes("UNIFIED 20.0 · CODE 22"), "UNIFIED Alpha build identit
 assert.ok(html.includes("https://play.google.com/apps/testing/com.unified.music"), "UNIFIED tester opt-in is linked");
 assert.ok(html.includes("12+ OPTED-IN TESTERS FOR 14 CONTINUOUS DAYS"), "Shared Google Play production gate is explicit");
 assert.ok(!html.includes('src="projects/runnerz.webp"'), "Legacy Runnerz banner is no longer referenced");
-assert.ok(html.includes("PILOT READY // APPROVALS PENDING"), "RightMatch launch gate is current");
-assert.ok(html.includes("final Namibian legal, insurance, registration and payment approvals"), "RightMatch external approvals remain explicit");
+assert.ok(html.includes("EARLY ACCESS EXPANDED // APPROVALS PENDING"), "RightMatch launch gate is current");
+assert.ok(html.includes("dedicated renter, owner and small-business paths"), "RightMatch business pathway is current");
+assert.ok(html.includes("six-vehicle featured view"), "RightMatch discovery refresh is current");
+assert.ok(html.includes("transparent owner-income calculator"), "RightMatch calculator is current");
+assert.ok(html.includes("final Namibian legal, insurance, identity and operational approvals"), "RightMatch external approvals remain explicit");
+assert.ok(html.includes('class="build-card flagship" id="rightmatch"'), "RightMatch has a shareable flagship anchor");
 assert.ok(html.includes("42 valid directional journeys"), "Borizago directional route scope is current");
 assert.ok(html.includes("monthly financial/customer reporting"), "Borizago reporting scope is current");
 assert.ok(html.includes("borizago-staff-guide.pdf"), "Borizago staff guide is linked");
