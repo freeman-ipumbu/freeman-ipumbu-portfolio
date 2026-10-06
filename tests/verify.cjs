@@ -13,7 +13,7 @@ assert.ok(html.includes("touch-action:pan-x pan-y pinch-zoom"), "Touch zoom must
 assert.ok(html.includes('<a class="skip-link" href="#main">'), "Skip link is present");
 assert.ok(html.includes('<main id="main">'), "Main landmark is present");
 assert.ok(html.includes('<link rel="icon" href="/favicon.svg" type="image/svg+xml">'), "Favicon is linked");
-assert.ok(html.includes('content="https://freeman-ipumbu.pages.dev/social-preview.png"'), "Social preview uses the production origin");
+assert.ok(html.includes('content="https://freeman-ipumbu.pages.dev/social-preview-v2.jpg"'), "Social preview uses the versioned production origin");
 assert.ok(html.includes('<meta property="og:image:width" content="1200">'));
 assert.ok(html.includes('<meta property="og:image:height" content="630">'));
 assert.ok(html.includes('<meta name="twitter:image:alt"'));
@@ -75,10 +75,9 @@ for (const match of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
   assert.ok(fs.existsSync(path.join(root, value)), `Missing local asset: ${value}`);
 }
 
-const image = fs.readFileSync(path.join(root, "social-preview.png"));
-assert.deepEqual([...image.subarray(0, 8)], [137,80,78,71,13,10,26,10], "Social preview must be PNG");
-assert.equal(image.readUInt32BE(16), 1200, "Social preview width");
-assert.equal(image.readUInt32BE(20), 630, "Social preview height");
+const image = fs.readFileSync(path.join(root, "social-preview-v2.jpg"));
+assert.deepEqual([...image.subarray(0, 2)], [255,216], "Social preview must be JPEG");
+assert.ok(image.length < 300 * 1024, "Social preview stays lightweight for messaging-app crawlers");
 
 const runnerzProof = fs.readFileSync(path.join(root, "projects/runnerz-1.1.0.png"));
 assert.deepEqual([...runnerzProof.subarray(0, 8)], [137,80,78,71,13,10,26,10], "Runnerz proof must be PNG");
