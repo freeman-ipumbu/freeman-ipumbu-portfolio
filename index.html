@@ -515,13 +515,14 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .pro-link span:not(.pro-icon){position:relative;z-index:1}.pro-link small{display:block;font:8px var(--mono);letter-spacing:.13em;color:var(--electric);margin-bottom:4px}.pro-link strong{font:11px var(--mono);color:#e5faff}
 .pro-link i{font-style:normal;color:var(--electric);position:relative;z-index:1}
 .proof-of-work{padding:105px 0 25px}
-.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .proof-card{position:relative;text-decoration:none;color:inherit;padding:25px;border:1px solid rgba(94,231,255,.15);background:linear-gradient(145deg,rgba(17,31,42,.72),rgba(7,14,20,.66));overflow:hidden;transition:.3s;min-height:190px}
 .proof-card::before{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,var(--electric),transparent);transform:scaleX(.25);transform-origin:left;transition:.4s}
 .proof-card:hover{transform:translateY(-6px);border-color:rgba(94,231,255,.35);box-shadow:0 25px 70px rgba(0,0,0,.2),0 0 40px rgba(94,231,255,.05)}
 .proof-card:hover::before{transform:scaleX(1)}
 .proof-head{display:flex;align-items:center;gap:10px;font:9px var(--mono);letter-spacing:.15em;color:var(--electric)}.proof-head span{color:var(--text-faint)}.proof-head i{margin-left:auto;font-style:normal;font-size:15px}
 .proof-card strong{display:block;font-size:21px;margin:27px 0 7px}.proof-card p{color:var(--text-dim);font-size:13px;line-height:1.6;max-width:450px}.proof-route{position:absolute;left:25px;bottom:20px;font:9px var(--mono);color:var(--text-faint);letter-spacing:.06em}
+@media(max-width:900px){.proof-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:700px){.professional-links,.proof-grid{grid-template-columns:1fr}.pro-link strong{font-size:10px}}
 
 /* Google Play launch lane */
@@ -825,8 +826,9 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
           <div><strong>22</strong><span>SELECTED BUILDS</span></div>
   <div><strong>01</strong><span>SYSTEMS MINDSET</span></div>
 </div>
-<div class="hero-actions">
+        <div class="hero-actions">
           <a href="#builds" class="btn btn-primary">Explore the builds &rarr;</a>
+          <a href="documents/Freeman-Paul-Ipumbu-Career-Dossier-2026.pdf" class="btn btn-ghost" download>Download career dossier</a>
           <a href="#research" class="btn btn-ghost">Read the research</a>
           <a href="#contact" class="btn btn-ghost">Establish connection</a>
         </div>
@@ -1594,7 +1596,7 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
     <div class="section-head">
       <div class="eyebrow">PROOF OF WORK</div>
       <h2>Beyond the title.</h2>
-      <p>A senior technical profile should point outward&mdash;to professional networks, published work and evidence of continued learning.</p>
+      <p>A senior technical profile should point outward to professional networks, published work, a career record and evidence of continued learning.</p>
     </div>
     <div class="proof-grid">
       <a class="proof-card" href="https://www.linkedin.com/in/freeman-paul-ipumbu/" target="_blank" rel="noopener noreferrer">
@@ -1608,6 +1610,12 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
         <strong>Published / Archived Work</strong>
         <p>Research and technical work with a persistent DOI-based record.</p>
         <div class="proof-route">doi:10.5281/zenodo.21840440</div>
+      </a>
+      <a class="proof-card" href="documents/Freeman-Paul-Ipumbu-Career-Dossier-2026.pdf" download>
+        <div class="proof-head"><span>03</span><b>CAREER DOSSIER</b><i>&darr;</i></div>
+        <strong>Four-page career record</strong>
+        <p>TPTS leadership, founder systems, operational infrastructure, product evidence, research and professional credentials.</p>
+        <div class="proof-route">PDF / 2026 EDITION / 443 KB</div>
       </a>
     </div>
   </div>

@@ -76,6 +76,11 @@ assert.ok(html.includes("projects/pdm-namibia-hq.png"), "PDM Namibia uses the hi
 assert.ok(html.includes('href="https://namair-command.pages.dev/"'), "NamAir uses its Git-connected Pages demo");
 assert.ok(html.includes('href="https://nammar.pages.dev/"'), "NamMar uses its Git-connected Pages demo");
 assert.ok(!html.includes("nammar-command-centre.freeman-ipumbu634390.chatgpt.site"), "Legacy NamMar host is removed");
+assert.ok(html.includes('documents/Freeman-Paul-Ipumbu-Career-Dossier-2026.pdf'), "Approved career dossier is linked");
+assert.ok(html.includes('download>Download career dossier</a>'), "Career dossier is prominent in the hero");
+const dossier = fs.readFileSync(path.join(root, "documents/Freeman-Paul-Ipumbu-Career-Dossier-2026.pdf"));
+assert.equal(dossier.subarray(0, 5).toString("ascii"), "%PDF-", "Career dossier must be a valid PDF");
+assert.ok(dossier.length < 2 * 1024 * 1024, "Career dossier stays lightweight for public download");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
 assert.equal(cards, 22, "Selected build count changed; update the portfolio metric and test intentionally");
