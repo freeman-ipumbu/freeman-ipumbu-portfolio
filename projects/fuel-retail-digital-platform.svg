@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Fuel Retail Digital Platform case study</title>
+  <desc id="desc">An anonymous SolarSpin Technologies case study for customer, station, fleet and operations workflows.</desc>
+  <rect width="1600" height="900" fill="#F3EEE6"/>
+  <rect x="60" y="60" width="1480" height="780" rx="34" fill="#F8FAFC" stroke="#D7DCE5" stroke-width="3"/>
+  <path d="M1090 60H1506C1525 60 1540 75 1540 94V840H1090Z" fill="#071522"/>
+  <g fill="none" transform="translate(1310 438) rotate(-16)">
+    <ellipse rx="292" ry="116" stroke="#304155" stroke-width="3" stroke-dasharray="7 17"/>
+    <ellipse rx="216" ry="72" stroke="#5655E8" stroke-width="6" stroke-dasharray="136 27"/>
+    <ellipse rx="146" ry="47" stroke="#28C7AD" stroke-width="3" stroke-dasharray="8 14"/>
+    <circle r="35" stroke="#FF4F7B" stroke-width="15"/>
+  </g>
+  <text x="120" y="143" fill="#5655E8" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" letter-spacing="4">CASE STUDY // SYSTEM 001 // ANONYMOUS PILOT</text>
+  <text x="120" y="320" fill="#071522" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="86" font-weight="800" letter-spacing="-3">FUEL RETAIL</text>
+  <text x="120" y="410" fill="#071522" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="86" font-weight="800" letter-spacing="-3">DIGITAL PLATFORM</text>
+  <text x="120" y="500" fill="#5655E8" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="86" font-weight="800" letter-spacing="-3">CASE STUDY.</text>
+  <text x="124" y="584" fill="#3E4C5E" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="500">Customer. Station. Fleet. Operations. One transaction spine.</text>
+  <g transform="translate(120 700)">
+    <rect width="580" height="68" rx="34" fill="#071522"/>
+    <text x="35" y="44" fill="#F8FAFC" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" letter-spacing="3">BUILT BY SOLARSPIN TECHNOLOGIES</text>
+    <circle cx="541" cy="34" r="8" fill="#FF5E88"/>
+  </g>
+  <text x="1160" y="773" fill="#B7C2CF" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700" letter-spacing="3">WHK.NA // 2026</text>
+</svg>

@@ -1,6 +1,8 @@
-# Freeman Ipumbu — Systems, Research & Product Portfolio
+# Freeman Ipumbu | Technical Director, Founder and Systems Builder
 
-An interactive public portfolio spanning infrastructure, network operations, security, design science research and end-to-end product engineering from Windhoek, Namibia.
+Freeman Ipumbu is Technical Director at TPTS Namibia, Founder and CEO of SolarSpin Technologies and Runnerz Namibia, and Co-Founder and CTO of RightMatch Namibia.
+
+This interactive portfolio follows the work from infrastructure and network operations through design science research, product architecture and end-to-end engineering from Windhoek, Namibia.
 
 ## View the portfolio
 
@@ -8,6 +10,7 @@ An interactive public portfolio spanning infrastructure, network operations, sec
 
 ## Featured work
 
+- **Fuel Retail Digital Platform:** an anonymous, controlled-pilot case study joining customer, station, fleet and operations workflows on one transaction spine. It is concept work, not a live financial service or evidence of a client relationship.
 - **Tito On Call** — classic black/red mobile-barber identity, installable Tito Pass loyalty, same-place group savings, fair route pricing and a private full-stack owner control room for a talented Windhoek student.
 - **PDM Namibia** — cinematic, installable national political experience unifying the movement's history, Top 9, policies, parliamentary work, news, events, structures and membership pathways in an unmistakably PDM identity.
 - **ECC Command · E.M.A. Namibia** — authenticated, multi-agency emergency-centre pilot coordinating medical, fire-and-rescue and police resources on one scene, with visible questionnaire follow-ups, human-confirmed smart ECC-code matches, high-visibility multi-resource selection, E.M.A.-owned ECC Signal alarming, all 139 inherited quick-action references, shift-aware day/night modes, an open operational map, guided onboarding and accountable audit.
@@ -45,5 +48,7 @@ Run `npm test` to check social metadata, accessibility landmarks, local assets, 
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/freeman-paul-ipumbu/) · [Email](mailto:freeman.ipumbu@outlook.com)
+
+The experience is built by [SolarSpin Technologies](https://solarspin-namibia.pages.dev/).
 
 © 2026 Freeman Ipumbu.

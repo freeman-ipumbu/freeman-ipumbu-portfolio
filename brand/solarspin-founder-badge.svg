@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">SolarSpin Founder Edition badge</title>
+  <desc id="desc">A technical founder seal connecting Freeman Ipumbu to SolarSpin Technologies and Windhoek, Namibia.</desc>
+  <rect width="720" height="720" rx="76" fill="#071522"/>
+  <circle cx="360" cy="360" r="276" fill="none" stroke="#304155" stroke-width="3" stroke-dasharray="9 17"/>
+  <circle cx="360" cy="360" r="236" fill="none" stroke="#8585FF" stroke-width="3"/>
+  <path d="M360 60V98M360 622V660M60 360H98M622 360H660" stroke="#F8FAFC" stroke-width="10" stroke-linecap="round"/>
+  <path d="M518 239C455 157 287 155 210 226C149 283 194 357 291 364L412 375C497 382 535 444 485 507C424 581 261 583 178 501" fill="none" stroke="#8585FF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" opacity=".35"/>
+  <circle cx="360" cy="360" r="45" fill="#FF5E88"/>
+  <circle cx="360" cy="360" r="13" fill="#071522"/>
+  <circle cx="518" cy="239" r="15" fill="#36E1C3"/>
+  <text x="360" y="340" text-anchor="middle" fill="#F8FAFC" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="86" font-weight="800" letter-spacing="2">FI // SST</text>
+  <text x="360" y="417" text-anchor="middle" fill="#36E1C3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="27" font-weight="700" letter-spacing="6">FOUNDER EDITION</text>
+  <text x="360" y="129" text-anchor="middle" fill="#B7C2CF" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="7">SOLARSPIN TECHNOLOGIES</text>
+  <text x="360" y="606" text-anchor="middle" fill="#B7C2CF" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="700" letter-spacing="5">WHK.NA // EST.11.2025</text>
+</svg>

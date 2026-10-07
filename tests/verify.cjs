@@ -13,12 +13,22 @@ assert.ok(html.includes("touch-action:pan-x pan-y pinch-zoom"), "Touch zoom must
 assert.ok(html.includes('<a class="skip-link" href="#main">'), "Skip link is present");
 assert.ok(html.includes('<main id="main">'), "Main landmark is present");
 assert.ok(html.includes('<link rel="icon" href="/favicon.svg" type="image/svg+xml">'), "Favicon is linked");
-assert.ok(html.includes('content="https://freeman-ipumbu.pages.dev/social-preview-v2.jpg"'), "Social preview uses the versioned production origin");
+assert.ok(html.includes('content="https://freeman-ipumbu.pages.dev/social-preview-v3.jpg"'), "Social preview uses the current versioned production origin");
 assert.ok(html.includes('<meta property="og:image:width" content="1200">'));
 assert.ok(html.includes('<meta property="og:image:height" content="630">'));
 assert.ok(html.includes('<meta name="twitter:image:alt"'));
 assert.ok(html.includes('type="application/ld+json"'), "Person structured data is present");
+const structuredData = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+assert.ok(structuredData, "Structured data block can be located");
+assert.doesNotThrow(() => JSON.parse(structuredData[1]), "Structured data is valid JSON");
+assert.ok(html.includes('"jobTitle":"Technical Director"'), "Structured data leads with the current TPTS role");
+assert.ok(html.includes('"name":"TPTS Namibia"'), "TPTS Namibia is represented in structured data");
 assert.ok(!/\son(?:click|error|load)=/i.test(html), "No inline event handlers");
+assert.ok(html.includes("Technical Director, TPTS Namibia"), "Current TPTS leadership role is visible");
+assert.ok(html.includes("Founder and CEO, SolarSpin Technologies"), "SolarSpin founder identity is visible");
+assert.ok(html.includes("Founder and CEO, Runnerz Namibia"), "Runnerz founder identity is visible");
+assert.ok(html.includes("Co-Founder and CTO, RightMatch Namibia"), "RightMatch technical leadership is visible");
+assert.ok(html.includes("20 July 2026 to 15 September 2026"), "The Namibian role has the confirmed closed dates");
 assert.ok(html.includes("LIVE // FIELD COMMAND 2"), "Omutambo release signal is current");
 assert.ok(html.includes("100 AUTOMATED CHECKS"), "Omutambo verification evidence is visible");
 assert.ok(html.includes("cattle, goats, sheep, freely named livestock"), "Omutambo multi-species scope is visible");
@@ -53,7 +63,10 @@ assert.ok(html.includes("monthly financial/customer reporting"), "Borizago repor
 assert.ok(html.includes("borizago-staff-guide.pdf"), "Borizago staff guide is linked");
 assert.ok(html.includes("projects/borizago-refined-v2.png"), "Borizago uses the local refined identity asset");
 assert.ok(html.includes("ALL RIGHTS RESERVED"), "Portfolio ownership notice is visible");
-assert.ok(html.includes("A DIGITAL EXPERIENCE BY SOLARSPIN TECHNOLOGIES"), "SolarSpin experience credit is visible");
+assert.ok(html.includes("A DIGITAL EXPERIENCE BY") && html.includes(">SOLARSPIN TECHNOLOGIES</a>"), "Linked SolarSpin experience credit is visible");
+assert.ok(html.includes('id="fuel-retail-platform"'), "Anonymous fuel-retail case study is featured");
+assert.ok(html.includes("It is not a live financial service"), "Fuel-retail public boundary is explicit");
+assert.ok(html.includes("fuel-retail-digital-platform-case-study"), "Fuel-retail public repository is linked");
 assert.ok(html.includes('href="https://titos-barber.pages.dev/"'), "Tito On Call live experience is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/tito-on-call-case-study"'), "Tito On Call case study is linked");
 assert.ok(html.includes("projects/tito-on-call.svg"), "Tito On Call uses its launch identity artwork");
@@ -65,8 +78,8 @@ assert.ok(html.includes('href="https://nammar.pages.dev/"'), "NamMar uses its Gi
 assert.ok(!html.includes("nammar-command-centre.freeman-ipumbu634390.chatgpt.site"), "Legacy NamMar host is removed");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
-assert.equal(cards, 21, "Selected build count changed; update the portfolio metric and test intentionally");
-assert.ok(html.includes('<strong>21</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
+assert.equal(cards, 22, "Selected build count changed; update the portfolio metric and test intentionally");
+assert.ok(html.includes('<strong>22</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
 
 for (const match of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
   const value = match[1];
@@ -75,7 +88,7 @@ for (const match of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
   assert.ok(fs.existsSync(path.join(root, value)), `Missing local asset: ${value}`);
 }
 
-const image = fs.readFileSync(path.join(root, "social-preview-v2.jpg"));
+const image = fs.readFileSync(path.join(root, "social-preview-v3.jpg"));
 assert.deepEqual([...image.subarray(0, 2)], [255,216], "Social preview must be JPEG");
 assert.ok(image.length < 300 * 1024, "Social preview stays lightweight for messaging-app crawlers");
 
