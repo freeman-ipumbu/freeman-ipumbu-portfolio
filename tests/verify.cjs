@@ -70,6 +70,11 @@ assert.ok(html.includes("fuel-retail-digital-platform-case-study"), "Fuel-retail
 assert.ok(html.includes('href="https://titos-barber.pages.dev/"'), "Tito On Call live experience is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/tito-on-call-case-study"'), "Tito On Call case study is linked");
 assert.ok(html.includes("projects/tito-on-call.svg"), "Tito On Call uses its launch identity artwork");
+assert.ok(html.includes('id="monaluxe-circle"'), "Mona Luxe Circle has a shareable flagship anchor");
+assert.ok(html.includes('href="https://monaluxe.pages.dev/"'), "Mona Luxe live experience is linked");
+assert.ok(html.includes('href="https://github.com/freeman-ipumbu/monaluxe-case-study"'), "Mona Luxe public case study is linked");
+assert.ok(html.includes("projects/monaluxe-card.webp"), "Mona Luxe uses its PII-free final brand artwork");
+assert.ok(html.includes("Mona Luxe Circle rewards and referrals"), "Mona Luxe client-retention system is represented");
 assert.ok(html.includes('href="https://pdm-namibia.pages.dev/"'), "PDM Namibia live experience is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/pdm-namibia-case-study"'), "PDM Namibia case study is linked");
 assert.ok(html.includes("projects/pdm-namibia-hq.png"), "PDM Namibia uses the high-resolution identity banner");
@@ -83,8 +88,8 @@ assert.equal(dossier.subarray(0, 5).toString("ascii"), "%PDF-", "Career dossier 
 assert.ok(dossier.length < 2 * 1024 * 1024, "Career dossier stays lightweight for public download");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
-assert.equal(cards, 22, "Selected build count changed; update the portfolio metric and test intentionally");
-assert.ok(html.includes('<strong>22</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
+assert.equal(cards, 23, "Selected build count changed; update the portfolio metric and test intentionally");
+assert.ok(html.includes('<strong>23</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
 
 for (const match of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
   const value = match[1];
