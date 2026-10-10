@@ -75,6 +75,9 @@ assert.ok(html.includes('href="https://monaluxe.pages.dev/"'), "Mona Luxe live e
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/monaluxe-case-study"'), "Mona Luxe public case study is linked");
 assert.ok(html.includes("projects/monaluxe-card.webp"), "Mona Luxe uses its PII-free final brand artwork");
 assert.ok(html.includes("Mona Luxe Circle rewards and referrals"), "Mona Luxe client-retention system is represented");
+assert.ok(html.includes("private StudioDesk for appointments, payments, client value and retention insight"), "Mona Luxe StudioDesk scope is represented");
+assert.ok(html.includes("beginner options with or without a kit, advanced nail art and lash training by request"), "Mona Luxe training system is represented");
+assert.ok(html.includes("delivery-ready social brand kit"), "Mona Luxe social brand system is represented");
 assert.ok(html.includes('href="https://pdm-namibia.pages.dev/"'), "PDM Namibia live experience is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/pdm-namibia-case-study"'), "PDM Namibia case study is linked");
 assert.ok(html.includes("projects/pdm-namibia-hq.png"), "PDM Namibia uses the high-resolution identity banner");
