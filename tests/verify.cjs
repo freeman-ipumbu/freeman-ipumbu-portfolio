@@ -27,7 +27,7 @@ assert.ok(!/\son(?:click|error|load)=/i.test(html), "No inline event handlers");
 assert.ok(html.includes("Technical Director, TPTS Namibia"), "Current TPTS leadership role is visible");
 assert.ok(html.includes("Founder and CEO, SolarSpin Technologies"), "SolarSpin founder identity is visible");
 assert.ok(html.includes("Founder and CEO, Runnerz Namibia"), "Runnerz founder identity is visible");
-assert.ok(html.includes("Co-Founder and CTO, RightMatch Namibia"), "RightMatch technical leadership is visible");
+assert.ok(html.includes("Co-Founder &amp; Chief Technology Officer, RightMatch Namibia"), "RightMatch technical leadership is visible");
 assert.ok(html.includes("20 July 2026 to 15 September 2026"), "The Namibian role has the confirmed closed dates");
 assert.ok(html.includes("LIVE // FIELD COMMAND 2"), "Omutambo release signal is current");
 assert.ok(html.includes("100 AUTOMATED CHECKS"), "Omutambo verification evidence is visible");
@@ -54,6 +54,7 @@ assert.ok(html.includes("12+ OPTED-IN TESTERS FOR 14 CONTINUOUS DAYS"), "Shared 
 assert.ok(!html.includes('src="projects/runnerz.webp"'), "Legacy Runnerz banner is no longer referenced");
 assert.ok(html.includes("EARLY ACCESS EXPANDED // APPROVALS PENDING"), "RightMatch launch gate is current");
 assert.ok(html.includes("dedicated renter, owner and small-business paths"), "RightMatch business pathway is current");
+assert.ok(html.includes("Co-Founder &amp; Chief Technology Officer"), "Canonical RightMatch founder title is current");
 assert.ok(html.includes("six-vehicle featured view"), "RightMatch discovery refresh is current");
 assert.ok(html.includes("transparent owner-income calculator"), "RightMatch calculator is current");
 assert.ok(html.includes("final Namibian legal, insurance, identity and operational approvals"), "RightMatch external approvals remain explicit");

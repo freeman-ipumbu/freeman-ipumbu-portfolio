@@ -1,6 +1,6 @@
 # Freeman Ipumbu | Technical Director, Founder and Systems Builder
 
-Freeman Ipumbu is Technical Director at TPTS Namibia, Founder and CEO of SolarSpin Technologies and Runnerz Namibia, and Co-Founder and CTO of RightMatch Namibia.
+Freeman Ipumbu is Technical Director at TPTS Namibia, Founder and CEO of SolarSpin Technologies and Runnerz Namibia, and Co-Founder & Chief Technology Officer of RightMatch Namibia.
 
 This interactive portfolio follows the work from infrastructure and network operations through design science research, product architecture and end-to-end engineering from Windhoek, Namibia.
 
@@ -22,7 +22,7 @@ This interactive portfolio follows the work from infrastructure and network oper
 - **Utuseb — Drinks & Delivery** — mobile ordering across 47 product lines including ice and AirsPops, universal 18+ ID verification, local delivery or arranged pickup, cash/eWallet checkout, PWA installation, fulfilment, stock control and downloadable business reporting.
 - **M & L Occupational Safety** — identity refinement and a mobile-hardened business experience for a Windhoek occupational health and safety consultancy.
 - **Omwenyo Renal Health Centre** — brand identity and interactive digital experience for an emerging renal-care initiative in Nkurenkuru.
-- **RightMatch Namibia** — expanded controlled-pilot vehicle marketplace with dedicated renter, owner and small-business paths, a three-part product story, purpose-led discovery and a transparent owner-income calculator; public bookings, payments and document submission remain gated pending final Namibian legal, insurance, identity and operational approvals.
+- **RightMatch Namibia** — Co-Founder & Chief Technology Officer for an expanded controlled-pilot vehicle marketplace with dedicated renter, owner and small-business paths, a three-part product story, purpose-led discovery and a transparent owner-income calculator; public bookings, payments and document submission remain gated pending final Namibian legal, insurance, identity and operational approvals.
 - **Runnerz Namibia 1.1.0** — signed version-code-16 Google Play bundle validated, all 11 store setup tasks complete, 13 changes submitted for review and a 36-person Namibia-only Alpha tester group assigned; the product retains hardened accepted-fix GPS, its segmented signature trail, persistent runs and banked miles, privacy-preserving nearby discovery, women-led run options and the deliberate UNIFIED Music relay.
 - **MOHSS AIRMED COMMAND** — live national air-medical coordination and governed Government mobility demonstration.
 - **NamAir Command** — aviation crew-readiness and rostering prototype.
