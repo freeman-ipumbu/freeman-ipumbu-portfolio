@@ -78,6 +78,7 @@ assert.ok(html.includes("Mona Luxe Circle rewards and referrals"), "Mona Luxe cl
 assert.ok(html.includes("private StudioDesk for appointments, payments, client value and retention insight"), "Mona Luxe StudioDesk scope is represented");
 assert.ok(html.includes("beginner options with or without a kit, advanced nail art and lash training by request"), "Mona Luxe training system is represented");
 assert.ok(html.includes("delivery-ready social brand kit"), "Mona Luxe social brand system is represented");
+assert.ok(html.includes("CLIENT-APPROVED // LIVE BEAUTY STUDIO + TRAINING OPERATIONS"), "Mona Luxe launch is marked as client-approved and live");
 assert.ok(html.includes('href="https://pdm-namibia.pages.dev/"'), "PDM Namibia live experience is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/pdm-namibia-case-study"'), "PDM Namibia case study is linked");
 assert.ok(html.includes("projects/pdm-namibia-hq.png"), "PDM Namibia uses the high-resolution identity banner");
