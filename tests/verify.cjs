@@ -44,6 +44,9 @@ assert.ok(html.includes("aggregate-only completion contract"), "Runnerz privacy 
 assert.ok(html.includes("GOOGLE PLAY REVIEW // RUNNERZ 1.1.0 · CODE 16"), "Runnerz Play review signal is current");
 assert.ok(html.includes("projects/runnerz-1.1.0.png"), "Runnerz uses current controlled handset proof");
 assert.ok(html.includes('class="build-card flagship runnerz-release" id="runnerz"'), "Runnerz has a shareable flagship anchor");
+assert.ok(html.includes('class="runnerz-teaser"'), "Runnerz official teaser is featured in the portfolio");
+assert.ok(html.includes('projects/runnerz-showtime-cover.png'), "Runnerz teaser uses its uncropped portrait cover");
+assert.ok(html.includes('Full mastered track forthcoming.'), "Runnerz teaser does not imply the full master is out");
 assert.ok(html.includes("145 TESTS PER VARIANT / 0 FAILURES"), "Runnerz automated-test evidence is visible");
 assert.ok(html.includes("exact trails stay local"), "Runnerz trail privacy boundary is visible");
 assert.ok(html.includes("12-testers-for-14-days production gate remain tracked work"), "Runnerz production-access boundary is visible");
