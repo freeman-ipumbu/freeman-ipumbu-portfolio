@@ -83,6 +83,15 @@ assert.ok(html.includes("CLIENT-APPROVED // LIVE BEAUTY STUDIO + TRAINING OPERAT
 assert.ok(html.includes('href="https://pdm-namibia.pages.dev/"'), "PDM Namibia live experience is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/pdm-namibia-case-study"'), "PDM Namibia case study is linked");
 assert.ok(html.includes("projects/pdm-namibia-hq.png"), "PDM Namibia uses the high-resolution identity banner");
+assert.ok(html.includes('id="pdm-national-platform"'), "PDM Namibia has a shareable flagship anchor");
+assert.ok(html.includes("source-linked 2026 public record"), "PDM Namibia's current public-information boundary is explicit");
+assert.ok(html.includes("national OpenStreetMap authority layer for offices, representatives and councillors"), "PDM Namibia's national map and representation scope is visible");
+assert.ok(html.includes("nonbinding-support journeys"), "PDM Namibia's non-payment support journey is represented accurately");
+assert.ok(html.includes("Support submissions are nonbinding and take no payment"), "PDM Namibia does not imply payment processing");
+assert.ok(html.includes("real-data intake remains closed unless and until PDM records its governance approval"), "PDM Namibia's public-intake launch gate is explicit");
+assert.ok(html.includes("Administration is not yet role- or region-scoped"), "PDM Namibia's current admin authorization boundary is explicit");
+assert.ok(html.includes("Microsoft 365/SharePoint is a separately governed next stage"), "PDM Namibia does not imply an active Microsoft 365 integration");
+assert.ok(html.includes("FAIL-CLOSED BY DEFAULT"), "PDM Namibia's fail-closed launch discipline is visible");
 assert.ok(html.includes('href="https://namair-command.pages.dev/"'), "NamAir uses its Git-connected Pages demo");
 assert.ok(html.includes('href="https://nammar.pages.dev/"'), "NamMar uses its Git-connected Pages demo");
 assert.ok(!html.includes("nammar-command-centre.freeman-ipumbu634390.chatgpt.site"), "Legacy NamMar host is removed");

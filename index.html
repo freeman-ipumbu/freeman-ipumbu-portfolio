@@ -635,6 +635,12 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .build-card.runnerz-release:hover{border-color:rgba(57,255,136,.58);box-shadow:0 28px 90px rgba(0,0,0,.35),0 0 46px rgba(57,255,136,.075)}
 .runnerz-release .build-signal{color:#63ffa0;border-color:rgba(57,255,136,.42)}
 .runnerz-release .build-index{color:#39ff88}
+.build-card.pdm-platform-card{border-color:rgba(37,95,178,.48);box-shadow:inset 0 1px 0 rgba(255,255,255,.07),inset 0 -2px 0 rgba(203,28,47,.32)}
+.build-card.pdm-platform-card:hover{border-color:rgba(78,132,215,.8);box-shadow:0 28px 90px rgba(0,0,0,.35),0 0 46px rgba(31,77,148,.15),inset 0 -2px 0 rgba(203,28,47,.56)}
+.pdm-platform-card .build-body{background:radial-gradient(circle at 100% 0,rgba(37,95,178,.13),transparent 42%),linear-gradient(160deg,rgba(15,27,44,.96),rgba(9,14,21,.96))}
+.pdm-platform-card .build-signal{color:#eef5ff;border-color:rgba(255,255,255,.32);box-shadow:inset 3px 0 0 #d0213c}
+.pdm-platform-card .build-index{color:#77a9f1}
+.pdm-platform-card .build-proof{color:#a9caff;border-top-color:rgba(203,28,47,.44)}
 .build-media{position:relative;min-height:245px;overflow:hidden;background:#0a1118}
 .build-card.flagship .build-media{min-height:100%}
 .build-media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.04);transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s}
@@ -1126,20 +1132,23 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
         </div>
       </article>
 
-      <article class="build-card flagship">
+      <article class="build-card flagship pdm-platform-card" id="pdm-national-platform">
         <div class="build-media">
-          <span class="build-signal">NEW // CIVIC IDENTITY + INSTALLABLE POLITICAL EXPERIENCE</span>
-          <img src="projects/pdm-namibia-hq.png" alt="PDM Namibia community banner in the movement's blue, red and white identity" width="2172" height="724" loading="eager" decoding="async">
+          <span class="build-signal">2026 SOURCE-LINKED // NATIONAL CIVIC PWA + OPERATIONS</span>
+          <img src="projects/pdm-namibia-hq.png" alt="PDM Namibia national digital platform in the movement's blue, red and white identity" width="2172" height="724" loading="eager" decoding="async">
         </div>
         <div class="build-body">
-          <div class="build-index">FEATURED BUILD / DEMOCRATIC PARTICIPATION</div>
-          <h3>PDM Namibia · Move Namibia Forward</h3>
-          <p>A cinematic, source-grounded national party experience unifying PDM's history, Top 9, policies, parliamentary work, news, events and party structures with installable membership pathways, documentary imagery and an unmistakably PDM visual system.</p>
-          <div class="build-role"><b>MY ROLE</b> Political and organisational research · identity translation · information architecture · art direction · UX/UI · frontend engineering · motion design · PWA engineering · mobile hardening · accessibility · Cloudflare Pages deployment</div>
+          <div class="build-index">FLAGSHIP BUILD / NATIONAL DEMOCRATIC INFRASTRUCTURE</div>
+          <h3>PDM Namibia · National Digital Platform</h3>
+          <p>A cinematic public PWA and civic operating foundation built around a source-linked 2026 public record. It brings PDM's leadership, policy, parliamentary work, news and structures together with a national OpenStreetMap authority layer for offices, representatives and councillors, plus guided membership, public-idea, parliamentary, constituency, contact and nonbinding-support journeys.</p>
+          <p>Behind the public experience is a protected operations console for reviewing intake, publishing verified offices and authorities, and managing the lifecycle of party assets. Every public authority record requires source evidence and verification; sensitive submissions stay private by default.</p>
+          <p><strong>Launch boundary:</strong> real-data intake remains closed unless and until PDM records its governance approval and the production controls are verified. Support submissions are nonbinding and take no payment. Administration is not yet role- or region-scoped, and Microsoft 365/SharePoint is a separately governed next stage.</p>
+          <div class="build-role"><b>MY ROLE</b> Political and organisational research · 2026 source verification · identity translation · information architecture · civic service and membership design · OpenStreetMap information layer · UX/UI and motion design · full-stack and PWA engineering · Cloudflare D1 and Access architecture · mobile hardening · accessibility · launch governance and security boundaries</div>
           <div class="build-actions">
             <a class="primary" href="https://pdm-namibia.pages.dev/" target="_blank" rel="noopener noreferrer">VISIT LIVE EXPERIENCE ↗</a>
             <a href="https://github.com/freeman-ipumbu/pdm-namibia-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a>
           </div>
+          <div class="build-proof">PUBLIC PWA · 2026 SOURCE-LINKED RECORD · OPENSTREETMAP NATIONAL PRESENCE LAYER · FOUR LAUNCH-GATED INTAKE ROUTES · PROTECTED OPERATIONS CONSOLE · FAIL-CLOSED BY DEFAULT</div>
         </div>
       </article>
 
