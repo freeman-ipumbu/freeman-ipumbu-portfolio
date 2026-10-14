@@ -84,6 +84,9 @@ assert.ok(html.includes('href="https://pdm-namibia.pages.dev/"'), "PDM Namibia l
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/pdm-namibia-case-study"'), "PDM Namibia case study is linked");
 assert.ok(html.includes("projects/pdm-namibia-hq.png"), "PDM Namibia uses the high-resolution identity banner");
 assert.ok(html.includes('id="pdm-national-platform"'), "PDM Namibia has a shareable flagship anchor");
+assert.ok(html.includes("PORTFOLIO REPLACEMENT VALUE"), "PDM Namibia's portfolio valuation is prominent");
+assert.ok(html.includes("N$100K+"), "PDM Namibia's N$100K+ value signal is visible");
+assert.ok(html.includes("not a fee charged or paid"), "PDM Namibia's valuation boundary is explicit");
 assert.ok(html.includes("source-linked 2026 public record"), "PDM Namibia's current public-information boundary is explicit");
 assert.ok(html.includes("national OpenStreetMap authority layer for offices, representatives and councillors"), "PDM Namibia's national map and representation scope is visible");
 assert.ok(html.includes("nonbinding-support journeys"), "PDM Namibia's non-payment support journey is represented accurately");
