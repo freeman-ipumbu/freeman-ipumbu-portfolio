@@ -10,6 +10,7 @@ This interactive portfolio follows the work from infrastructure and network oper
 
 ## Featured work
 
+- **JB.Braids — Wear Your Story** — a live, installable booking flagship for Jessica Autoni combining editorial discovery, a curated gallery and price list, 7–90 day availability, home-studio, house-call and away-call routes, Namibia-only contact validation, server-controlled 50% deposits, Crown Club return-client rewards and an authenticated private studio desk. The deployed release completed a 110-check production verification gate.
 - **Fuel Retail Digital Platform:** an anonymous, controlled-pilot case study joining customer, station, fleet and operations workflows on one transaction spine. It is concept work, not a live financial service or evidence of a client relationship.
 - **Tito On Call** — classic black/red mobile-barber identity, installable Tito Pass loyalty, same-place group savings, fair route pricing and a private full-stack owner control room for a talented Windhoek student.
 - **NAILED & Lashed by Mona** — a client-approved, installable beauty-studio platform pairing an editorial real-work lookbook, studio and house-call booking, secure return-client accounts, Mona Luxe Circle rewards and referrals, a private StudioDesk for appointments and financial oversight, dedicated beginner, advanced and by-request lash training enquiries, and a delivery-ready social brand kit.

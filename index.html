@@ -628,7 +628,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .build-intro{display:flex;justify-content:space-between;gap:36px;align-items:end;margin-bottom:36px}
 .build-intro .section-head{margin:0}.build-intro-note{max-width:360px;color:var(--text-dim);font-size:13px;line-height:1.65;border-left:1px solid rgba(255,176,32,.38);padding-left:18px}
 .build-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.build-card{position:relative;min-height:520px;display:flex;flex-direction:column;border:1px solid rgba(128,185,199,.2);background:linear-gradient(145deg,rgba(17,30,40,.9),rgba(7,13,19,.92));overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;content-visibility:auto;contain:layout paint style;contain-intrinsic-size:520px}
+.build-card{position:relative;min-height:520px;display:flex;flex-direction:column;border:1px solid rgba(128,185,199,.2);background:linear-gradient(145deg,rgba(17,30,40,.9),rgba(7,13,19,.92));overflow:hidden;scroll-margin-top:72px;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;content-visibility:auto;contain:layout paint style;contain-intrinsic-size:520px}
 .build-card:hover{transform:translateY(-7px);border-color:rgba(94,231,255,.5);box-shadow:0 28px 90px rgba(0,0,0,.32),0 0 40px rgba(94,231,255,.065)}
 .build-card.flagship{grid-column:1/-1;min-height:560px;display:grid;grid-template-columns:1.15fr .85fr}
 .build-card.runnerz-release{border-color:rgba(57,255,136,.28);box-shadow:inset 0 1px 0 rgba(57,255,136,.08)}
@@ -641,6 +641,13 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .pdm-platform-card .build-signal{color:#eef5ff;border-color:rgba(255,255,255,.32);box-shadow:inset 3px 0 0 #d0213c}
 .pdm-platform-card .build-index{color:#77a9f1}
 .pdm-platform-card .build-proof{color:#a9caff;border-top-color:rgba(203,28,47,.44)}
+.build-card.jb-braids-card{border-color:rgba(255,255,255,.34);background:linear-gradient(145deg,rgba(24,22,21,.98),rgba(5,5,5,.98));box-shadow:inset 0 1px 0 rgba(255,255,255,.08),inset 0 -2px 0 rgba(216,166,83,.4)}
+.build-card.jb-braids-card:hover{border-color:rgba(244,225,191,.78);box-shadow:0 28px 90px rgba(0,0,0,.38),0 0 48px rgba(216,166,83,.11),inset 0 -2px 0 rgba(216,166,83,.62)}
+.jb-braids-card .build-media{background:#151210}
+.jb-braids-card .build-media img{object-fit:contain;object-position:center;padding:clamp(10px,1.2vw,18px);background:#151210;filter:saturate(.92) contrast(1.04)}
+.jb-braids-card .build-signal{color:#f4e1bf;border-color:rgba(244,225,191,.42);background:rgba(9,8,7,.88)}
+.jb-braids-card .build-index{color:#e3b562}
+.jb-braids-card .build-proof{color:#f4e1bf;border-top-color:rgba(227,181,98,.42)}
 .build-value{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 18px;align-items:end;margin:2px 0 20px;padding:15px 17px;border:1px solid rgba(119,169,241,.3);border-left:3px solid #d0213c;background:linear-gradient(100deg,rgba(37,95,178,.18),rgba(8,15,24,.74));box-shadow:inset 0 1px 0 rgba(255,255,255,.045)}
 .build-value span{font:9px var(--mono);letter-spacing:.16em;color:#a9caff}
 .build-value strong{grid-row:1/3;grid-column:2;font:800 clamp(25px,3.2vw,42px) var(--mono);line-height:.92;letter-spacing:-.07em;color:#fff;text-shadow:0 0 24px rgba(119,169,241,.18)}
@@ -667,7 +674,7 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .build-role{padding:12px 0;border-top:1px solid var(--panel-line);border-bottom:1px solid var(--panel-line);font:10px var(--mono);line-height:1.65;color:#cdeff4;margin-top:auto}
 .build-role b{color:var(--text-faint);font-weight:500;letter-spacing:.1em;margin-right:7px}
 .build-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
-.build-actions a{font:9px var(--mono);letter-spacing:.1em;text-decoration:none;color:var(--electric);border:1px solid rgba(94,231,255,.22);padding:9px 11px;transition:.2s}
+.build-actions a{min-height:44px;display:inline-flex;align-items:center;font:9px var(--mono);letter-spacing:.1em;text-decoration:none;color:var(--electric);border:1px solid rgba(94,231,255,.22);padding:9px 11px;transition:.2s}
 .build-actions a:hover{border-color:var(--electric);background:rgba(94,231,255,.06)}
 .build-actions a.primary{color:#171109;background:var(--amber);border-color:var(--amber);font-weight:700}.build-actions a.primary:hover{background:#ffc65d}
 .runnerz-teaser{display:grid;grid-template-columns:88px minmax(0,1fr);align-items:center;gap:16px;margin:2px 0 20px;padding:10px;border:1px solid rgba(57,255,136,.35);background:linear-gradient(110deg,rgba(57,255,136,.09),rgba(4,15,10,.72));text-decoration:none;transition:border-color .2s,background .2s}
@@ -840,7 +847,7 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
         <div class="hero-metrics" aria-label="Professional metrics">
   <div><strong>2017</strong><span>PRO IT SINCE</span></div>
   <div><strong>04</strong><span>ACTIVE ROLES</span></div>
-          <div><strong>23</strong><span>SELECTED BUILDS</span></div>
+          <div><strong>24</strong><span>SELECTED BUILDS</span></div>
   <div><strong>01</strong><span>SYSTEMS MINDSET</span></div>
 </div>
         <div class="hero-actions">
@@ -1105,6 +1112,25 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
             <a class="primary" href="https://github.com/freeman-ipumbu/fuel-retail-digital-platform-case-study" target="_blank" rel="noopener noreferrer">READ PUBLIC CASE STUDY ↗</a>
           </div>
           <div class="build-proof">CONCEPT ONLY · CLIENT IDENTITY REMOVED · PRODUCTION GATES STATED · PUBLIC-SAFETY CHECK ACTIVE</div>
+        </div>
+      </article>
+
+      <article class="build-card flagship jb-braids-card" id="jb-braids">
+        <div class="build-media">
+          <span class="build-signal">LATEST // LIVE BEAUTY BOOKING + PRIVATE STUDIO OPERATIONS</span>
+          <img src="projects/jb-braids-launch.webp" alt="JB.Braids monochrome editorial booking experience for Jessica Autoni in Windhoek" width="1280" height="720" loading="eager" decoding="async">
+        </div>
+        <div class="build-body">
+          <div class="build-index">LATEST CLIENT LAUNCH / HAIR ARTISTRY + RETURN-CLIENT SYSTEM</div>
+          <h3>JB.Braids · Wear Your Story</h3>
+          <p>A founder-led, installable platform for Jessica Autoni's Windhoek hair studio: editorial discovery, a curated gallery, complete price list, 7–90 day live availability, home-studio, house-call and away-call booking, Namibia-only contact validation, server-controlled totals and 50% deposits, optional map pins and custom requests, Crown Club rewards and an authenticated private studio desk.</p>
+          <p>The production release completed a 110-check deployed verification gate covering booking collisions, daily chair capacity, payment-proof privacy, return-client logic, PWA behaviour, live links and compact-mobile presentation.</p>
+          <div class="build-role"><b>MY ROLE</b> Social and service research · product strategy · identity and logo refinement · pricing architecture · UX/UI · motion · full-stack engineering · booking integrity · loyalty design · PWA engineering · Cloudflare launch · QA · owner handover</div>
+          <div class="build-actions">
+            <a class="primary" href="https://jb-braids.pages.dev/" target="_blank" rel="noopener noreferrer">ENTER JB.BRAIDS ↗</a>
+            <a href="https://github.com/freeman-ipumbu/jb-braids-case-study" target="_blank" rel="noopener noreferrer">PUBLIC CASE STUDY ↗</a>
+          </div>
+          <div class="build-proof">LIVE · INSTALLABLE PWA · HOME + HOUSE + AWAY CALLS · 50% DEPOSIT · CROWN CLUB · PRIVATE STUDIO DESK · 110 / 110 PRODUCTION CHECKS</div>
         </div>
       </article>
 
@@ -2058,6 +2084,25 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
   document.body.appendChild(boot);
   setTimeout(() => boot.classList.add('done'), 650);
   setTimeout(() => boot.remove(), 1200);
+})();
+
+// ---------- stable deep links after lazy layout settles ----------
+(function(){
+  let settleToken=0;
+  ['wheel','touchstart','pointerdown','keydown'].forEach(type=>addEventListener(type,()=>{settleToken+=1},{passive:true}));
+  function settleHash(){
+    if(!location.hash) return;
+    const id=decodeURIComponent(location.hash.slice(1));
+    const target=document.getElementById(id);
+    if(!target) return;
+    const token=++settleToken;
+    [0,240,720,1480].forEach(delay=>setTimeout(()=>{
+      if(token!==settleToken) return;
+      target.scrollIntoView({block:'start',inline:'nearest'});
+    },delay));
+  }
+  addEventListener('load',settleHash,{once:true});
+  addEventListener('hashchange',settleHash);
 })();
 
 </script>

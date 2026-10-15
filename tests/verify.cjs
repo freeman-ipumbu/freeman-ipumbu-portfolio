@@ -83,6 +83,12 @@ assert.ok(html.includes("private StudioDesk for appointments, payments, client v
 assert.ok(html.includes("beginner options with or without a kit, advanced nail art and lash training by request"), "Mona Luxe training system is represented");
 assert.ok(html.includes("delivery-ready social brand kit"), "Mona Luxe social brand system is represented");
 assert.ok(html.includes("CLIENT-APPROVED // LIVE BEAUTY STUDIO + TRAINING OPERATIONS"), "Mona Luxe launch is marked as client-approved and live");
+assert.ok(html.includes('id="jb-braids"'), "JB.Braids has a shareable flagship anchor");
+assert.ok(html.includes('href="https://jb-braids.pages.dev/"'), "JB.Braids live experience is linked");
+assert.ok(html.includes('href="https://github.com/freeman-ipumbu/jb-braids-case-study"'), "JB.Braids public case study is linked");
+assert.ok(html.includes("projects/jb-braids-launch.webp"), "JB.Braids uses its launch artwork");
+assert.ok(html.includes("Crown Club rewards"), "JB.Braids return-client system is represented");
+assert.ok(html.includes("110-check deployed verification gate"), "JB.Braids production verification is represented");
 assert.ok(html.includes('href="https://pdm-namibia.pages.dev/"'), "PDM Namibia live experience is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/pdm-namibia-case-study"'), "PDM Namibia case study is linked");
 assert.ok(html.includes("projects/pdm-namibia-hq.png"), "PDM Namibia uses the high-resolution identity banner");
@@ -108,8 +114,8 @@ assert.equal(dossier.subarray(0, 5).toString("ascii"), "%PDF-", "Career dossier 
 assert.ok(dossier.length < 2 * 1024 * 1024, "Career dossier stays lightweight for public download");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
-assert.equal(cards, 23, "Selected build count changed; update the portfolio metric and test intentionally");
-assert.ok(html.includes('<strong>23</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
+assert.equal(cards, 24, "Selected build count changed; update the portfolio metric and test intentionally");
+assert.ok(html.includes('<strong>24</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
 
 for (const match of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
   const value = match[1];
