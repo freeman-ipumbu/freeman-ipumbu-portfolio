@@ -86,9 +86,10 @@ assert.ok(html.includes("CLIENT-APPROVED // LIVE BEAUTY STUDIO + TRAINING OPERAT
 assert.ok(html.includes('id="jb-braids"'), "JB.Braids has a shareable flagship anchor");
 assert.ok(html.includes('href="https://jb-braids.pages.dev/"'), "JB.Braids live experience is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/jb-braids-case-study"'), "JB.Braids public case study is linked");
-assert.ok(html.includes("projects/jb-braids-launch.webp"), "JB.Braids uses its launch artwork");
+assert.ok(html.includes("projects/jb-braids-launch-final.webp"), "JB.Braids uses its final launch artwork");
 assert.ok(html.includes("Crown Club rewards"), "JB.Braids return-client system is represented");
-assert.ok(html.includes("110-check deployed verification gate"), "JB.Braids production verification is represented");
+assert.ok(html.includes("133-check deployed verification gate"), "JB.Braids production verification is represented");
+assert.ok(html.includes("12-look gallery, six original studio films"), "JB.Braids final media curation is represented");
 assert.ok(html.includes('href="https://pdm-namibia.pages.dev/"'), "PDM Namibia live experience is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/pdm-namibia-case-study"'), "PDM Namibia case study is linked");
 assert.ok(html.includes("projects/pdm-namibia-hq.png"), "PDM Namibia uses the high-resolution identity banner");
