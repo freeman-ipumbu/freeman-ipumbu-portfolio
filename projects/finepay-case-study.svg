@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Namibia FinePay public case study</title>
+  <desc id="desc">A TPTS-led illustrative traffic fine payment and reconciliation system case study.</desc>
+  <rect width="1600" height="900" fill="#090A0B"/>
+  <rect x="0" y="0" width="34" height="900" fill="#DDAF27"/>
+  <g opacity="0.38" stroke="#DDAF27" fill="none">
+    <circle cx="1350" cy="170" r="220" stroke-width="2"/>
+    <circle cx="1350" cy="170" r="150" stroke-width="2" stroke-dasharray="14 20"/>
+    <path d="M1110 690H1510M1110 734H1450M1110 778H1380" stroke-width="2"/>
+  </g>
+  <text x="100" y="95" fill="#DDAF27" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="700" letter-spacing="4">TPTS NAMIBIA // PUBLIC SYSTEM CASE STUDY</text>
+  <text x="96" y="265" fill="#FFFFFF" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="116" font-weight="800" letter-spacing="-5">FinePay</text>
+  <text x="102" y="355" fill="#F4E7B6" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="35" font-weight="500">Connected traffic fine payments, reconciliation</text>
+  <text x="102" y="402" fill="#F4E7B6" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="35" font-weight="500">and operational control.</text>
+  <line x1="102" y1="482" x2="1025" y2="482" stroke="#45474B" stroke-width="2"/>
+  <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="700" letter-spacing="2">
+    <text x="102" y="555" fill="#DDAF27">NOTICE</text>
+    <text x="310" y="555" fill="#777B82">→</text>
+    <text x="382" y="555" fill="#DDAF27">PAYMENT</text>
+    <text x="620" y="555" fill="#777B82">→</text>
+    <text x="692" y="555" fill="#DDAF27">SETTLEMENT</text>
+    <text x="982" y="555" fill="#777B82">→</text>
+    <text x="1054" y="555" fill="#DDAF27">ACKNOWLEDGEMENT</text>
+  </g>
+  <text x="102" y="659" fill="#FFFFFF" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="700">One traceable reference. Seven purposeful surfaces.</text>
+  <text x="102" y="707" fill="#A9AAAD" font-family="Avenir Next, Avenir, Helvetica Neue, Arial, sans-serif" font-size="24">Illustrative records only. Live institutional rails remain gated.</text>
+  <rect x="102" y="770" width="520" height="64" rx="32" fill="#DDAF27"/>
+  <text x="137" y="811" fill="#090A0B" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="800" letter-spacing="3">TECHNICAL DIRECTION / TPTS NAMIBIA</text>
+</svg>

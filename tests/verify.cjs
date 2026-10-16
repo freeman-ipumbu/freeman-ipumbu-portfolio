@@ -5,6 +5,7 @@ const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
 const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
+const readme = fs.readFileSync(path.join(root, "README.md"), "utf8");
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(new Set(ids).size, ids.length, "HTML IDs must be unique");
 assert.ok(!html.includes("user-scalable=no"), "Browser zoom must remain available");
@@ -68,6 +69,26 @@ assert.ok(html.includes("borizago-staff-guide.pdf"), "Borizago staff guide is li
 assert.ok(html.includes("projects/borizago-refined-v2.png"), "Borizago uses the local refined identity asset");
 assert.ok(html.includes("ALL RIGHTS RESERVED"), "Portfolio ownership notice is visible");
 assert.ok(html.includes("A DIGITAL EXPERIENCE BY") && html.includes(">SOLARSPIN TECHNOLOGIES</a>"), "Linked SolarSpin experience credit is visible");
+assert.ok(html.includes('id="tpts-grid"'), "TPTS Grid has a shareable project anchor");
+assert.ok(html.includes('projects/tpts-grid-route-studio-live.jpg'), "TPTS Grid uses current route-studio evidence");
+assert.ok(html.includes('href="https://tpts-grid.pages.dev/"'), "TPTS Grid pilot is linked");
+assert.ok(html.includes('href="https://github.com/freeman-ipumbu/tpts-grid-case-study"'), "TPTS Grid public case study is linked");
+assert.ok(html.includes("destination anchors are not presented as bookable properties"), "TPTS Grid inventory boundary is explicit");
+assert.ok(html.includes('id="namibia-finepay"'), "Namibia FinePay has a shareable project anchor");
+assert.ok(html.includes('projects/finepay-case-study.svg'), "Namibia FinePay uses public case-study artwork");
+assert.ok(html.includes('href="https://namibia-finepay-case-study.pages.dev/"'), "Namibia FinePay case study is linked");
+assert.ok(html.includes("takes no payments, queries no notices and connects to no bank"), "Namibia FinePay demo boundary is explicit");
+assert.ok(html.includes('id="soek-iets"'), "Soek.Iets has a shareable project anchor");
+assert.ok(html.includes('projects/soek-iets.webp'), "Soek.Iets uses public-safe project artwork");
+assert.ok(html.includes('href="https://soek-iets.pages.dev/"'), "Soek.Iets test pilot is linked");
+assert.ok(html.includes('href="https://github.com/freeman-ipumbu/soek-iets-use-case"'), "Soek.Iets public use case is linked");
+assert.ok(html.includes("regulated payment, OTP handover and integrated delivery are not active"), "Soek.Iets inactive rails are explicit");
+assert.ok(html.includes('id="stephanie-madl"'), "Stephanie Madl has a shareable project anchor");
+assert.ok(html.includes('projects/stephanie-madl.webp'), "Stephanie Madl uses the established portfolio artwork");
+assert.ok(html.includes('href="https://stephanie-madl.pages.dev/"'), "Stephanie Madl live portfolio is linked");
+assert.ok(html.includes('id="solarspin-hq"'), "SolarSpin digital headquarters has a shareable project anchor");
+assert.ok(html.includes('projects/solarspin-digital-hq.svg'), "SolarSpin headquarters uses its public build-record artwork");
+assert.ok(html.includes('href="https://github.com/freeman-ipumbu/solarspin-website-case-study"'), "SolarSpin public build record is linked");
 assert.ok(html.includes('id="fuel-retail-platform"'), "Anonymous fuel-retail case study is featured");
 assert.ok(html.includes("It is not a live financial service"), "Fuel-retail public boundary is explicit");
 assert.ok(html.includes("fuel-retail-digital-platform-case-study"), "Fuel-retail public repository is linked");
@@ -115,8 +136,10 @@ assert.equal(dossier.subarray(0, 5).toString("ascii"), "%PDF-", "Career dossier 
 assert.ok(dossier.length < 2 * 1024 * 1024, "Career dossier stays lightweight for public download");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
-assert.equal(cards, 24, "Selected build count changed; update the portfolio metric and test intentionally");
-assert.ok(html.includes('<strong>24</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
+assert.equal(cards, 29, "Selected build count changed; update the portfolio metric and test intentionally");
+assert.ok(html.includes('<strong>29</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
+const featuredSection = readme.split("## Featured work")[1]?.split("## Google Play launch lane")[0] ?? "";
+assert.equal((featuredSection.match(/^- \*\*/gm) || []).length, 29, "README featured-work count matches the portfolio");
 
 for (const match of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
   const value = match[1];
@@ -129,6 +152,9 @@ const image = fs.readFileSync(path.join(root, "social-preview-v3.jpg"));
 assert.deepEqual([...image.subarray(0, 2)], [255,216], "Social preview must be JPEG");
 assert.ok(image.length < 300 * 1024, "Social preview stays lightweight for messaging-app crawlers");
 
+const tptsProof = fs.readFileSync(path.join(root, "projects/tpts-grid-route-studio-live.jpg"));
+assert.deepEqual([...tptsProof.subarray(0, 2)], [255,216], "TPTS Grid route-studio proof must be JPEG");
+
 const runnerzProof = fs.readFileSync(path.join(root, "projects/runnerz-1.1.0.png"));
 assert.deepEqual([...runnerzProof.subarray(0, 8)], [137,80,78,71,13,10,26,10], "Runnerz proof must be PNG");
 assert.equal(runnerzProof.readUInt32BE(16), 1600, "Runnerz proof width");
@@ -139,4 +165,4 @@ assert.deepEqual([...unifiedProof.subarray(0, 8)], [137,80,78,71,13,10,26,10], "
 assert.equal(unifiedProof.readUInt32BE(16), 1200, "UNIFIED proof width");
 assert.equal(unifiedProof.readUInt32BE(20), 2664, "UNIFIED proof height");
 
-console.log("PASS: portfolio metadata, accessibility landmarks, asset references, build count and social image.");
+console.log("PASS: portfolio metadata, accessibility landmarks, asset references, 29-build HTML/README counts and social image.");
