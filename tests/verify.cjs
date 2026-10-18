@@ -73,7 +73,9 @@ assert.ok(html.includes('id="tpts-grid"'), "TPTS Grid has a shareable project an
 assert.ok(html.includes('projects/tpts-grid-route-studio-live.jpg'), "TPTS Grid uses current route-studio evidence");
 assert.ok(html.includes('href="https://tpts-grid.pages.dev/"'), "TPTS Grid pilot is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/tpts-grid-case-study"'), "TPTS Grid public case study is linked");
-assert.ok(html.includes("destination anchors are not presented as bookable properties"), "TPTS Grid inventory boundary is explicit");
+assert.ok(html.includes("public stays directory is discovery context, not confirmed live room inventory"), "TPTS Grid inventory boundary is explicit");
+assert.ok(html.includes("booking, merchant-payment and external-channel activation remain gated"), "TPTS Grid commercial and partner gates are explicit");
+assert.ok(html.includes("ONE LIVE MAP · CUSTOM ROUTES · ROUTE INTELLIGENCE"), "TPTS Grid route-intelligence proof is visible");
 assert.ok(html.includes('id="namibia-finepay"'), "Namibia FinePay has a shareable project anchor");
 assert.ok(html.includes('projects/finepay-case-study.svg'), "Namibia FinePay uses public case-study artwork");
 assert.ok(html.includes('href="https://namibia-finepay-case-study.pages.dev/"'), "Namibia FinePay case study is linked");
