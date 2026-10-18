@@ -75,7 +75,7 @@ assert.ok(html.includes('href="https://tpts-grid.pages.dev/"'), "TPTS Grid pilot
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/tpts-grid-case-study"'), "TPTS Grid public case study is linked");
 assert.ok(html.includes("public stays directory is discovery context, not confirmed live room inventory"), "TPTS Grid inventory boundary is explicit");
 assert.ok(html.includes("booking, merchant-payment and external-channel activation remain gated"), "TPTS Grid commercial and partner gates are explicit");
-assert.ok(html.includes("22 DESTINATION ANCHORS · EDITABLE ROUTES · COUNTRY PULSE · 28 DISCOVERY STAYS"), "TPTS Grid route, pulse and directory proof is visible");
+assert.ok(html.includes("27 DESTINATION ANCHORS · EDITABLE ROUTES · 33 DISTINCT VISUAL FAMILIES · COUNTRY PULSE · 28 DISCOVERY STAYS"), "TPTS Grid route, atlas, pulse and directory proof is visible");
 assert.ok(html.includes("35 RESEARCHED INTEGRATION PATHS · INSTALLABLE PWA · OFFLINE SAFETY"), "TPTS Grid integration and resilience scope is visible");
 assert.ok(html.includes("the payment boundary remains guarded"), "TPTS Grid payment boundary is explicit");
 assert.ok(html.includes('id="namibia-finepay"'), "Namibia FinePay has a shareable project anchor");
