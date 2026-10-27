@@ -129,7 +129,7 @@ assert.ok(html.includes('href="https://jb-braids.pages.dev/"'), "JB.Braids live 
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/jb-braids-case-study"'), "JB.Braids public case study is linked");
 assert.ok(html.includes("projects/jb-braids-linework-2026.webp"), "JB.Braids uses its final line-art launch artwork");
 assert.ok(html.includes("Crown Club rewards"), "JB.Braids return-client system is represented");
-assert.ok(html.includes("143-check deployed verification gate"), "JB.Braids production verification is represented");
+assert.ok(html.includes("146-check deployed verification gate"), "JB.Braids production verification is represented");
 assert.ok(html.includes("12-look gallery, six original studio films"), "JB.Braids final media curation is represented");
 assert.ok(html.includes('href="https://pdm-namibia.pages.dev/"'), "PDM Namibia live experience is linked");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/pdm-namibia-case-study"'), "PDM Namibia case study is linked");
