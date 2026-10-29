@@ -14,13 +14,14 @@ This interactive portfolio follows the work from infrastructure and network oper
 
 ## Featured work
 
-The portfolio curates **29 selected builds**, ordered by current relevance and recency:
+The portfolio curates **30 selected builds**, ordered by current relevance and recency:
 
 - **[TPTS Grid](https://tpts-grid.pages.dev/)** — TPTS' cinematic Namibia-first travel PWA, built around one living map with 27 grounded destination anchors, editable route intelligence, Country Pulse travel and safety guidance, a factual 28-stay discovery directory, direct human-verified host intake, offline safety and 35 researched integration paths. Its launch atlas uses 33 distinct photographic image families—including 28 newly sourced Namibia photographs and an eight-scene Country Atlas—without recycling one landscape across the home narrative. Public stay records are not confirmed live room inventory; the payment boundary remains guarded; and booking, merchant-payment and external-channel activation stay gated behind their respective commercial and partner approvals. [Public case study](https://github.com/freeman-ipumbu/tpts-grid-case-study).
 - **[Namibia FinePay](https://namibia-finepay-case-study.pages.dev/)** — a seven-surface traffic-fine concept following one reference from notice through payment, settlement and authority acknowledgement. The illustrative public demonstration takes no payments, queries no notices and connects to no institution. [Public case study](https://github.com/freeman-ipumbu/namibia-finepay-case-study).
 - **[Soek.Iets](https://soek-iets.pages.dev/)** — an access-code-controlled Windhoek test pilot for approximate-neighbourhood discovery, reviewed listings, buyer requests and participant-only enquiries. Trade completion, reputation, regulated payment, OTP handover and integrated delivery are not active. [Public use case](https://github.com/freeman-ipumbu/soek-iets-use-case).
 - **[Stephanie Madl Portfolio](https://stephanie-madl.pages.dev/)** — a live editorial portfolio for a Namibian travel specialist and remote-administration professional, connecting journey operations, field experience, an accessible CV and direct contact.
-- **[SolarSpin Digital Headquarters](https://www.solarspin-namibia.xyz/)** — SolarSpin Technologies' living company home and 30-system project observatory, with Solar Day and Interstellar, the Public Atlas, Gravity Table, secure in-site intake and a cosmic Windhoek transmission. [Public build record](https://github.com/freeman-ipumbu/solarspin-website-case-study).
+- **[SolarSpin Digital Headquarters](https://www.solarspin-namibia.xyz/)** — SolarSpin Technologies' living company home and 31-system project observatory, with Solar Day and Interstellar, the Public Atlas, Gravity Table, secure in-site intake and a cosmic Windhoek transmission. [Public build record](https://github.com/freeman-ipumbu/solarspin-website-case-study).
+- **[Career Arc Lab](https://career-arc-lab.onrender.com/)** — a live explainable career-planning pilot that compares three visible routes, reads bounded public-project evidence, recommends one 30-day proof sprint and tests interest in one narrow practitioner review. It is planning support, not a job board, salary predictor, marketplace or employment/income guarantee. [Public case study](https://github.com/freeman-ipumbu/career-arc-lab-case-study).
 - **[Ontoko Foods](https://ontoko-foods.pages.dev/)** — a live, installable egg-order and enquiry system for Jane Auala's Groot Aub farm, with device-private return-client onboarding, OpenStreetMap delivery pinning and a protected order desk. Every request remains subject to Ontoko's stock, price and fulfilment confirmation. Cash order requests are live; OneGate-hosted EFT / Pay by Bank, Google Pay and Apple Pay remain activation-gated until Ontoko receives its payment-capable merchant credentials. [Public case study](https://github.com/freeman-ipumbu/ontoko-foods-case-study).
 - **JB.Braids — Wear Your Story** — a live, installable booking flagship for Jessica Autoni combining a tightly edited home experience, 12-look gallery, six original studio films, complete price list, 2–90 day availability, home-studio, house-call and away-call routes, Namibia-only contact validation, server-controlled 50% deposits, Crown Club return-client rewards and an authenticated private studio desk. Its final black-and-white feminine line-art release completed a 146-check production verification gate across desktop, mobile and compact landscape.
 - **Fuel Retail Digital Platform:** an anonymous, controlled-pilot case study joining customer, station, fleet and operations workflows on one transaction spine. It is concept work, not a live financial service or evidence of a client relationship.
@@ -56,7 +57,7 @@ The portfolio and linked case studies explain the product problem, decisions, ex
 
 ## Verification
 
-Run `npm test` to check social metadata, accessibility landmarks, local assets, the 29-build catalogue and the 1200×630 share image.
+Run `npm test` to check social metadata, accessibility landmarks, local assets, the 30-build catalogue and the 1200×630 share image.
 
 ## Contact
 

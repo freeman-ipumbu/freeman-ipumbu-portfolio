@@ -110,9 +110,9 @@ assert.ok(html.includes("Cash order requests are live"), "Ontoko Foods live cash
 assert.ok(html.includes("OneGate-hosted EFT / Pay by Bank, Google Pay and Apple Pay remain activation-gated"), "Ontoko Foods online payment methods remain activation-gated");
 assert.ok(html.includes("Cloudflare Functions and KV · protected admin operations · PWA engineering · payment-boundary design"), "Ontoko Foods full-stack, admin, PWA and payment-boundary role is current");
 assert.ok(html.includes("ONEGATE METHODS ACTIVATION-GATED"), "Ontoko Foods proof strip does not imply live online payment processing");
-assert.ok(html.indexOf('id="solarspin-hq"') < html.indexOf('id="ontoko-foods"') && html.indexOf('id="ontoko-foods"') < html.indexOf('id="fuel-retail-platform"'), "Ontoko Foods follows SolarSpin in the current-work ordering");
+assert.ok(html.indexOf('id="solarspin-hq"') < html.indexOf('id="career-arc-lab"') && html.indexOf('id="career-arc-lab"') < html.indexOf('id="ontoko-foods"') && html.indexOf('id="ontoko-foods"') < html.indexOf('id="fuel-retail-platform"'), "Career Arc and Ontoko Foods follow SolarSpin in the current-work ordering");
 assert.ok(readme.includes("Cash order requests are live; OneGate-hosted EFT / Pay by Bank, Google Pay and Apple Pay remain activation-gated"), "README preserves the Ontoko merchant-activation boundary");
-assert.ok(readme.indexOf("- **[SolarSpin Digital Headquarters]") < readme.indexOf("- **[Ontoko Foods]") && readme.indexOf("- **[Ontoko Foods]") < readme.indexOf("- **JB.Braids"), "README places Ontoko directly after SolarSpin in the current-work ordering");
+assert.ok(readme.indexOf("- **[SolarSpin Digital Headquarters]") < readme.indexOf("- **[Career Arc Lab]") && readme.indexOf("- **[Career Arc Lab]") < readme.indexOf("- **[Ontoko Foods]") && readme.indexOf("- **[Ontoko Foods]") < readme.indexOf("- **JB.Braids"), "README places Career Arc and Ontoko directly after SolarSpin in the current-work ordering");
 assert.ok(html.includes('id="fuel-retail-platform"'), "Anonymous fuel-retail case study is featured");
 assert.ok(html.includes("It is not a live financial service"), "Fuel-retail public boundary is explicit");
 assert.ok(html.includes("fuel-retail-digital-platform-case-study"), "Fuel-retail public repository is linked");
@@ -160,10 +160,13 @@ assert.equal(dossier.subarray(0, 5).toString("ascii"), "%PDF-", "Career dossier 
 assert.ok(dossier.length < 2 * 1024 * 1024, "Career dossier stays lightweight for public download");
 
 const cards = [...html.matchAll(/<article class="build-card/g)].length;
-assert.equal(cards, 29, "Selected build count changed; update the portfolio metric and test intentionally");
-assert.ok(html.includes('<strong>29</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
+assert.equal(cards, 30, "Selected build count changed; update the portfolio metric and test intentionally");
+assert.ok(html.includes('<strong>30</strong><span>SELECTED BUILDS</span>'), "Hero build metric matches the cards");
 const featuredSection = readme.split("## Featured work")[1]?.split("## Google Play launch lane")[0] ?? "";
-assert.equal((featuredSection.match(/^- \*\*/gm) || []).length, 29, "README featured-work count matches the portfolio");
+assert.equal((featuredSection.match(/^- \*\*/gm) || []).length, 30, "README featured-work count matches the portfolio");
+assert.ok(html.includes('id="career-arc-lab"'), "Career Arc Lab is featured in the portfolio");
+assert.ok(html.includes('href="https://github.com/freeman-ipumbu/career-arc-lab-case-study"'), "Career Arc Lab public case study is linked");
+assert.ok(html.includes("not a job board, salary predictor, credential marketplace or promise of employment, income, qualification or visa eligibility"), "Career Arc Lab outcome boundary is explicit");
 
 for (const match of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
   const value = match[1];
@@ -189,4 +192,4 @@ assert.deepEqual([...unifiedProof.subarray(0, 8)], [137,80,78,71,13,10,26,10], "
 assert.equal(unifiedProof.readUInt32BE(16), 1200, "UNIFIED proof width");
 assert.equal(unifiedProof.readUInt32BE(20), 2664, "UNIFIED proof height");
 
-console.log("PASS: portfolio metadata, accessibility landmarks, asset references, 29-build HTML/README counts and social image.");
+console.log("PASS: portfolio metadata, accessibility landmarks, asset references, 30-build HTML/README counts and social image.");
