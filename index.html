@@ -26,7 +26,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="image" href="og-image.jpg" fetchpriority="high">
 
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://freeman-ipumbu.pages.dev/#freeman","name":"Freeman Ipumbu","url":"https://freeman-ipumbu.pages.dev/","image":"https://freeman-ipumbu.pages.dev/og-image.jpg","jobTitle":"Technical Director","worksFor":{"@id":"https://www.tptsnam.com/#organization"},"address":{"@type":"PostalAddress","addressLocality":"Windhoek","addressCountry":"NA"},"sameAs":["https://github.com/freeman-ipumbu","https://www.linkedin.com/in/freeman-paul-ipumbu/","https://doi.org/10.5281/zenodo.21840440"]},{"@type":"Organization","@id":"https://www.tptsnam.com/#organization","name":"TPTS Namibia","legalName":"TPTS Financial Technology Group (Pty) Ltd","url":"https://www.tptsnam.com/"},{"@type":"Organization","name":"SolarSpin Technologies","url":"https://solarspin-namibia.pages.dev/","founder":{"@id":"https://freeman-ipumbu.pages.dev/#freeman"}},{"@type":"Organization","name":"Runnerz Namibia","url":"https://runnerznamibia.com/","founder":{"@id":"https://freeman-ipumbu.pages.dev/#freeman"}},{"@type":"Organization","name":"RightMatch Namibia","url":"https://rightmatchnamibia.com/","founder":{"@id":"https://freeman-ipumbu.pages.dev/#freeman"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://freeman-ipumbu.pages.dev/#freeman","name":"Freeman Ipumbu","url":"https://freeman-ipumbu.pages.dev/","image":"https://freeman-ipumbu.pages.dev/og-image.jpg","jobTitle":"Technical Director","worksFor":{"@id":"https://www.tptsnam.com/#organization"},"address":{"@type":"PostalAddress","addressLocality":"Windhoek","addressCountry":"NA"},"sameAs":["https://github.com/freeman-ipumbu","https://www.linkedin.com/in/freeman-paul-ipumbu/","https://doi.org/10.5281/zenodo.21840440"]},{"@type":"Organization","@id":"https://www.tptsnam.com/#organization","name":"TPTS Namibia","legalName":"TPTS Financial Technology Group (Pty) Ltd","url":"https://www.tptsnam.com/"},{"@type":"Organization","name":"SolarSpin Technologies","url":"https://www.solarspin-namibia.xyz/","founder":{"@id":"https://freeman-ipumbu.pages.dev/#freeman"}},{"@type":"Organization","name":"Runnerz Namibia","url":"https://runnerznamibia.com/","founder":{"@id":"https://freeman-ipumbu.pages.dev/#freeman"}},{"@type":"Organization","name":"RightMatch Namibia","url":"https://rightmatchnamibia.com/","founder":{"@id":"https://freeman-ipumbu.pages.dev/#freeman"}}]}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,6 +105,11 @@
   .topnav a{ text-decoration:none; transition:color .15s; }
   .topnav a:hover{ color:var(--amber); }
   .topnav-uptime{ color:var(--text-faint); }
+  @media (max-width:940px){
+    .topbar-inner{font-size:10px}
+    .topnav{gap:13px}
+    .topnav-uptime{display:none}
+  }
   @media (max-width:760px){ .topnav{ display:none; } }
 
   /* ---------- hero ---------- */
@@ -663,6 +668,8 @@ section::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;bac
 .build-media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.04);transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s}
 .build-media.brand-showcase{background:radial-gradient(circle at 50% 42%,rgba(195,217,108,.16),transparent 44%),#07160f}
 .build-media.brand-showcase img{object-fit:contain;padding:clamp(34px,6vw,78px);filter:saturate(1) contrast(1)}
+.build-media.art-contain{background:radial-gradient(circle at 50% 45%,rgba(94,231,255,.11),transparent 42%),linear-gradient(145deg,#08151e,#050b11)}
+.build-media.art-contain img{object-fit:contain;padding:clamp(14px,2.3vw,28px);filter:saturate(1) contrast(1.02)}
 .build-card:hover .build-media img{transform:scale(1.035);filter:saturate(1) contrast(1.05)}
 .build-media.unified-shot-wall{display:grid;grid-template-columns:1.08fr .92fr;grid-template-rows:1fr 1fr;gap:10px;padding:18px;background:radial-gradient(circle at 35% 25%,rgba(57,255,136,.13),transparent 48%),#050b08}
 .build-media.unified-shot-wall img{height:100%;min-height:0;border:1px solid rgba(57,255,136,.22);object-fit:cover;object-position:center;filter:saturate(.98) contrast(1.03);transform:none}
@@ -914,7 +921,7 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
           <strong>Technical Director, TPTS Namibia</strong>
           <span>Technical direction for financial technology products, architecture and delivery.</span>
         </a>
-        <a class="identity-role solar" href="https://solarspin-namibia.pages.dev/" target="_blank" rel="noopener noreferrer">
+        <a class="identity-role solar" href="https://www.solarspin-namibia.xyz/" target="_blank" rel="noopener noreferrer">
           <small>FOUNDED NOV 2025</small>
           <strong>Founder and CEO, SolarSpin Technologies</strong>
           <span>The company behind my independent product, client and research-led engineering work.</span>
@@ -1124,7 +1131,7 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
       </article>
 
       <article class="build-card" id="namibia-finepay">
-        <div class="build-media">
+        <div class="build-media art-contain">
           <span class="build-signal">PUBLIC CASE STUDY // ILLUSTRATIVE DEMO</span>
           <img src="projects/finepay-case-study.svg" alt="Namibia FinePay public system case-study artwork" width="1600" height="900" loading="lazy" decoding="async">
         </div>
@@ -1142,7 +1149,7 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
       </article>
 
       <article class="build-card" id="soek-iets">
-        <div class="build-media">
+        <div class="build-media art-contain">
           <span class="build-signal">ACCESS-CODE // PUBLIC TEST PILOT</span>
           <img src="projects/soek-iets.webp" alt="Soek.Iets Windhoek-first marketplace safety and handover guidance" width="1200" height="628" loading="lazy" decoding="async">
         </div>
@@ -1160,15 +1167,15 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
       </article>
 
       <article class="build-card" id="stephanie-madl">
-        <div class="build-media">
+        <div class="build-media art-contain">
           <span class="build-signal">LIVE // EDITORIAL CAREER PORTFOLIO</span>
           <img src="projects/stephanie-madl.webp" alt="Stephanie Madl travel-operations portfolio across Namibia's landscapes" width="1200" height="630" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">CLIENT EXPERIENCE / TRAVEL OPERATIONS</div>
-          <h3>Stephanie Madl Portfolio</h3>
-          <p>A cinematic, responsive portfolio for a Namibian travel specialist and remote-administration professional, connecting tailor-made journey operations, supplier coordination and field experience with an accessible CV and direct contact path.</p>
-          <div class="build-role"><b>MY ROLE</b> Identity · editorial storytelling · UX/UI · motion · frontend engineering · accessibility · launch</div>
+          <h3>Stephanie Madl · Feel the experience.</h3>
+          <p>A cinematic portfolio for a Namibian Travel Specialist who holds the unseen pieces together, from tailor-made tours and supplier bookings to OTA pages, invoices, guide schedules, road-closure messages and the finer remote-administration work that lets the guest simply feel the experience.</p>
+          <div class="build-role"><b>MY ROLE</b> Identity · editorial storytelling · Namibia visual curation · UX/UI · motion · frontend engineering · accessibility · launch</div>
           <div class="build-actions">
             <a class="primary" href="https://stephanie-madl.pages.dev/" target="_blank" rel="noopener noreferrer">ENTER THE PORTFOLIO ↗</a>
           </div>
@@ -1176,19 +1183,20 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
       </article>
 
       <article class="build-card" id="solarspin-hq">
-        <div class="build-media">
+        <div class="build-media art-contain">
           <span class="build-signal">LIVE // COMPANY HEADQUARTERS + PUBLIC BUILD RECORD</span>
           <img src="projects/solarspin-digital-hq.svg" alt="SolarSpin Technologies digital headquarters build-record artwork" width="1600" height="900" loading="lazy" decoding="async">
         </div>
         <div class="build-body">
           <div class="build-index">FOUNDER BUILD / COMPANY IDENTITY</div>
-          <h3>SolarSpin Digital Headquarters</h3>
-          <p>The public home and project observatory for SolarSpin Technologies, bringing the company's positioning, identity, information architecture, motion language and evidence-backed project record into one accessible experience.</p>
-          <div class="build-role"><b>MY ROLE</b> Founder · company positioning · identity system · information architecture · UX/UI · motion · frontend engineering · accessibility · deployment</div>
+          <h3>SolarSpin Digital Headquarters · The Centre of the Universe</h3>
+          <p>A living company home and 30-system project observatory built around the beauty of science and the discipline of real operations. Solar Day and Interstellar themes, the Public Atlas, relationship-led Gravity Table, secure Start Here intake and cosmic Windhoek transmission turn the wider body of work into one coherent experience.</p>
+          <div class="build-role"><b>MY ROLE</b> Founder · company positioning · identity system · information architecture · UX/UI · motion · frontend engineering · accessibility · verification · custom-domain deployment</div>
           <div class="build-actions">
-            <a class="primary" href="https://solarspin-namibia.pages.dev/" target="_blank" rel="noopener noreferrer">ENTER SOLARSPIN ↗</a>
+            <a class="primary" href="https://www.solarspin-namibia.xyz/" target="_blank" rel="noopener noreferrer">ENTER SOLARSPIN ↗</a>
             <a href="https://github.com/freeman-ipumbu/solarspin-website-case-study" target="_blank" rel="noopener noreferrer">PUBLIC BUILD RECORD ↗</a>
           </div>
+          <div class="build-proof">LIVE ON SOLARSPIN-NAMIBIA.XYZ · 30-SYSTEM PUBLIC ATLAS · RESPONSIVE GRAVITY TABLE · SECURE IN-SITE INTAKE</div>
         </div>
       </article>
 
@@ -1210,7 +1218,6 @@ footer a:hover{color:#fff;border-color:var(--solar-mint)}
           <div class="build-proof">LIVE · INSTALLABLE PWA · EGG ORDERS + ENQUIRIES · OPENSTREETMAP DELIVERY PIN · DEVICE-PRIVATE RETURN PROFILE · PROTECTED ORDER DESK · CASH REQUEST FLOW LIVE · ONEGATE METHODS ACTIVATION-GATED</div>
         </div>
       </article>
-
       <article class="build-card flagship fuel-case-card" id="fuel-retail-platform">
         <div class="build-media">
           <span class="build-signal">ANONYMOUS // CONTROLLED-PILOT CONCEPT</span>
@@ -1853,7 +1860,7 @@ status: <span class="status-ok">reachable</span><span class="cursor"></span>
 
 <footer>
   &copy; 2026 FREEMAN IPUMBU &middot; ALL RIGHTS RESERVED<br>
-  A DIGITAL EXPERIENCE BY <a href="https://solarspin-namibia.pages.dev/" target="_blank" rel="noopener noreferrer">SOLARSPIN TECHNOLOGIES</a> &middot; WINDHOEK, NAMIBIA
+  A DIGITAL EXPERIENCE BY <a href="https://www.solarspin-namibia.xyz/" target="_blank" rel="noopener noreferrer">SOLARSPIN TECHNOLOGIES</a> &middot; WINDHOEK, NAMIBIA
 </footer>
 
 <script>

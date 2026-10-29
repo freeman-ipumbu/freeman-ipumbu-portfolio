@@ -1,5 +1,9 @@
 # Freeman Ipumbu | Technical Director, Founder and Systems Builder
 
+<p align="center">
+  <a href="https://freeman-ipumbu.pages.dev/"><img src="social-preview-v3.jpg" width="100%" alt="Freeman Ipumbu technical portfolio from Windhoek, Namibia"></a>
+</p>
+
 Freeman Ipumbu is Technical Director at TPTS Namibia, Founder and CEO of SolarSpin Technologies and Runnerz Namibia, and Co-Founder & Chief Technology Officer of RightMatch Namibia.
 
 This interactive portfolio follows the work from infrastructure and network operations through design science research, product architecture and end-to-end engineering from Windhoek, Namibia.
@@ -16,7 +20,7 @@ The portfolio curates **29 selected builds**, ordered by current relevance and r
 - **[Namibia FinePay](https://namibia-finepay-case-study.pages.dev/)** — a seven-surface traffic-fine concept following one reference from notice through payment, settlement and authority acknowledgement. The illustrative public demonstration takes no payments, queries no notices and connects to no institution. [Public case study](https://github.com/freeman-ipumbu/namibia-finepay-case-study).
 - **[Soek.Iets](https://soek-iets.pages.dev/)** — an access-code-controlled Windhoek test pilot for approximate-neighbourhood discovery, reviewed listings, buyer requests and participant-only enquiries. Trade completion, reputation, regulated payment, OTP handover and integrated delivery are not active. [Public use case](https://github.com/freeman-ipumbu/soek-iets-use-case).
 - **[Stephanie Madl Portfolio](https://stephanie-madl.pages.dev/)** — a live editorial portfolio for a Namibian travel specialist and remote-administration professional, connecting journey operations, field experience, an accessible CV and direct contact.
-- **[SolarSpin Digital Headquarters](https://solarspin-namibia.pages.dev/)** — SolarSpin Technologies' public company home and project observatory, bringing its positioning, identity, information architecture, motion and evidence-backed project record into one accessible experience. [Public build record](https://github.com/freeman-ipumbu/solarspin-website-case-study).
+- **[SolarSpin Digital Headquarters](https://www.solarspin-namibia.xyz/)** — SolarSpin Technologies' living company home and 30-system project observatory, with Solar Day and Interstellar, the Public Atlas, Gravity Table, secure in-site intake and a cosmic Windhoek transmission. [Public build record](https://github.com/freeman-ipumbu/solarspin-website-case-study).
 - **[Ontoko Foods](https://ontoko-foods.pages.dev/)** — a live, installable egg-order and enquiry system for Jane Auala's Groot Aub farm, with device-private return-client onboarding, OpenStreetMap delivery pinning and a protected order desk. Every request remains subject to Ontoko's stock, price and fulfilment confirmation. Cash order requests are live; OneGate-hosted EFT / Pay by Bank, Google Pay and Apple Pay remain activation-gated until Ontoko receives its payment-capable merchant credentials. [Public case study](https://github.com/freeman-ipumbu/ontoko-foods-case-study).
 - **JB.Braids — Wear Your Story** — a live, installable booking flagship for Jessica Autoni combining a tightly edited home experience, 12-look gallery, six original studio films, complete price list, 2–90 day availability, home-studio, house-call and away-call routes, Namibia-only contact validation, server-controlled 50% deposits, Crown Club return-client rewards and an authenticated private studio desk. Its final black-and-white feminine line-art release completed a 146-check production verification gate across desktop, mobile and compact landscape.
 - **Fuel Retail Digital Platform:** an anonymous, controlled-pilot case study joining customer, station, fleet and operations workflows on one transaction spine. It is concept work, not a live financial service or evidence of a client relationship.
@@ -52,12 +56,12 @@ The portfolio and linked case studies explain the product problem, decisions, ex
 
 ## Verification
 
-Run `npm test` to check social metadata, accessibility landmarks, local assets, the selected-build count and the 1200×630 share image.
+Run `npm test` to check social metadata, accessibility landmarks, local assets, the 29-build catalogue and the 1200×630 share image.
 
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/freeman-paul-ipumbu/) · [Email](mailto:freeman.ipumbu@outlook.com)
 
-The experience is built by [SolarSpin Technologies](https://solarspin-namibia.pages.dev/).
+The experience is built by [SolarSpin Technologies](https://www.solarspin-namibia.xyz/).
 
 © 2026 Freeman Ipumbu.

@@ -24,6 +24,8 @@ assert.ok(structuredData, "Structured data block can be located");
 assert.doesNotThrow(() => JSON.parse(structuredData[1]), "Structured data is valid JSON");
 assert.ok(html.includes('"jobTitle":"Technical Director"'), "Structured data leads with the current TPTS role");
 assert.ok(html.includes('"name":"TPTS Namibia"'), "TPTS Namibia is represented in structured data");
+assert.ok(html.includes('"url":"https://www.solarspin-namibia.xyz/"'), "SolarSpin structured data uses the custom domain");
+assert.ok(!html.includes("solarspin-namibia.pages.dev"), "Legacy SolarSpin Pages address has been removed");
 assert.ok(!/\son(?:click|error|load)=/i.test(html), "No inline event handlers");
 assert.ok(html.includes("Technical Director, TPTS Namibia"), "Current TPTS leadership role is visible");
 assert.ok(html.includes("Founder and CEO, SolarSpin Technologies"), "SolarSpin founder identity is visible");
@@ -92,6 +94,8 @@ assert.ok(html.includes('projects/stephanie-madl.webp'), "Stephanie Madl uses th
 assert.ok(html.includes('href="https://stephanie-madl.pages.dev/"'), "Stephanie Madl live portfolio is linked");
 assert.ok(html.includes('id="solarspin-hq"'), "SolarSpin digital headquarters has a shareable project anchor");
 assert.ok(html.includes('projects/solarspin-digital-hq.svg'), "SolarSpin headquarters uses its public build-record artwork");
+assert.ok(html.includes('href="https://www.solarspin-namibia.xyz/"'), "SolarSpin headquarters uses the custom domain");
+assert.ok(html.includes("Public Atlas") && html.includes("Gravity Table"), "SolarSpin current experience features are represented");
 assert.ok(html.includes('href="https://github.com/freeman-ipumbu/solarspin-website-case-study"'), "SolarSpin public build record is linked");
 assert.ok(html.includes('id="ontoko-foods"'), "Ontoko Foods has a shareable flagship anchor");
 assert.ok(html.includes('projects/ontoko-order-platform.jpg'), "Ontoko Foods uses current live order-platform evidence");
