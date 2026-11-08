@@ -45,11 +45,11 @@ The portfolio curates **30 selected builds**, ordered by current relevance and r
 - **Borizago** — installable shuttle booking and operations platform with 42 directional journeys, managed fares and locations, service workflows, manifests, monthly reporting, staff guidance and a refined Boriza identity.
 - **Omutambo Herd Operations** — live, invitation-only farm-operations workspace joining cattle, goats, sheep, freely named livestock and poultry flocks; Field Command 2 unifies its identity, branded access surfaces, startup states, responsive registers and evidence-led poultry measures while retaining the 100-check release gate and explicit owner-authenticated smoke check.
 - **KICKOFF NAM** — public, source-linked Namibian football intelligence archive with a national football atlas.
-- **UNIFIED 20.0 — Signal Command** — the official Runnerz music player now staged on an active Google Play Alpha track as version code 22, with the release in review and 36 testers assigned; the local-first product keeps its living Command Deck, protected 3,795-track Library Vault, five evidence-led Smart Spaces, checksum-protected portable Capsule, reversible Queue Director, Sonic Forge, Sonic Recall, thirty-five persistent badges and privacy-light matching-signature Runnerz relay.
+- **UNIFIED 50.0 — Deep Current** — the local build-56 candidate adds Living Lyrics, refined Inter typography, Editorial / Orbit / Afterhours sharing, living listening portraits, Tag Studio, explicit folder rules, bookmarks, speed and passage controls, Google Drive Capsules, Nearby transfer, Android Auto surfaces and a Wear OS companion. The worldwide closed test currently distributes 20.0 / code 22; the local v50 binary has not replaced it.
 
-## Google Play launch lane — 2 October 2026
+## UNIFIED release and tester access
 
-Runnerz and UNIFIED are not claimed as public-production releases yet. Both signed Android App Bundles are in Namibia-only Alpha release lanes. Runnerz has completed its Play setup and submitted its store changes for review; UNIFIED's Alpha track is active and release `20.0 Signal Command (22)` is in review. The next shared account gate is at least 12 continuously opted-in testers for 14 days before production access can be requested.
+UNIFIED 50.0 / build 56 is installed on the physical test handset. Country/group expansion for the existing 20.0 / code 22 Play closed test was verified published on 7 November 2026 across 178 countries and regions. [Join the tester group](https://groups.google.com/g/unified-music-worldwide), then [opt into Google Play](https://play.google.com/apps/testing/com.unified.music) using the same account. Group membership alone is not Play opt-in. Runnerz has its own release lane; public production remains separate for both apps.
 
 ## Public/private boundary
 

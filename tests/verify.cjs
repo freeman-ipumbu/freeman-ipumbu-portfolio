@@ -37,8 +37,8 @@ assert.ok(html.includes("100 AUTOMATED CHECKS"), "Omutambo verification evidence
 assert.ok(html.includes("cattle, goats, sheep, freely named livestock"), "Omutambo multi-species scope is visible");
 assert.ok(html.includes("projects/magic-boys-fa-logo.png"), "Magic Boys uses the approved standalone academy crest");
 assert.ok(html.includes("evidence coverage behind poultry measures"), "Omutambo evidence-coverage refresh is visible");
-assert.ok(html.includes("UNIFIED 20.0 — Signal Command"), "Current UNIFIED release is visible");
-assert.ok(html.includes("projects/unified-20-command-deck.png"), "UNIFIED uses current physical Command Deck proof");
+assert.ok(html.includes("UNIFIED 50.0 — Deep Current"), "Current UNIFIED release is visible");
+assert.ok(html.includes("projects/unified-50-living-lyrics-55.png"), "UNIFIED uses labelled native v50 lyric-stage evidence");
 assert.ok(html.includes("version code 22"), "UNIFIED Play version-code evidence is visible");
 assert.ok(html.includes('class="build-card flagship" id="unified"'), "UNIFIED has a shareable flagship anchor");
 assert.ok(html.includes("five evidence-led Smart Spaces"), "Continuum scope is visible");
